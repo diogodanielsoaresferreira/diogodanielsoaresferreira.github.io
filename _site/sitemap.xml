@@ -12,4 +12,8 @@
 <url>
 <loc>http://localhost:4000/about/</loc>
 </url>
+<url>
+<loc>http://localhost:4000/assets/pdf/CV.pdf</loc>
+<lastmod>2019-04-30T16:22:30+01:00</lastmod>
+</url>
 </urlset>
