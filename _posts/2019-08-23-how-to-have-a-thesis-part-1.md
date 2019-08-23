@@ -15,7 +15,7 @@ Obviously, the content of this blog post is highly subjective and related to my 
 
 This post will be divided into four parts: 
 
-* I - 3 tips for before starting the dissertation;
+* **I - 3 tips for before starting the dissertation;**
 * II - 4 tips for during the dissertation;
 * III - more 4 tips for during the dissertation;
 * IV - tips for after the dissertation.
