@@ -63,6 +63,11 @@ instagram:          diogodsferreira
 #xmpp:              username@server.com
 #hackernews:        username
 
+jekyll_analytics:
+  GoogleAnalytics:          # Add, if you want to track with Google Analytics
+    id: UA-146324263-1          # Required - replace with your tracking id
+    anonymizeIp: false      # Optional - Default: false - set to true for anonymized tracking
+
 # Gems
 plugins:
   - jekyll-mentions
@@ -70,6 +75,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-gist
   - jemoji
+  - jekyll-analytics
 
 jekyll-mentions:
     base_url: https://github.com
