@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/how-to-have-a-thesis-part-1/</loc>
+<loc>https://diogodanielsoaresferreira.github.io/how-to-have-a-thesis-part-1/</loc>
 <lastmod>2019-08-23T00:00:00+01:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/404</loc>
+<loc>https://diogodanielsoaresferreira.github.io/404</loc>
 </url>
 <url>
-<loc>http://localhost:4000/tags/</loc>
+<loc>https://diogodanielsoaresferreira.github.io/tags/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/</loc>
+<loc>https://diogodanielsoaresferreira.github.io/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/about/</loc>
+<loc>https://diogodanielsoaresferreira.github.io/about/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/posts/</loc>
+<loc>https://diogodanielsoaresferreira.github.io/posts/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/assets/pdf/CV.pdf</loc>
+<loc>https://diogodanielsoaresferreira.github.io/assets/pdf/CV.pdf</loc>
 <lastmod>2019-04-30T16:22:30+01:00</lastmod>
 </url>
 </urlset>
