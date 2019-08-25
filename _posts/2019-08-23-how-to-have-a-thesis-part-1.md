@@ -9,16 +9,16 @@ comments: true
 
 Hi there!
 
-I have recently concluded my Masters Dissertation about Control and Management Mechanisms for 5G Networks, with a 20/20 grade :) (in Portugal, the grading system goes from 1 (F) to 20 (A+) ) ![grinning-face](/assets/img/emojis/grinning-face-facebook.png){:class="emojis"}). While for me it was a smooth ride, for many of my colleagues it was/is really challenging to do their dissertation (or thesis, depending on the country you are studying). In this blog post, I will summarize the tips I would give myself before starting the dissertation, explaining my good and bad decisions along the way!
+I have recently concluded my Masters Dissertation about Control and Management Mechanisms for 5G Networks, with a 20/20 grade :) (in Portugal, the grading system goes from 1 (F) to 20 (A+) ) ![grinning-face](/assets/img/emojis/grinning-face-facebook.png){:class="emojis"}). While for me it was a smooth ride, for many of my colleagues it was/is really challenging to do their dissertation (or thesis, depending on the country you are studying). In this blog post, I will summarize the tips I would give myself before starting the dissertation, explaining my good and bad decisions along the way.
 
 Obviously, the content of this blog post is highly subjective and related to my dissertation experience, so don't take it as the ground truth. But do think critically about my advice and, whether you agree with them or not, comment on what you think about it (I will number the tips for easy reference). Although this post is about a Masters Dissertation, it can also be (loosely) applied to a PhD work. But do note that I did not do a PhD: think critically whether this applies to you or not.
 
 This post will be divided into four parts: 
 
-* **I - 3 tips for before starting the dissertation;**
-* II - 4 tips for during the dissertation;
-* III - more 4 tips for during the dissertation;
-* IV - tips for after the dissertation.
+* **I - 3 tips for before starting the writing of the dissertation;**
+* II - 4 tips for during the writing of the dissertation;
+* III - more 4 tips for during the writing of the dissertation;
+* IV - 3 tips for after the writing of the dissertation.
 
 Let's start?
 
@@ -35,16 +35,16 @@ Ush, this is a hot topic. Usually, some months (or weeks) before the beginning o
 This is a hard question. Ideally, you would like to have both: a supervisor that you get along with and a dissertation topic that you love. That is possible more times than not.
 
 ### My Experience
-I was already in a research group before starting the dissertation, with a research grant. To choose a dissertation topic, I just went talk to my supervisor, explained to her what I had in mind, and we came to an agreement. No, it wasn't exactly her area of research (Machine Learning/Deep Learning), but it was of both parties' interest to make a dissertation about that. We agreed that Machine Learning techniques were going to be used to analyze and improve 5G Networks. The Professor could give me work revision and discussion about 5G Networks, but I was on my own on how to apply the Machine Learning techniques.
+I was already in a research group before starting the dissertation, with a research grant. To choose a dissertation topic, I just went talk to my supervisor, explained to her what I had in mind, and we came to an agreement. No, it wasn't exactly her area of research (Machine Learning/Deep Learning), but it was of both parties' interest to make a dissertation about that. We agreed that Machine Learning techniques were going to be used to analyze and improve 5G Networks. The supervisor could give me work revision and discussion about 5G Networks, but I was on my own on how to apply the Machine Learning techniques.
 
 While during the writing of the dissertation sometimes I felt a little "lost" in what my approach should be, it has inspired me to learn online about the area, and to understand it better. Due to the freedom that I had and the confidence that I always felt by my supervisor on me, any setback in my work was quickly discussed, besides the usual weekly meetings. In the end, I felt that although another supervisor could have given me more technical insights, I had much more freedom, encouragement and logistical support that was essential to my great grade in the dissertation.
 
 ### My Advice
-I suggest going with your gut on this one. To give you an objective answer, I would say 70/30. For me, a great supervisor is more important than a great dissertation topic. A great supervisor will guarantee you 70% of your grade on your dissertation. Remember that your supervisor will be guiding you for one year (at least). You will have many meetings with him about the direction of your work. If you are not comfortable with him, or if you just don't get along, then things can become really hard, independently of the topic of the work. What is a good supervisor? Well, that's a topic for another post, but if you keep reading, I will give you some guidelines of what your supervisor should and shouldn't do.
+I suggest going with your gut on this one. To give you an objective answer, I would say 70/30. For me, a great supervisor is more important than a great dissertation topic. A great supervisor will guarantee you 70% of your grade on your dissertation. Remember that your supervisor will be guiding you for one year (at least). You will have many meetings with him/her about the direction of your work. If you are not comfortable with him/her, or if you just don't get along, then things can become really hard, independently of the topic of the work. What is a good supervisor? Well, that's a topic for another post, but if you keep reading, I will give you some guidelines of what your supervisor should and shouldn't do.
 
 Being in love with a dissertation topic is important because you will spend a lot of time researching that topic. If you find a supervisor that you like and that accepts your dissertation topic, go for it! Otherwise, you will have to make a trade-off. But don't forget: 70% of the importance to the supervisor, 30% to the dissertation topic.
 
-For the PhD thesis I would NOT recommend following this approach! The PhD is a hard road for everyone, and it involves a LOT more research and background work than a Masters dissertation. You will only be able to make it to the end if you **really** like the topic that you're working in. Besides, because you will spend much more time than one year working on that topic, it is expected that you become a world expert about that. If you don't like that topic... why you're doing a PhD anyway?
+For the PhD thesis I would **NOT** recommend following this approach! The PhD is a hard road for everyone, and it involves a LOT more research and background work than a Masters dissertation. You will only be able to make it to the end if you **really** like the topic that you're working in. Besides, because you will spend much more time than one year working on that topic, it is expected that you become a world expert about that. If you don't like that topic... why you're doing a PhD anyway?
 
 In this case, I would recommend to, before starting the dissertation, search for the world experts about the topic that you are in love with. Make a short-list: 2 or 3 supervisors. Then, get in touch with them to understand if they are interested and, more importantly, if they are the right supervisor for you. If you find one that you like, go for it! Otherwise, keep searching. And don't be afraid of changing supervisors while you're still in the first year. It is better to change in the first year than spend 3, 4 or more years regretting that decision.
 
