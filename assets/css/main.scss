@@ -11,6 +11,12 @@ sitemap: false
  *
 */
 
+
+.emojis {
+	display: inline;
+	width: 20px;
+}
+
 // Partials
 @import "variables";
 @import "mixins";
