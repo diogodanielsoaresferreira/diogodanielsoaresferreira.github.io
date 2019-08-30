@@ -1,16 +1,150 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://diogodanielsoaresferreira.github.io/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.6.3">Jekyll</generator><link href="https://diogodanielsoaresferreira.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://diogodanielsoaresferreira.github.io/" rel="alternate" type="text/html" /><updated>2019-08-25T18:03:24+01:00</updated><id>https://diogodanielsoaresferreira.github.io/</id><title type="html">Diogo Ferreira webpage</title><subtitle>Diogo Ferreira personal webpage.</subtitle><entry><title type="html">How to have an A+ dissertation/thesis (I/IV)</title><link href="https://diogodanielsoaresferreira.github.io/how-to-have-a-thesis-part-1/" rel="alternate" type="text/html" title="How to have an A+ dissertation/thesis (I/IV)" /><published>2019-08-23T00:00:00+01:00</published><updated>2019-08-23T00:00:00+01:00</updated><id>https://diogodanielsoaresferreira.github.io/how-to-have-a-thesis-part-1</id><content type="html" xml:base="https://diogodanielsoaresferreira.github.io/how-to-have-a-thesis-part-1/">&lt;p&gt;Hi there!&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://diogodanielsoaresferreira.github.io/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.6.3">Jekyll</generator><link href="https://diogodanielsoaresferreira.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://diogodanielsoaresferreira.github.io/" rel="alternate" type="text/html" /><updated>2019-08-30T23:06:33+01:00</updated><id>https://diogodanielsoaresferreira.github.io/</id><title type="html">Diogo Ferreira webpage</title><subtitle>Diogo Ferreira personal webpage.</subtitle><entry><title type="html">How to have an A+ dissertation/thesis (II/IV)</title><link href="https://diogodanielsoaresferreira.github.io/how-to-have-a-thesis-part-2/" rel="alternate" type="text/html" title="How to have an A+ dissertation/thesis (II/IV)" /><published>2019-08-30T00:00:00+01:00</published><updated>2019-08-30T00:00:00+01:00</updated><id>https://diogodanielsoaresferreira.github.io/how-to-have-a-thesis-part-2</id><content type="html" xml:base="https://diogodanielsoaresferreira.github.io/how-to-have-a-thesis-part-2/">&lt;p&gt;Hi there!&lt;/p&gt;
 
-&lt;p&gt;I have recently concluded my Masters Dissertation about Control and Management Mechanisms for 5G Networks, with a 20/20 grade :) (in Portugal, the grading system goes from 1 (F) to 20 (A+) ) &lt;img src=&quot;/assets/img/emojis/grinning-face-facebook.png&quot; alt=&quot;grinning-face&quot; class=&quot;emojis&quot; /&gt;). While for me it was a smooth ride, for many of my colleagues it was/is really challenging to do their dissertation (or thesis, depending on the country you are studying). In this blog post, I will summarize the tips I would give myself before starting the dissertation, explaining my good and bad decisions along the way!&lt;/p&gt;
+&lt;p&gt;If you didn’t read the previous post, check it out &lt;a href=&quot;/how-to-have-a-thesis-part-1/&quot;&gt;here&lt;/a&gt;. I am summarizing tips I would give myself before starting the dissertation, explaining my good and bad decisions along the way.&lt;/p&gt;
+
+&lt;p&gt;Before, a heads up: the content of this blog post is highly subjective and related to my dissertation experience, so don’t take it as the ground truth. But do think critically about my advice and, whether you agree with them or not, comment on what you think about it&lt;/p&gt;
+
+&lt;p&gt;This post is divided into four parts:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;/how-to-have-a-thesis-part-1/&quot;&gt;II - 3 tips for before starting the writing of the dissertation;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;II - 4 tips for during the writing of the dissertation;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;III - more 4 tips for during the writing of the dissertation;&lt;/li&gt;
+  &lt;li&gt;IV - 3 tips for after the writing of the dissertation.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;during-the-dissertation&quot;&gt;During the dissertation&lt;/h1&gt;
+
+&lt;h2 id=&quot;4---when-to-research-and-write-the-state-of-the-art-of-your-work&quot;&gt;4 - When to research and write the state of the art of your work?&lt;/h2&gt;
+
+&lt;figure&gt;
+	&lt;a href=&quot;/assets/img/thesis-2.jpg&quot;&gt;&lt;img src=&quot;/assets/img/thesis-2.jpg&quot; /&gt;&lt;/a&gt;
+	&lt;figcaption style=&quot;text-align: center&quot;&gt;It can be important to search for articles in the beginning of the thesis&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;A state of the art is a survey about the recent advances in the area you are working on. It shows the newer techniques for solving the problem you are trying to solve. In a dissertation, the state of the art chapter is usually about 10%-20% of the size of the whole document. A good state of the art shows not only the proposed techniques, but also that the writer has knowledge about the area he/she is working with. The goal is to identify the flaws in the work done previously to justify your approach to the problem. Otherwise, you will be solving a problem that is already solved.&lt;/p&gt;
+
+&lt;p&gt;This question comes up frequently at the beginning of the dissertation work. Should you write the state of the art before you start trying to solve the problem? Or do you start writing the state of the art after having a deep knowledge about your work, and you can easily identify similar research reports?&lt;/p&gt;
+
+&lt;p&gt;Both approaches have pros and cons. If you start to write the state of the art before start working on the dissertation, you understand better the proposed approaches to solve your problem and the recent techniques used before starting the dissertation work, and it can influence you (in a good way) to follow a certain approach. However, after the development of your work, you may have to adjust your state of the art to address the unexpected problems you may have encountered.&lt;/p&gt;
+
+&lt;p&gt;If you write the state of the art after the dissertation work is done, you will have more in-depth knowledge about your work at the time you are writing it, and your state of the art will probably be more focused on your problem. However, there is always the risk (and it is a &lt;strong&gt;BIG&lt;/strong&gt; risk!) of finding out that the problem you have solved was already solved by someone else.&lt;/p&gt;
+
+&lt;h3 id=&quot;my-experience&quot;&gt;My Experience&lt;/h3&gt;
+&lt;p&gt;I initially wrote the state of the art before starting the dissertation work. It took two weeks. And it was beautiful &amp;lt;3. By the end of it, I was certain of what I was going to do next, and I knew everything about the approach to follow. When I started the dissertation work, nothing went as I expected. The data that I was told I would have was totally different from what I had thought; the approaches I thought would work did not work; even the scope of the dissertation slightly changed. As a result, by the end of it, I had to erase 60% of the state of the art previously done and start all over again; the other 40% need to be reviewed to be according to the scope of the work.&lt;/p&gt;
+
+&lt;h3 id=&quot;my-advice&quot;&gt;My Advice&lt;/h3&gt;
+&lt;p&gt;Well, I’m sorry. If you want to have a great state of the art, you will have to write it two times (at least…). You can start by making a state of the art before you start the dissertation work. This version will be used to explore the recent approaches to solve your problem and to start to develop your own approach to the problem. I advise you to not spend much time with syntax and grammar corrections in this version. You can even write it in bullets. After the dissertation work, you will see that this version is outdated: it contains topics that were not approached and/or is missing other topics. Do not panic! It is expected that, after the dissertation work, your understanding of the problem is different. You will have to iterate over the previous version of the state of the art and delete/write/rewrite everything until it is according to your work. After two, three or more passes on this chapter, the state of the art will be ready.&lt;/p&gt;
+
+&lt;p&gt;In summary, the writing of the state of the art is a continuous loop. It must be done before and after the dissertation work, to be consistent with the entire dissertation.&lt;/p&gt;
+
+&lt;h2 id=&quot;5---when-should-i-write-my-work&quot;&gt;5 - When should I write my work?&lt;/h2&gt;
+
+&lt;figure&gt;
+	&lt;a href=&quot;/assets/img/thesis-3.jpg&quot;&gt;&lt;img src=&quot;/assets/img/thesis-3.jpg&quot; /&gt;&lt;/a&gt;
+	&lt;figcaption style=&quot;text-align:center&quot;&gt;When you start writing your thesis, you start to understand better the topic you are working in.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Alright, we should write the state of the art before and after the dissertation work. But when should we write the content of the dissertation work? It is important to split the dissertation work into two parts: the implementation and the writing. The implementation loosely involves the approach description and the results obtained; the writing about the implementation is another part. In which order they must be done? Obviously, you can’t write everything before the implementation is done, but do you write as you implement or do you implement everything first and then write after?&lt;/p&gt;
+
+&lt;h3 id=&quot;my-experience-1&quot;&gt;My Experience&lt;/h3&gt;
+&lt;p&gt;I have to admit that I am a &lt;em&gt;little&lt;/em&gt; anxious. Whenever I did anything of the work, I would write it down quickly so I would not forget what I had done. Looking back, I think it helped me. Allowed me to always be focused on the work to be done, and I could forget what was done previously: if I needed to go back to remember it, I would only need to read the chapter that was already previously written.&lt;/p&gt;
+
+&lt;h3 id=&quot;my-advice-1&quot;&gt;My Advice&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Write!&lt;/strong&gt; Even if you are doing just quick tests. &lt;strong&gt;Write!&lt;/strong&gt; Even if you just need to write a description of a part of your work. &lt;strong&gt;Write!&lt;/strong&gt; The journey of the writing of a dissertation can be long, and our ability to remember everything we have done is clearly overrated. I can assure you that at the end of the dissertation you will not remember all the implementation details of the work. The only way to build a complete dissertation is to write everything as you do it. And don’t be a perfectionist: the writing does not need to be perfect, you will review it later. You only need to write to remember what you have done.&lt;/p&gt;
+
+&lt;h2 id=&quot;6---when-to-meet-with-my-supervisor&quot;&gt;6 - When to meet with my supervisor?&lt;/h2&gt;
+
+&lt;figure&gt;
+	&lt;a href=&quot;/assets/img/thesis-4.jpg&quot;&gt;&lt;img src=&quot;/assets/img/thesis-4.jpg&quot; /&gt;&lt;/a&gt;
+	&lt;figcaption style=&quot;text-align:center&quot;&gt;Meetings with your supervisor should be weekly at most.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This is one of the most important questions. How often should you meet with your supervisor? If you meet him/her rarely, chances are that he/she will not understand the work you are doing, making it harder to receive relevant feedback. This could totally ruin your work, especially if the dissertation objective is a little blurred. In the worst possible scenario, you can end up working for nothing, since what you have done is not what your supervisor wants you to do.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, meetings are tiring for all intervenients. If you regularly set up long meetings to discuss details about your work, you and your supervisor will get tired quickly, and frustration will start to grow on both. Your supervisor will start to wonder if you have enough autonomy to make progress alone, without his/her input.&lt;/p&gt;
+
+&lt;h3 id=&quot;my-experience-2&quot;&gt;My Experience&lt;/h3&gt;
+&lt;p&gt;From the beginning of the work, we had a weekly meeting of about half an hour (extendable to one hour when needed) on the same day and hour of every week. At that meeting, we discussed mainly two things: what was done in the previous week and what was proposed to be done in the next. In that way, my supervisor was always following my work, and at any week we could discuss the results obtained and propose a different approach for the next week, or give me some criticism about anything I could do better before I move on.&lt;/p&gt;
+
+&lt;h3 id=&quot;my-advice-2&quot;&gt;My Advice&lt;/h3&gt;
+&lt;p&gt;I &lt;strong&gt;REALLY&lt;/strong&gt; suggest you schedule weekly meetings to talk to your supervisor about your work. Besides receiving important feedback and understand if you are on the right track, it also helps to keep up the pace week after week - if there is a week where you didn’t do anything, you will have to say it to your supervisor. Just by saying it, you will be putting (good) pressure on yourself to get the job done in the next week. It also implicitly puts pressure on your supervisor to help you when you have problems and to split the responsibilities of your work. You can often ask: should I do X or Y? Whatever the answer of your supervisor is, he/she is responsible for that choice and you do not have to answer for it.&lt;/p&gt;
+
+&lt;p&gt;Not all supervisors are able and willing to schedule weekly half-an-hour meetings. Maybe it’s because they think that they should only interfere in your work when you have doubts or problems; maybe it’s because they think that a monthly meeting is enough; maybe it’s because their schedule is flexible and they rather schedule meetings the week before; maybe it’s just because they are lazy (yes, it happens and it is quite common, unfortunately). Whatever it is the reason, understand it and try at all costs to schedule regular meetings. The supervisor is not at the university? You can talk to him/her with a video call. You don’t have anything to say to him? Tell him about your work in the previous week and see if he/she agrees with the approach and the results. But try to meet him/her weekly.&lt;/p&gt;
+
+&lt;p&gt;Do not schedule long meetings when they are not needed. Choose regular short meetings over monthly long meetings. Long meetings are tedious and boring - no one likes them. Besides, if you did anything wrong in the first week of the month, the work of the whole month is wasted. The key here is to have continuous and short iteration loops where your work can be evaluated, discussed and improved (have you heard of agile sprints? It follows the same principle). It improves the quality of your work and it helps you to stay focused and motivated in the task. Meetings of half-an-hour are perfect (for me). Do not make meetings of more than one hour - after the first hour, you will be much less productive. In those cases, don’t be afraid of scheduling more than one meeting.&lt;/p&gt;
+
+&lt;p&gt;Finally, but equally important, meet with your supervisor outside the meeting schedule whenever needed. During your work, there will be times when you will be stuck. You need immediate feedback to continue or you do not have a clue on what to do next in your work. In those times, do not wait for the next meeting: you can and should talk to your supervisor ASAP. There are supervisors more available than others. Independently of that, you have the right to discuss your problems with your supervisor in a short period of time. Do not be afraid of being annoying: their job is to help you when you have problems.&lt;/p&gt;
+
+&lt;h2 id=&quot;7---how-to-prepare-your-meetings&quot;&gt;7 - How to prepare your meetings?&lt;/h2&gt;
+
+&lt;p&gt;When you go to the meetings you have to be prepared. And to be prepared not only for what you are going to say but also for the possible answers from your supervisor. You have to be aware that it must be &lt;strong&gt;YOU&lt;/strong&gt; to set up an agenda for the meeting and control it if it goes wrong. But how can you do that, if you have never learned anything about it in university?&lt;/p&gt;
+
+&lt;h3 id=&quot;my-experience-3&quot;&gt;My Experience&lt;/h3&gt;
+&lt;p&gt;Before the dissertation, I was already in a research group, with a research grant. I had the experience of being in many meetings before the dissertation and with the experience, I learned to manage meetings for them to go according to what I had planned to. Before the meeting, I made a list of everything I had to discuss. It usually started with the work of the previous week, followed by what I had in mind for the next week.&lt;/p&gt;
+
+&lt;p&gt;During that time, I gathered a few pieces of advice that were useful for me to know at the beginning of the work. The 5 pieces of advice most important are below.&lt;/p&gt;
+
+&lt;h3 id=&quot;my-advice-3&quot;&gt;My Advice&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Make a list of everything you have to discuss in a meeting. It will be easier for you to not forget anything of what you want to discuss.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Do not wait for your supervisor to tell you what to do. Remember that you are the person that knows more about your work. You are the person that knows exactly what to do next to reach the proposed goal of your dissertation. Obviously, you can and should hear the advice from your supervisor. But you should ALWAYS propose what you should do in the next week. I can assure you that your supervisor has a different vision from yours on what’s left of your dissertation. Always be critical about what you hear and don’t be afraid to criticize your supervisor when you think he/she is wrong.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;If there is any graphical form to show the results you have, show it. Whether it is in a powerpoint, excel or code, show it. It helps the viewers to understand what you are saying and the work that you have done.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Common discussion in a meeting&lt;/strong&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Student&lt;/strong&gt;: I have the following problem. What should I do?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Student&lt;/strong&gt;: &amp;lt;Secretely wanting to use approach A&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Supervisor&lt;/strong&gt;: &amp;lt;15 minutes of discussion and searching the web about possible approaches&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Supervisor&lt;/strong&gt;: You know what? Let’s try the approaches A, B and C. At the end we will choose the best one!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Student&lt;/strong&gt;: But approaches B and C will not work…&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Supervisor&lt;/strong&gt;: Well, let’s try it!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Student&lt;/strong&gt;: &amp;lt;Wants to die&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;Whenever you make a question in a meeting, try to give two or three answer possibilities. If the question is about your work and you have a preference for an answer (e.g. you would like to use approach A, but the approaches B and C are also options), do not ask any question and go straight to the point: tell that you will use approach A, but B and C were also options. If your supervisor stops you and proves you wrong, follow his advice. Otherwise, just continue. In a dissertation, it is supposed for you to be autonomous. If you have a problem and you have a preferred approach to solve it, why to ask what approach should you do? If the approach is clearly wrong, your supervisor will tell you. Otherwise, you will avoid a discussion that can take a few minutes of your meeting and it will inevitably end up with you following your approach, whatever the advice of your supervisor.&lt;/p&gt;
+
+&lt;p&gt;How it could have been:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Student&lt;/strong&gt;: For solving the problem, there are approaches A, B and C. I will use A, because it gives best results on the papers I read.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Supervisor&lt;/strong&gt;: It seems OK to me.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Know the personalities of the people that will be in the meeting: the meeting course will be heavily influenced by them. Be careful with the chitchatters! If you let them talk too much, you will realize that the meeting will not go as planned: you will start talking about anything else but your work. Whenever that happens, you MUST re-focus the discussion in your work. Also, be careful with advice from outsiders that do not follow your work since the beginning: they can give you advice that goes in the wrong direction just because they do not understand the whole scope of your work.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There are many more pieces of advice to prepare your meetings, but I consider these to be the five most important ones.&lt;/p&gt;
+
+&lt;p&gt;That’s it for today!&lt;/p&gt;
+
+&lt;p&gt;Thanks for sticking by. Don’t forget that next friday Part III is out.&lt;/p&gt;
+
+&lt;p&gt;See ya!&lt;/p&gt;</content><category term="thesis" /><category term="dissertation" /><category term="tips" /><summary type="html">15 tips for your thesis/dissertation - 2/4</summary></entry><entry><title type="html">How to have an A+ dissertation/thesis (I/IV)</title><link href="https://diogodanielsoaresferreira.github.io/how-to-have-a-thesis-part-1/" rel="alternate" type="text/html" title="How to have an A+ dissertation/thesis (I/IV)" /><published>2019-08-23T00:00:00+01:00</published><updated>2019-08-23T00:00:00+01:00</updated><id>https://diogodanielsoaresferreira.github.io/how-to-have-a-thesis-part-1</id><content type="html" xml:base="https://diogodanielsoaresferreira.github.io/how-to-have-a-thesis-part-1/">&lt;p&gt;Hi there!&lt;/p&gt;
+
+&lt;p&gt;I have recently concluded my Masters Dissertation about Control and Management Mechanisms for 5G Networks, with a 20/20 grade :) (in Portugal, the grading system goes from 1 (F) to 20 (A+) ) &lt;img src=&quot;/assets/img/emojis/grinning-face-facebook.png&quot; alt=&quot;grinning-face&quot; class=&quot;emojis&quot; /&gt;). While for me it was a smooth ride, for many of my colleagues it was/is really challenging to do their dissertation (or thesis, depending on the country you are studying). In this blog post, I will summarize the tips I would give myself before starting the dissertation, explaining my good and bad decisions along the way.&lt;/p&gt;
 
 &lt;p&gt;Obviously, the content of this blog post is highly subjective and related to my dissertation experience, so don’t take it as the ground truth. But do think critically about my advice and, whether you agree with them or not, comment on what you think about it (I will number the tips for easy reference). Although this post is about a Masters Dissertation, it can also be (loosely) applied to a PhD work. But do note that I did not do a PhD: think critically whether this applies to you or not.&lt;/p&gt;
 
 &lt;p&gt;This post will be divided into four parts: &lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;I - 3 tips for before starting the dissertation;&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;II - 4 tips for during the dissertation;&lt;/li&gt;
-  &lt;li&gt;III - more 4 tips for during the dissertation;&lt;/li&gt;
-  &lt;li&gt;IV - tips for after the dissertation.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;I - 3 tips for before starting the writing of the dissertation;&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;/how-to-have-a-thesis-part-2/&quot;&gt;II - 4 tips for during the writing of the dissertation;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;III - more 4 tips for during the writing of the dissertation;&lt;/li&gt;
+  &lt;li&gt;IV - 3 tips for after the writing of the dissertation.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Let’s start?&lt;/p&gt;
@@ -28,16 +162,16 @@
 &lt;p&gt;This is a hard question. Ideally, you would like to have both: a supervisor that you get along with and a dissertation topic that you love. That is possible more times than not.&lt;/p&gt;
 
 &lt;h3 id=&quot;my-experience&quot;&gt;My Experience&lt;/h3&gt;
-&lt;p&gt;I was already in a research group before starting the dissertation, with a research grant. To choose a dissertation topic, I just went talk to my supervisor, explained to her what I had in mind, and we came to an agreement. No, it wasn’t exactly her area of research (Machine Learning/Deep Learning), but it was of both parties’ interest to make a dissertation about that. We agreed that Machine Learning techniques were going to be used to analyze and improve 5G Networks. The Professor could give me work revision and discussion about 5G Networks, but I was on my own on how to apply the Machine Learning techniques.&lt;/p&gt;
+&lt;p&gt;I was already in a research group before starting the dissertation, with a research grant. To choose a dissertation topic, I just went talk to my supervisor, explained to her what I had in mind, and we came to an agreement. No, it wasn’t exactly her area of research (Machine Learning/Deep Learning), but it was of both parties’ interest to make a dissertation about that. We agreed that Machine Learning techniques were going to be used to analyze and improve 5G Networks. The supervisor could give me work revision and discussion about 5G Networks, but I was on my own on how to apply the Machine Learning techniques.&lt;/p&gt;
 
 &lt;p&gt;While during the writing of the dissertation sometimes I felt a little “lost” in what my approach should be, it has inspired me to learn online about the area, and to understand it better. Due to the freedom that I had and the confidence that I always felt by my supervisor on me, any setback in my work was quickly discussed, besides the usual weekly meetings. In the end, I felt that although another supervisor could have given me more technical insights, I had much more freedom, encouragement and logistical support that was essential to my great grade in the dissertation.&lt;/p&gt;
 
 &lt;h3 id=&quot;my-advice&quot;&gt;My Advice&lt;/h3&gt;
-&lt;p&gt;I suggest going with your gut on this one. To give you an objective answer, I would say 70/30. For me, a great supervisor is more important than a great dissertation topic. A great supervisor will guarantee you 70% of your grade on your dissertation. Remember that your supervisor will be guiding you for one year (at least). You will have many meetings with him about the direction of your work. If you are not comfortable with him, or if you just don’t get along, then things can become really hard, independently of the topic of the work. What is a good supervisor? Well, that’s a topic for another post, but if you keep reading, I will give you some guidelines of what your supervisor should and shouldn’t do.&lt;/p&gt;
+&lt;p&gt;I suggest going with your gut on this one. To give you an objective answer, I would say 70/30. For me, a great supervisor is more important than a great dissertation topic. A great supervisor will guarantee you 70% of your grade on your dissertation. Remember that your supervisor will be guiding you for one year (at least). You will have many meetings with him/her about the direction of your work. If you are not comfortable with him/her, or if you just don’t get along, then things can become really hard, independently of the topic of the work. What is a good supervisor? Well, that’s a topic for another post, but if you keep reading, I will give you some guidelines of what your supervisor should and shouldn’t do.&lt;/p&gt;
 
 &lt;p&gt;Being in love with a dissertation topic is important because you will spend a lot of time researching that topic. If you find a supervisor that you like and that accepts your dissertation topic, go for it! Otherwise, you will have to make a trade-off. But don’t forget: 70% of the importance to the supervisor, 30% to the dissertation topic.&lt;/p&gt;
 
-&lt;p&gt;For the PhD thesis I would NOT recommend following this approach! The PhD is a hard road for everyone, and it involves a LOT more research and background work than a Masters dissertation. You will only be able to make it to the end if you &lt;strong&gt;really&lt;/strong&gt; like the topic that you’re working in. Besides, because you will spend much more time than one year working on that topic, it is expected that you become a world expert about that. If you don’t like that topic… why you’re doing a PhD anyway?&lt;/p&gt;
+&lt;p&gt;For the PhD thesis I would &lt;strong&gt;NOT&lt;/strong&gt; recommend following this approach! The PhD is a hard road for everyone, and it involves a LOT more research and background work than a Masters dissertation. You will only be able to make it to the end if you &lt;strong&gt;really&lt;/strong&gt; like the topic that you’re working in. Besides, because you will spend much more time than one year working on that topic, it is expected that you become a world expert about that. If you don’t like that topic… why you’re doing a PhD anyway?&lt;/p&gt;
 
 &lt;p&gt;In this case, I would recommend to, before starting the dissertation, search for the world experts about the topic that you are in love with. Make a short-list: 2 or 3 supervisors. Then, get in touch with them to understand if they are interested and, more importantly, if they are the right supervisor for you. If you find one that you like, go for it! Otherwise, keep searching. And don’t be afraid of changing supervisors while you’re still in the first year. It is better to change in the first year than spend 3, 4 or more years regretting that decision.&lt;/p&gt;
 
@@ -66,6 +200,6 @@
 
 &lt;p&gt;That’s it for today!&lt;/p&gt;
 
-&lt;p&gt;Thanks for sticking by. In the next Friday I will post here part II.&lt;/p&gt;
+&lt;p&gt;Thanks for sticking by. Click &lt;a href=&quot;/how-to-have-a-thesis-part-2/&quot;&gt;here&lt;/a&gt; for part II.&lt;/p&gt;
 
 &lt;p&gt;See ya!&lt;/p&gt;</content><category term="thesis" /><category term="dissertation" /><category term="tips" /><summary type="html">15 tips for your thesis/dissertation - 1/4</summary></entry></feed>

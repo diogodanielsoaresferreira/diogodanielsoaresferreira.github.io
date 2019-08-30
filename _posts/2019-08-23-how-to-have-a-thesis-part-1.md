@@ -16,7 +16,7 @@ Obviously, the content of this blog post is highly subjective and related to my 
 This post will be divided into four parts: 
 
 * **I - 3 tips for before starting the writing of the dissertation;**
-* II - 4 tips for during the writing of the dissertation;
+* <a href="/how-to-have-a-thesis-part-2/">II - 4 tips for during the writing of the dissertation;</a>
 * III - more 4 tips for during the writing of the dissertation;
 * IV - 3 tips for after the writing of the dissertation.
 
@@ -74,6 +74,6 @@ No, you don't *necessarily* need to go to Taizé to take a break. But I would re
 
 That's it for today!
 
-Thanks for sticking by. In the next Friday I will post here part II.
+Thanks for sticking by. Click <a href="/how-to-have-a-thesis-part-2/">here</a> for part II.
 
 See ya!
