@@ -16,7 +16,7 @@ Before, a heads up: the content of this blog post is highly subjective and relat
 This post is divided into four parts:
 * <a href="/how-to-have-a-thesis-part-1/">II - 3 tips for before starting the writing of the dissertation;</a>
 * **II - 4 tips for during the writing of the dissertation;**
-* III - more 4 tips for during the writing of the dissertation;
+* <a href="/how-to-have-a-thesis-part-3/">III - more 4 tips for during the writing of the dissertation;</a>
 * IV - 3 tips for after the writing of the dissertation.
 
 
@@ -132,6 +132,6 @@ There are many more pieces of advice to prepare your meetings, but I consider th
 
 That's it for today!
 
-Thanks for sticking by. Don't forget that next friday Part III is out.
+Thanks for sticking by. Click <a href="/how-to-have-a-thesis-part-3/">here</a> for part III.
 
 See ya!
