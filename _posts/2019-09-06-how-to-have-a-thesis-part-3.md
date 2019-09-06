@@ -14,7 +14,7 @@ If you didn't read the previous post, check it out <a href="/how-to-have-a-thesi
 Before, a heads up: the content of this blog post is highly subjective and related to my dissertation experience, so don't take it as the ground truth. But do think critically about my advice and, whether you agree with them or not, comment on what you think about it
 
 This post is divided into four parts:
-* <a href="/how-to-have-a-thesis-part-1/">II - 3 tips for before starting the writing of the dissertation;</a>
+* <a href="/how-to-have-a-thesis-part-1/">I - 3 tips for before starting the writing of the dissertation;</a>
 * <a href="/how-to-have-a-thesis-part-2/">II - 4 tips for during the writing of the dissertation;</a>
 * **III - more 4 tips for during the writing of the dissertation;**
 * IV - 3 tips for after the writing of the dissertation.
