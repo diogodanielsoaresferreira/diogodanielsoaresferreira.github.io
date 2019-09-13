@@ -17,7 +17,7 @@ This post is divided into four parts:
 * <a href="/how-to-have-a-thesis-part-1/">I - 3 tips for before starting the writing of the dissertation;</a>
 * <a href="/how-to-have-a-thesis-part-2/">II - 4 tips for during the writing of the dissertation;</a>
 * **III - more 4 tips for during the writing of the dissertation;**
-* IV - 3 tips for after the writing of the dissertation.
+* <a href="/how-to-have-a-thesis-part-4/">IV - 3 tips for after the writing of the dissertation.</a>
 
 
 ## 8 - The dissertation is a marathon, not a sprint!
@@ -100,7 +100,7 @@ The first goal of the writing is to explain what you did, what are your thoughts
 
 That's it for today!
 
-Thanks for sticking by. The last part is out next Friday!
+Thanks for sticking by. Click <a href="/how-to-have-a-thesis-part-4/">here</a> for part IV.
 
 See ya!
 

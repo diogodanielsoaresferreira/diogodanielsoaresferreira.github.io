@@ -17,7 +17,7 @@ This post is divided into four parts:
 * <a href="/how-to-have-a-thesis-part-1/">I - 3 tips for before starting the writing of the dissertation;</a>
 * **II - 4 tips for during the writing of the dissertation;**
 * <a href="/how-to-have-a-thesis-part-3/">III - more 4 tips for during the writing of the dissertation;</a>
-* IV - 3 tips for after the writing of the dissertation.
+* <a href="/how-to-have-a-thesis-part-4/">IV - 3 tips for after the writing of the dissertation.</a>
 
 
 # During the dissertation
