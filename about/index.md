@@ -11,7 +11,7 @@ comments: false
 ![me](../assets/img/im4.jpg "me"){: style="height:250px"}
 
 |Name| **Diogo Daniel Soares Ferreira**|
-|Job| **Data Scientist @ Talkdesk Innovation Lab** ![UA_Logo](../assets/img/talkdesk_logo_2.png "Talkdesk Logo"){: style="display:inline; height:50px"}|
+|Job| **Data Scientist @ Talkdesk** ![UA_Logo](../assets/img/talkdesk_logo_2.png "Talkdesk Logo"){: style="display:inline; height:50px"}|
 |Education| **Master in Computer and Telematics Engineering (Aveiro University, 2014-2019)** ![UA_Logo](../assets/img/ua_logo_3.jpg "UA Logo"){: style="display:inline; height:50px"}|
 |Birthday date| **February 3<sup>rd</sup>, 1997 (22 years old)**|
 |Location| **Oliveira do Bairro, Aveiro**|
@@ -25,3 +25,11 @@ Beyond the digital world, I am also passionate about music, having attended seve
 Finally, I am also a member of the Portuguese Scouts (CNE), being a candidate to scout leader.
 
 Check my CV **[here](../assets/pdf/CV.pdf)**!
+
+
+### Publications
+
+|**Breaking Text-Based CAPTCHA with Sparse Convolutional Neural Networks** [PDF](../assets/pdf/paper.pdf)|
+|Diogo Daniel Ferreira, Luís Leira, Petya Mihaylova, Petia Georgieva|
+|IbPRIA 2019: Pattern Recognition and Image Analysis pp 404-415|
+|DOI: 10.1007/978-3-030-31321-0_35|
