@@ -4,7 +4,7 @@ bio:                'Welcome! Know more about my personal interests in this page
 description:        "Diogo Ferreira personal webpage."
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/img/im4.jpg'
+logo:               'assets/img/me.png'
 background:         'assets/img/ua2.jpeg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US

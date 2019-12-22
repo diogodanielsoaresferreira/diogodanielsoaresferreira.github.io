@@ -8,7 +8,7 @@ comments: false
 
 # Who am I?
 
-![me](../assets/img/im4.jpg "me"){: style="height:250px"}
+![me](../assets/img/me.png "me"){: style="height:250px"}
 
 |Name| **Diogo Daniel Soares Ferreira**|
 |Job| **Data Scientist @ Talkdesk** ![UA_Logo](../assets/img/talkdesk_logo_2.png "Talkdesk Logo"){: style="display:inline; height:50px"}|
@@ -33,3 +33,9 @@ Check my CV **[here](../assets/pdf/CV.pdf)**!
 |Diogo Daniel Ferreira, Luís Leira, Petya Mihaylova, Petia Georgieva|
 |IbPRIA 2019: Pattern Recognition and Image Analysis pp 404-415|
 |DOI: 10.1007/978-3-030-31321-0_35|
+
+
+
+|**Root Cause Analysis of Reduced Accessibility in 4G Networks** [PDF](../assets/pdf/paper2.pdf)|
+|Diogo Ferreira, Carlos Senna, Luís Cortesão, Cristina Pires, Rui Pedro, Susana Sargento|
+|2nd IFIP International Conference on Machine Learning for Networking (MLN’2019)|
