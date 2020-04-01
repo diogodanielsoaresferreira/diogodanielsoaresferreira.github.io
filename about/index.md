@@ -29,6 +29,15 @@ Check my CV **[here](../assets/pdf/CV.pdf)**!
 
 ### Publications
 
+|**Distributed Real-time Forecasting Framework for IoT Network and Service Management** [PDF](../assets/pdf/paper3.pdf)|
+|Diogo Ferreira, Carlos Senna, Susana Sargento|
+|IEEE/IFIP Symposium Network Operations and Management (NOMS), Budapest, Hungary, April, 2020|
+
+|**Root Cause Analysis of Reduced Accessibility in 4G Networks** [PDF](../assets/pdf/paper2.pdf)|
+|Diogo Ferreira, Carlos Senna, Paulo Salvador, Luís Cortesão, Cristina Pires, Rui Pedro, Susana Sargento|
+|2nd IFIP International Conference on Machine Learning for Networking (MLN’2019)|
+
+
 |**Breaking Text-Based CAPTCHA with Sparse Convolutional Neural Networks** [PDF](../assets/pdf/paper.pdf)|
 |Diogo Daniel Ferreira, Luís Leira, Petya Mihaylova, Petia Georgieva|
 |IbPRIA 2019: Pattern Recognition and Image Analysis pp 404-415|
@@ -36,6 +45,4 @@ Check my CV **[here](../assets/pdf/CV.pdf)**!
 
 
 
-|**Root Cause Analysis of Reduced Accessibility in 4G Networks** [PDF](../assets/pdf/paper2.pdf)|
-|Diogo Ferreira, Carlos Senna, Luís Cortesão, Cristina Pires, Rui Pedro, Susana Sargento|
-|2nd IFIP International Conference on Machine Learning for Networking (MLN’2019)|
+
