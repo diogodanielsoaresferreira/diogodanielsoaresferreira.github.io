@@ -16,9 +16,9 @@ comments: false
 |Birthday date| **February 3<sup>rd</sup>, 1997 (23 years old)**|
 |Location| **Oliveira do Bairro, Aveiro**|
 
-Hi! I'm Diogo Ferreira and I love to use and learn about machine learning techniques, mainly Deep Learning. I have finished my Masters in Computer and Telematics Engineering, with a thesis about forecasting techniques in 5G networks and its implementation to improve the network behavior (with a 20/20 grade). Currently, I work at Talkdesk Innovation Lab (TDX) in Coimbra, where I am Data Scientist of NLP-related projects.
+Hi! I'm Diogo Ferreira and I love to use and learn about machine learning techniques, mainly Deep Learning. I have finished my Masters in Computer and Telematics Engineering, with a thesis about forecasting techniques in 5G networks and its implementation to improve the network behavior (with a 20/20 grade). Currently, I work at Talkdesk Innovation Lab (TDX) in Aveiro, where I am Data Scientist of NLP-related projects.
 
-I have done online courses to learn more about machine learning, such as the Machine Learning course by Andrew Ng in Coursera, and the Deep Learning Specialization, by Deep Learning.ai.
+I have done online courses to learn more about machine learning, such as the Machine Learning course by Andrew Ng in Coursera, the Deep Learning Specialization by Deep Learning.ai, or CS224n: Natural Language Processing with Deep Learning by Stanford University.
 
 Beyond the digital world, I am also passionate about music, having attended several music summer festivals in the past years. I also enjoy sports, having played football for 12 years.
 
@@ -35,8 +35,8 @@ Check my CV **[here](../assets/pdf/CV.pdf)**!
 
 |**Root Cause Analysis of Reduced Accessibility in 4G Networks** [PDF](../assets/pdf/paper2.pdf)|
 |Diogo Ferreira, Carlos Senna, Paulo Salvador, Luís Cortesão, Cristina Pires, Rui Pedro, Susana Sargento|
-|2nd IFIP International Conference on Machine Learning for Networking (MLN’2019)|
-
+|Machine Learning for Networking. MLN 2019. Lecture Notes in Computer Science, vol 12081. Springer, Cham|
+|DOI: 10.1007/978-3-030-45778-5_9|
 
 |**Breaking Text-Based CAPTCHA with Sparse Convolutional Neural Networks** [PDF](../assets/pdf/paper.pdf)|
 |Diogo Daniel Ferreira, Luís Leira, Petya Mihaylova, Petia Georgieva|
