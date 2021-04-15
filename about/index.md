@@ -29,6 +29,10 @@ Check my CV **[here](../assets/pdf/CV.pdf)**!
 
 ### Publications
 
+|**Prediction of Low Acessibility in 4G Networks** [PDF](../assets/pdf/paper5.pdf)|
+|Diogo Ferreira, Carlos Senna, Paulo Salvador, Luís Cortesão, Cristina Pires, Rui Pedro, Susana Sargento|
+|Annals of Telecommunications, 2021|
+
 |**A Forecasting Approach to Improve Control and Management for 5G Networks** [PDF](../assets/pdf/paper4.pdf)|
 |Diogo Ferreira, André Braga Reis, Carlos Senna, Susana Sargento|
 |IEEE Transactions on Network and Service Management, February 2021|
