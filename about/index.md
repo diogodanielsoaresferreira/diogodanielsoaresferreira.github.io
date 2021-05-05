@@ -31,7 +31,7 @@ Check my CV **[here](../assets/pdf/CV.pdf)**!
 
 |**Prediction of Low Acessibility in 4G Networks** [PDF](../assets/pdf/paper5.pdf)|
 |Diogo Ferreira, Carlos Senna, Paulo Salvador, Luís Cortesão, Cristina Pires, Rui Pedro, Susana Sargento|
-|Annals of Telecommunications, 2021|
+|Annals of Telecommunications, May 2021|
 |DOI: [10.1007/s12243-021-00849-9](https://doi.org/10.1007/s12243-021-00849-9)|
 
 |**A Forecasting Approach to Improve Control and Management for 5G Networks** [PDF](../assets/pdf/paper4.pdf)|
