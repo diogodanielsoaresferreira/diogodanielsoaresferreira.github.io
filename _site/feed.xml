@@ -1,4 +1,90 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.6.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-11-03T00:10:22+00:00</updated><id>http://localhost:4000/</id><title type="html">Diogo Ferreira webpage</title><subtitle>Diogo Ferreira personal webpage.</subtitle><entry><title type="html">Maximize the potential of your football players with Machine Learning</title><link href="http://localhost:4000/maximize-the-potential-of-your-football/" rel="alternate" type="text/html" title="Maximize the potential of your football players with Machine Learning" /><published>2020-08-27T00:00:00+01:00</published><updated>2020-08-27T00:00:00+01:00</updated><id>http://localhost:4000/maximize-the-potential-of-your-football</id><content type="html" xml:base="http://localhost:4000/maximize-the-potential-of-your-football/">&lt;figure&gt;
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.6.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-06-17T00:13:06+01:00</updated><id>http://localhost:4000/</id><title type="html">Diogo Ferreira webpage</title><subtitle>Diogo Ferreira personal webpage.</subtitle><entry><title type="html">Enterprise Integration Patterns With Apache Camel</title><link href="http://localhost:4000/enterprise-integration-patterns-with-apache-camel/" rel="alternate" type="text/html" title="Enterprise Integration Patterns With Apache Camel" /><published>2021-06-17T00:00:00+01:00</published><updated>2021-06-17T00:00:00+01:00</updated><id>http://localhost:4000/enterprise-integration-patterns-with-apache-camel</id><content type="html" xml:base="http://localhost:4000/enterprise-integration-patterns-with-apache-camel/">&lt;figure&gt;
+    &lt;a href=&quot;/assets/img/camel/camel.jpeg&quot;&gt;&lt;img src=&quot;/assets/img/camel/camel.jpeg&quot; style=&quot;max-width: 80%&quot; /&gt;&lt;/a&gt;
+    &lt;figcaption style=&quot;text-align: center&quot;&gt;Photo by &lt;a href=&quot;https://unsplash.com/@kristianegelund&quot; target=&quot;_blank&quot;&gt;Kristian Egelund&lt;/a&gt; on Unsplash&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Hi there! I want to tell you about a great open-source tool that is AWESOME and it does not get the love it deserves: &lt;strong&gt;&lt;a href=&quot;https://camel.apache.org/&quot;&gt;Apache Camel&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Apache Camel is an integration framework. What does that mean? Let’s suppose you are working on a project that consumes data from Kafka and RabbitMQ, reads and writes from and to various databases, transforms data, logs everything to files and outputs the processed data to another Kafka topic. You also have to implement the error handling of the service (retries, dead letter channel, etc.) for everything to run flawlessly. It seems hard.&lt;/p&gt;
+
+&lt;p&gt;Apache Camel helps you to integrate with many components, such as databases, files, brokers, and much more, while keeping the simplicity and promoting &lt;a href=&quot;https://www.enterpriseintegrationpatterns.com/patterns/messaging/&quot;&gt;enterprise integration patterns&lt;/a&gt;. Let’s see some examples, based on integration patterns. You can find the code in &lt;a href=&quot;https://github.com/diogodanielsoaresferreira/apache_camel_demo&quot;&gt;this repository&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We will start by consuming events from a Kafka topic and output to another one, taking advantage of the &lt;strong&gt;&lt;a href=&quot;https://www.enterpriseintegrationpatterns.com/patterns/messaging/EventDrivenConsumer.html&quot;&gt;Event-Driven Consumer&lt;/a&gt;&lt;/strong&gt; pattern. The events will be representation of text messages sent by a user.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/diogodanielsoaresferreira/0cdbb84d9a038679091c07ae7e5e5387.js&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;https://gist.github.com/diogodanielsoaresferreira/0591c76be64e9b131328ad15e2aa771b.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;That’s about it! We also added the log for us to see the message body in the logs. The log argument is passed using the Simple language, an Apache Camel language used to evaluate expressions.&lt;/p&gt;
+
+&lt;p&gt;Now let’s implement a &lt;strong&gt;&lt;a href=&quot;https://www.enterpriseintegrationpatterns.com/patterns/messaging/Filter.html&quot;&gt;message filter&lt;/a&gt;&lt;/strong&gt;. This pattern filters out the messages that do not match certain conditions. In our case, we will only process those that have the type “chat”.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/diogodanielsoaresferreira/e09cdb48d69e76ab1cb10c4af4bc6104.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Easy, right? We now unmarshal the message from JSON to the UserMessage POJO to be able to filter by type. We marshal again in JSON before sending it to another Kafka topic.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/diogodanielsoaresferreira/0f871fea43680f80ee14406c74e0450e.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Now suppose we want to store all messages in a file. Besides, for the messages where the emitter is “John Doe”, we want to store them in a different file, for testing purposes. For that, we can use the &lt;strong&gt;&lt;a href=&quot;https://www.enterpriseintegrationpatterns.com/patterns/messaging/ContentBasedRouter.html&quot;&gt;content-based router&lt;/a&gt;&lt;/strong&gt; pattern.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/diogodanielsoaresferreira/35e23fd77e0c7eba5490b3b4b89f95d2.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;If the file already exists, we will append the events and add a newline at the end of each event. For other emitters, we will do the same, but stores them in another file. It does look like an ‘if’ construct, right?&lt;/p&gt;
+
+&lt;p&gt;We can see a list of “devices” in the event, and we want to log them one by one. How can we do that? Using the &lt;strong&gt;&lt;a href=&quot;https://www.enterpriseintegrationpatterns.com/patterns/messaging/Sequencer.html&quot;&gt;Splitter&lt;/a&gt;&lt;/strong&gt; pattern, we can iterate through any list. We can do it sequentially or parallelly. Let’s try to do it sequentially in this example.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/diogodanielsoaresferreira/09fa1bef4dfeb39f97fc6ce8258177e8.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;We can split by any field that is an Iterable. As you can see, we are using again the Simple language to access the content of the event.&lt;/p&gt;
+
+&lt;p&gt;Let’s try something harder. We are receiving messages with text from various emitters, but we want to aggregate multiple text messages and create a new message with all messages for an emitter. To do that, we can use the &lt;strong&gt;&lt;a href=&quot;https://www.enterpriseintegrationpatterns.com/patterns/messaging/Aggregator.html&quot;&gt;Aggregator&lt;/a&gt;&lt;/strong&gt; pattern. The aggregator pattern allows events to be buffered and wait for other events. When another event is received, it can be performed a custom aggregation, based on our needs. A new event is sent when a condition is met. That condition can be based on the number of events received, a timeout, or any other custom condition.&lt;/p&gt;
+
+&lt;p&gt;In our case, we will create a new POJO that will aggregate the text messages from an emitter. The new event will be sent after 5 seconds of the first event received for the emitter.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/diogodanielsoaresferreira/c008156c4f83f1e3c6e7b7aaf90b9546.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;We are using an in-memory aggregation, but we could use other data stores, such as Postgres or Redis. We are using simple language to aggregate the emitter of the message, and we created a custom aggregation strategy, shown below.&lt;/p&gt;
+
+&lt;p&gt;In the custom aggregation strategy, for the first event (oldExchange==null), we create a new CombinedUserMessage with the text of the message. For all other events, we add the text of the message to the combined event.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/diogodanielsoaresferreira/718f4cd50a4d534f9cb165d00fae44d1.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;This is all great, but how do we apply transformations to a field? We now have a combined event, but what was great was if we could somehow process the combined event and turn it into plain text, by combining the multiple elements of the text messages. We can do that using the &lt;strong&gt;&lt;a href=&quot;https://www.enterpriseintegrationpatterns.com/patterns/messaging/MessageTranslator.html&quot;&gt;Message Translator&lt;/a&gt;&lt;/strong&gt; pattern.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/diogodanielsoaresferreira/3e1ab2d97d959d852f8585242d2a0448.js&quot;&gt;&lt;/script&gt;
+
+&lt;script src=&quot;https://gist.github.com/diogodanielsoaresferreira/c7a1ed32df2606f554a1a752a228bb76.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;We can call bean functions directly from a Camel Route and perform all the transformations that we need,using plain Java code. Neat!&lt;/p&gt;
+
+&lt;p&gt;We can see that our Camel Routes are becoming bigger. How do we do if we want, for example, to separate them between files? Two in-memory components that allow us to do that: &lt;strong&gt;Direct&lt;/strong&gt; and &lt;strong&gt;SEDA&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Direct&lt;/strong&gt; is a synchronous endpoint that works like a call from a route to another route. Let’s use it to separate the route that stores the event in a file.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/diogodanielsoaresferreira/a68c674081b169fc5f575a81f846fd19.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Great! There is another in-memory component that will be useful for us: &lt;strong&gt;SEDA&lt;/strong&gt;. SEDA works like Direct but is asynchronous, which means that puts the message in a queue for other thread to process. Let’s use SEDA to decouple the receiving of the message from Kafka from the routes that consume it.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/diogodanielsoaresferreira/09731355e56b2a12378237549b44c583.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Now our routes are much simpler. Suppose we need to perform a periodic task, such as a cleanup. We can take advantage of the &lt;strong&gt;Timer&lt;/strong&gt; endpoint. Let’s exemplify it by creating a route that runs every 5 seconds.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/diogodanielsoaresferreira/3c17f8dbf10065f55fced89e0638c51c.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Now that our application is almost ready for production, we have to improve fault tolerance. What happens if, for some reason, a message gets an error while in a route? Let’s implement the &lt;strong&gt;&lt;a href=&quot;https://www.enterpriseintegrationpatterns.com/patterns/messaging/DeadLetterChannel.html&quot;&gt;Dead Letter&lt;/a&gt;&lt;/strong&gt; pattern. When there is an error in the route, the message is sent to another Kafka topic, so that later it can be reprocessed.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/diogodanielsoaresferreira/6bc2f0623d14fe37058073d6846d95ff.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;And that’s it! The error handler configuration applies to all routes in the class. We send the original message to the topic (the one that was first received in the route). We could also configure retry policies, with timeouts and other common fault tolerance configurations, but as we don’t need it, we will leave it as is.&lt;/p&gt;
+
+&lt;p&gt;Now that we are reaching the end of this article, I also wanted to show you something: it is possible to configure &lt;strong&gt;REST&lt;/strong&gt; endpoints as Camel routes.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/diogodanielsoaresferreira/4993e2d298b912e222f586237f5bc783.js&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;As simple as that! We just configured a GET for the URL /api/hello, to be answered with “Hello World!”.
+As you can see, Apache Camel is a framework that simplifies the integration with other components, supporting the enterprise integration patterns and making it easier to create data pipelines.&lt;/p&gt;
+
+&lt;p&gt;I hope you have liked it! Thanks for reading!&lt;/p&gt;</content><category term="apache camel" /><category term="programming" /><category term="java" /><category term="frameworks" /><summary type="html">Why Apache Camel is awesome when dealing with complex dependencies</summary></entry><entry><title type="html">Maximize the potential of your football players with Machine Learning</title><link href="http://localhost:4000/maximize-the-potential-of-your-football/" rel="alternate" type="text/html" title="Maximize the potential of your football players with Machine Learning" /><published>2020-08-27T00:00:00+01:00</published><updated>2020-08-27T00:00:00+01:00</updated><id>http://localhost:4000/maximize-the-potential-of-your-football</id><content type="html" xml:base="http://localhost:4000/maximize-the-potential-of-your-football/">&lt;figure&gt;
     &lt;a href=&quot;/assets/img/football-players/capa.jpeg&quot;&gt;&lt;img src=&quot;/assets/img/football-players/capa.jpeg&quot; style=&quot;max-width: 80%&quot; /&gt;&lt;/a&gt;
     &lt;figcaption style=&quot;text-align: center&quot;&gt;Photo by &lt;a href=&quot;https://unsplash.com/@jasonrc23&quot; target=&quot;_blank&quot;&gt;jason charters&lt;/a&gt; on Unsplash&lt;/figcaption&gt;
 &lt;/figure&gt;
@@ -1022,74 +1108,4 @@ In a dissertation there are two types of “valuable software”:&lt;/p&gt;
 
 &lt;p&gt;Thanks for sticking by. Click &lt;a href=&quot;/how-to-have-a-thesis-part-3/&quot;&gt;here&lt;/a&gt; for part III.&lt;/p&gt;
 
-&lt;p&gt;See ya!&lt;/p&gt;</content><category term="thesis" /><category term="dissertation" /><category term="tips" /><summary type="html">15 tips for your thesis/dissertation - 2/4</summary></entry><entry><title type="html">How to have an A+ dissertation/thesis (I/IV)</title><link href="http://localhost:4000/how-to-have-a-thesis-part-1/" rel="alternate" type="text/html" title="How to have an A+ dissertation/thesis (I/IV)" /><published>2019-08-23T00:00:00+01:00</published><updated>2019-08-23T00:00:00+01:00</updated><id>http://localhost:4000/how-to-have-a-thesis-part-1</id><content type="html" xml:base="http://localhost:4000/how-to-have-a-thesis-part-1/">&lt;p&gt;Hi there!&lt;/p&gt;
-
-&lt;p&gt;I have recently concluded my Masters Dissertation about Control and Management Mechanisms for 5G Networks, with a 20/20 grade :) (in Portugal, the grading system goes from 1 (F) to 20 (A+) ) &lt;img src=&quot;/assets/img/emojis/grinning-face-facebook.png&quot; alt=&quot;grinning-face&quot; class=&quot;emojis&quot; /&gt;). While for me it was a smooth ride, for many of my colleagues it was/is really challenging to do their dissertation (or thesis, depending on the country you are studying). In this blog post, I will summarize the tips I would give myself before starting the dissertation, explaining my good and bad decisions along the way.&lt;/p&gt;
-
-&lt;p&gt;Obviously, the content of this blog post is highly subjective and related to my dissertation experience, so don’t take it as the ground truth. But do think critically about my advice and, whether you agree with them or not, comment on what you think about it (I will number the tips for easy reference). Although this post is about a Masters Dissertation, it can also be (loosely) applied to a PhD work. But do note that I did not do a PhD: think critically whether this applies to you or not.&lt;/p&gt;
-
-&lt;p&gt;This post will be divided into four parts: &lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;I - 3 tips for before starting the writing of the dissertation;&lt;/strong&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/how-to-have-a-thesis-part-2/&quot;&gt;II - 4 tips for during the writing of the dissertation;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/how-to-have-a-thesis-part-3/&quot;&gt;III - more 4 tips for during the writing of the dissertation;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;/how-to-have-a-thesis-part-4/&quot;&gt;IV - 3 tips for after the writing of the dissertation.&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Let’s start?&lt;/p&gt;
-
-&lt;h1 id=&quot;before&quot;&gt;Before&lt;/h1&gt;
-
-&lt;h2 id=&quot;1---choose-the-dissertation-because-of-the-supervisor-or-because-of-the-dissertation-topic&quot;&gt;1 - Choose the dissertation because of the supervisor or because of the dissertation topic?&lt;/h2&gt;
-
-&lt;figure&gt;
-	&lt;a href=&quot;/assets/img/thesis-1.jpg&quot;&gt;&lt;img src=&quot;/assets/img/thesis-1.jpg&quot; /&gt;&lt;/a&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Ush, this is a hot topic. Usually, some months (or weeks) before the beginning of your work, you have the chance to talk with your university Professors, to pick a topic for your dissertation. Do you start by choosing a dissertation topic and then talk to supervisors that understand that research area, or do you start by choosing a supervisor and then choose what he has to offer you?&lt;/p&gt;
-
-&lt;p&gt;This is a hard question. Ideally, you would like to have both: a supervisor that you get along with and a dissertation topic that you love. That is possible more times than not.&lt;/p&gt;
-
-&lt;h3 id=&quot;my-experience&quot;&gt;My Experience&lt;/h3&gt;
-&lt;p&gt;I was already in a research group before starting the dissertation, with a research grant. To choose a dissertation topic, I just went talk to my supervisor, explained to her what I had in mind, and we came to an agreement. No, it wasn’t exactly her area of research (Machine Learning/Deep Learning), but it was of both parties’ interest to make a dissertation about that. We agreed that Machine Learning techniques were going to be used to analyze and improve 5G Networks. The supervisor could give me work revision and discussion about 5G Networks, but I was on my own on how to apply the Machine Learning techniques.&lt;/p&gt;
-
-&lt;p&gt;While during the writing of the dissertation sometimes I felt a little “lost” in what my approach should be, it has inspired me to learn online about the area, and to understand it better. Due to the freedom that I had and the confidence that I always felt by my supervisor on me, any setback in my work was quickly discussed, besides the usual weekly meetings. In the end, I felt that although another supervisor could have given me more technical insights, I had much more freedom, encouragement and logistical support that was essential to my great grade in the dissertation.&lt;/p&gt;
-
-&lt;h3 id=&quot;my-advice&quot;&gt;My Advice&lt;/h3&gt;
-&lt;p&gt;I suggest going with your gut on this one. To give you an objective answer, I would say 70/30. For me, a great supervisor is more important than a great dissertation topic. A great supervisor will guarantee you 70% of your grade on your dissertation. Remember that your supervisor will be guiding you for one year (at least). You will have many meetings with him/her about the direction of your work. If you are not comfortable with him/her, or if you just don’t get along, then things can become really hard, independently of the topic of the work. What is a good supervisor? Well, that’s a topic for another post, but if you keep reading, I will give you some guidelines of what your supervisor should and shouldn’t do.&lt;/p&gt;
-
-&lt;p&gt;Being in love with a dissertation topic is important because you will spend a lot of time researching that topic. If you find a supervisor that you like and that accepts your dissertation topic, go for it! Otherwise, you will have to make a trade-off. But don’t forget: 70% of the importance to the supervisor, 30% to the dissertation topic.&lt;/p&gt;
-
-&lt;p&gt;For the PhD thesis I would &lt;strong&gt;NOT&lt;/strong&gt; recommend following this approach! The PhD is a hard road for everyone, and it involves a LOT more research and background work than a Masters dissertation. You will only be able to make it to the end if you &lt;strong&gt;really&lt;/strong&gt; like the topic that you’re working in. Besides, because you will spend much more time than one year working on that topic, it is expected that you become a world expert about that. If you don’t like that topic… why you’re doing a PhD anyway?&lt;/p&gt;
-
-&lt;p&gt;In this case, I would recommend to, before starting the dissertation, search for the world experts about the topic that you are in love with. Make a short-list: 2 or 3 supervisors. Then, get in touch with them to understand if they are interested and, more importantly, if they are the right supervisor for you. If you find one that you like, go for it! Otherwise, keep searching. And don’t be afraid of changing supervisors while you’re still in the first year. It is better to change in the first year than spend 3, 4 or more years regretting that decision.&lt;/p&gt;
-
-&lt;h2 id=&quot;2---understand-the-basics-before-diving-in&quot;&gt;2 - Understand the basics before diving in!&lt;/h2&gt;
-
-&lt;p&gt;Before closing the deal with a supervisor about your dissertation, you should understand the basics of the dissertation work, mainly the objective and the techniques used to solve the proposed problem. A common problem in dissertation students is that they choose a topic just by the dissertations’ name. Beware of the “hot trends” in the industry (eg. AI, 5G, Cloud, …): a cool name does not mean a cool dissertation!&lt;/p&gt;
-
-&lt;h3 id=&quot;my-experience-1&quot;&gt;My Experience&lt;/h3&gt;
-&lt;p&gt;Well, let’s say I was lucky with this one… Before the dissertation deal, I really wanted to learn more about machine learning, but I didn’t know much about it. I knew the basics about it, but I knew nothing about the internals of the algorithms used, or about model tuning. In summer holidays (after accepting the dissertation deal and before starting to work on the dissertation), I learned &lt;strong&gt;a lot&lt;/strong&gt; about machine learning in three ways: free online courses, blog posts and books. Those 2 months were a crash course about machine learning algorithms and its utilization in the real world, as well as in the Deep Learning state of the art techniques. Fortunately, I loved it! At the beginning of the dissertation work, I felt a lot more confident about what to do to solve the problem, and about general knowledge about machine learning.&lt;/p&gt;
-
-&lt;h3 id=&quot;my-advice-1&quot;&gt;My Advice&lt;/h3&gt;
-&lt;p&gt;Before accepting the dissertation, take an hour of conversation with the supervisor. Try to understand what are the objectives of the dissertations’ work, and what are the current techniques used (or expected to be used by the supervisor). If you think that those techniques are obsolete, discuss that with the supervisor to make sure that you will not reinvent the wheel just because your supervisor finds that interesting! If you don’t understand what are the techniques that your supervisor wants you to use, take a week to learn about them (not in-depth, at least to have a grasp and understand what type of work you will be doing). If you don’t like the techniques used, feel free to reject the dissertation work (it is better to reject than to spend a year working on something you don’t like!). After accepting the dissertation, take a more in-depth look at the techniques you will be using to solve the problem, and research for the state of the art approaches. After this (sometimes boring and time-consuming) work, you will feel much more comfortable and able to do the job.&lt;/p&gt;
-
-&lt;h2 id=&quot;3---take-a-break-after-accepting-the-dissertation&quot;&gt;3 - Take a break after accepting the dissertation!&lt;/h2&gt;
-
-&lt;div style=&quot;width:100%;height:0;padding-bottom:72%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/5ocAtoAPhIDcI&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameborder=&quot;0&quot; class=&quot;giphy-embed&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-&lt;p&gt;&lt;a href=&quot;https://giphy.com/gifs/homer-official-poster-5ocAtoAPhIDcI&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Why take a break after accepting the dissertation? Shouldn’t we all start working furiously to do the work as quickly as possible? Well… &lt;strong&gt;NO!&lt;/strong&gt; &lt;img src=&quot;/assets/img/emojis/pouting-face.png&quot; alt=&quot;pouting-face&quot; class=&quot;emojis&quot; /&gt; The dissertation &lt;em&gt;is not a sprint, it’s a marathon&lt;/em&gt; (more on that later). After accepting the dissertation (you usually accept it before the summer holidays), take a week to relax and think about the work you will need to do. It will require a lot of mental preparation to work a whole year in a project, especially when things go wrong. This week is not only to take in the dissertation goals and to think about them, but also to mentalize yourself that you can do it, even if things go wrong from time to time (trust me, in such a long-term work, many things &lt;strong&gt;will&lt;/strong&gt; go wrong!). It is important to mentalize yourself about the task you are facing.&lt;/p&gt;
-
-&lt;h3 id=&quot;my-experience-2&quot;&gt;My Experience&lt;/h3&gt;
-&lt;p&gt;Before big steps in my life, I like to take a week to think about the step I am taking, to think about the future consequences of my decision and to understand how am I going to fulfill my goals. I did it before entering in my college course, and I did it before the starting of the dissertation work. Before the dissertation, I took a week to go to the Taizé Community: an ecumenical Christian monastic fraternity in France. I left my laptop, smartphone and electronic devices turned off to focus in nature. Besides, Taizé is known for its meditations and reflections, which allowed me to think deeply about why I was doing a dissertation, and it helped me to not give up in the hardest times.&lt;/p&gt;
-
-&lt;h3 id=&quot;my-advice-2&quot;&gt;My Advice&lt;/h3&gt;
-&lt;p&gt;No, you don’t &lt;em&gt;necessarily&lt;/em&gt; need to go to Taizé to take a break. But I would recommend going away from distractions, from electronic devices and from your routine. A week camping in the forest is also a good option. If you can’t be unavailable for a week, at least do it for a weekend. If you can’t or don’t like camping, you can go to a bungalow and take walks in the forest, for example. The key here is to go away from your routine. Only when you disconnect from the world you can really think deeply about what you want and how to reach it.&lt;/p&gt;
-
-&lt;p&gt;That’s it for today!&lt;/p&gt;
-
-&lt;p&gt;Thanks for sticking by. Click &lt;a href=&quot;/how-to-have-a-thesis-part-2/&quot;&gt;here&lt;/a&gt; for part II.&lt;/p&gt;
-
-&lt;p&gt;See ya!&lt;/p&gt;</content><category term="thesis" /><category term="dissertation" /><category term="tips" /><summary type="html">15 tips for your thesis/dissertation - 1/4</summary></entry></feed>
+&lt;p&gt;See ya!&lt;/p&gt;</content><category term="thesis" /><category term="dissertation" /><category term="tips" /><summary type="html">15 tips for your thesis/dissertation - 2/4</summary></entry></feed>
