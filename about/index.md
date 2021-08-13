@@ -11,18 +11,21 @@ comments: false
 ![me](../assets/img/me.png "me"){: style="height:250px"}
 
 |Name| **Diogo Daniel Soares Ferreira**|
-|Job| **Data Scientist/Backend Developer @ Talkdesk (NLP Team, Aveiro)** ![UA_Logo](../assets/img/talkdesk_logo_2.png "Talkdesk Logo"){: style="display:inline; height:50px"}|
+|Job| **Software Engineer @ Talkdesk** ![TD_Logo](../assets/img/talkdesk_logo_new.svg "Talkdesk Logo"){: style="display:inline; height:50px"}|
 |Education| **Master in Computer and Telematics Engineering (Aveiro University, 2014-2019)** ![UA_Logo](../assets/img/ua_logo_3.jpg "UA Logo"){: style="display:inline; height:50px"}|
 |Birthday date| **February 3<sup>rd</sup>, 1997 (24 years old)**|
-|Location| **Vagueira, Vagos, Aveiro**|
+|Location| **Aveiro, Portugal**|
 
-Hi! I'm Diogo Ferreira and I love to use and learn about machine learning techniques, mainly Deep Learning. Currently, I work at Talkdesk Innovation Lab (TDX) in Aveiro, where I am Data Scientist and Backend Engineer of NLP-related projects. I have finished my Masters in Computer and Telematics Engineering, with a thesis about forecasting techniques in 5G networks and its implementation to improve the network behavior (with a 20/20 grade).
+Hi! I'm Diogo Ferreira and I have a special interest in cloud and data-driven architectures. Currently, I work at Talkdesk, where I am Software Engineer in the AI unit. I have worked with awesome technologies, such as Quarkus, Apache Camel, Kafka, Elastic Search, Databricks, and so much more.
 
-I love doing online courses to learn more about machine learning, such as the Machine Learning course by Andrew Ng in Coursera, the Deep Learning Specialization by Deep Learning.ai, or CS224n: Natural Language Processing with Deep Learning by Stanford University.
+I have finished my Masters in Computer and Telematics Engineering, with a thesis about forecasting techniques in 5G networks and its implementation to improve the network behavior (with a 20/20 grade).
 
-Beyond the digital world, I am also passionate about music, having attended several music summer festivals in the past years. I also enjoy sports, having played football for 12 years.
+I love doing online courses to learn more Computer Science, such as the Machine Learning course by Andrew Ng in Coursera, the Deep Learning Specialization by Deep Learning.ai, or CS224n: Natural Language Processing with Deep Learning by Stanford University.
 
-Finally, I am also a member of the Portuguese Scouts (CNE), being a candidate to scout leader.
+Beyond the digital world, I am also a member of the Portuguese Scouts (CNE), being a scout leader.
+
+Finally, I am also passionate about music, having attended several music summer festivals in the past years. I also enjoy sports, having played football for 12 years.
+
 
 Check my CV **[here](../assets/pdf/CV.pdf)**!
 
@@ -50,7 +53,7 @@ Check my CV **[here](../assets/pdf/CV.pdf)**!
 |DOI: [10.1007/978-3-030-45778-5_9](https://doi.org/10.1007/978-3-030-45778-5_9)|
 
 |**Breaking Text-Based CAPTCHA with Sparse Convolutional Neural Networks** [PDF](../assets/pdf/paper.pdf)|
-|Diogo Daniel Ferreira, Luís Leira, Petya Mihaylova, Petia Georgieva|
+|Diogo Daniel Ferreira, Luís Leira, Petya Mihaylova, Petia Georgieva|
 |IbPRIA 2019: Pattern Recognition and Image Analysis pp 404-415|
 |DOI: [10.1007/978-3-030-31321-0_35](https://doi.org/10.1007/978-3-030-31321-0_35)|
 
