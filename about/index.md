@@ -11,12 +11,12 @@ comments: false
 ![me](../assets/img/me.png "me"){: style="height:250px"}
 
 |Name| **Diogo Daniel Soares Ferreira**|
-|Job| **Software Engineer @ Talkdesk** ![TD_Logo](../assets/img/talkdesk_logo_new.svg "Talkdesk Logo"){: style="display:inline; height:50px"}|
+|Job| **Backend Engineer @ Blip** ![TD_Logo](../assets/img/blip-logo.svg "Blip Logo"){: style="display:inline; height:40px"}|
 |Education| **Master in Computer and Telematics Engineering (Aveiro University, 2014-2019)** ![UA_Logo](../assets/img/ua_logo_3.jpg "UA Logo"){: style="display:inline; height:50px"}|
 |Birthday date| **February 3<sup>rd</sup>, 1997 (24 years old)**|
 |Location| **Aveiro, Portugal**|
 
-Hi! I'm Diogo Ferreira and I have a special interest in cloud and data-driven architectures. Currently, I work at Talkdesk, where I am Software Engineer in the AI unit. I have worked with awesome technologies, such as Quarkus, Apache Camel, Kafka, Elastic Search, Databricks, and so much more.
+Hi! I'm Diogo Ferreira and I have a special interest in cloud and data-driven architectures. Currently, I work at Blip, where I am Backend Engineer. I have also been in Talkdesk, where I worked with awesome technologies, such as Quarkus, Apache Camel, Kafka, Elastic Search, Databricks, and so much more.
 
 I have finished my Masters in Computer and Telematics Engineering, with a thesis about forecasting techniques in 5G networks and its implementation to improve the network behavior (with a 20/20 grade).
 
