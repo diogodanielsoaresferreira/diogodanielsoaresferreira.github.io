@@ -2,7 +2,7 @@
 layout: page
 title: About me
 tags: [about, diogo ferreira]
-date: 2020-11-03
+date: 2022-02-22
 comments: false
 ---
 
@@ -13,7 +13,7 @@ comments: false
 |Name| **Diogo Daniel Soares Ferreira**|
 |Job| **Backend Engineer @ Blip** ![TD_Logo](../assets/img/blip-logo.svg "Blip Logo"){: style="display:inline; height:40px"}|
 |Education| **Master in Computer and Telematics Engineering (Aveiro University, 2014-2019)** ![UA_Logo](../assets/img/ua_logo_3.jpg "UA Logo"){: style="display:inline; height:50px"}|
-|Birthday date| **February 3<sup>rd</sup>, 1997 (24 years old)**|
+|Birthday date| **February 3<sup>rd</sup>, 1997 (25 years old)**|
 |Location| **Aveiro, Portugal**|
 
 Hi! I'm Diogo Ferreira and I have a special interest in cloud and data-driven architectures. Currently, I work at Blip, where I am Backend Engineer. I have also been in Talkdesk, where I worked with awesome technologies, such as Quarkus, Apache Camel, Kafka, Elastic Search, Databricks, and so much more.
@@ -24,7 +24,7 @@ I love doing online courses to learn more Computer Science, such as the Machine 
 
 Beyond the digital world, I am also a member of the Portuguese Scouts (CNE), being a scout leader.
 
-Finally, I am also passionate about music, having attended several music summer festivals in the past years. I also enjoy sports, having played football for 12 years.
+Finally, I am also passionate about running, having run multiple half marathons in the past years. I also enjoy music, having attended several music summer festivals.
 
 
 Check my CV **[here](../assets/pdf/CV.pdf)**!
