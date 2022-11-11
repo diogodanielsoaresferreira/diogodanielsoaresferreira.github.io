@@ -7,3 +7,4 @@ gem 'jekyll-mentions'
 gem 'jekyll-feed'
 gem 'jemoji'
 gem 'jekyll-analytics'
+gem "webrick", "~> 1.7"
