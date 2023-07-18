@@ -1,4 +1,74 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-11T23:53:22+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Diogo Ferreira webpage</title><subtitle>Diogo Ferreira personal webpage.</subtitle><entry><title type="html">Good old Unix commands need more love ❤</title><link href="http://localhost:4000/good-old-linux-commands-need-more-love/" rel="alternate" type="text/html" title="Good old Unix commands need more love ❤" /><published>2022-11-11T00:00:00+00:00</published><updated>2022-11-11T00:00:00+00:00</updated><id>http://localhost:4000/good-old-linux-commands-need-more-love</id><content type="html" xml:base="http://localhost:4000/good-old-linux-commands-need-more-love/"><![CDATA[<figure>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-18T23:04:36+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Diogo Ferreira webpage</title><subtitle>Diogo Ferreira personal webpage.</subtitle><entry><title type="html">Application Read and Write Path</title><link href="http://localhost:4000/application-read-and-write-path/" rel="alternate" type="text/html" title="Application Read and Write Path" /><published>2023-07-18T00:00:00+01:00</published><updated>2023-07-18T00:00:00+01:00</updated><id>http://localhost:4000/application-read-and-write-path</id><content type="html" xml:base="http://localhost:4000/application-read-and-write-path/"><![CDATA[<figure>
+    <a href="/assets/img/read-write-path/map_distributed_systems_landscape.png"><img src="/assets/img/read-write-path/map_distributed_systems_landscape.png" /></a>
+    <figcaption style="text-align: center">A map of the distributed data systems landscape, from the book "Designing Data-Intensive Applications", by Martin Kleppmann</figcaption>
+</figure>
+
+<p>Hi there! I recently read <a href="https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321" target="_blank">“Designing Data-Intensive Applications”, by Martin Kleppmann</a>, and was fascinated with the concept of building applications around the idea of dataflows. In this blog post, I explain what is the read and write path of an application.</p>
+
+<hr />
+
+<p>We want to develop a service that, given a user music playlist, generates a list of similar songs to a given song. The service has two flows: the <strong>song insertion flow</strong> and the <strong>similar songs calculator flow</strong>. The song insertion flow receives the song, computes the song features, and adds the features to a repository. The similar songs calculator flow receives a song name from the user, calculates similar songs based on the song features and the other songs’ features, and returns a list of similar songs.</p>
+
+<p>Let’s call the song insertion flow the write path, and the similar songs calculator flow the read path of the service. A depiction of both paths can be seen in the following Figure.</p>
+
+<figure>
+    <a href="/assets/img/read-write-path/path_1.png"><img src="/assets/img/read-write-path/path_1.png" /></a>
+</figure>
+
+<p>Now imagine that the service is taking too much time to add songs, and that most users add many songs but never calculate any similarity. We can prevent the service to compute the song features by moving that computation from the write path to the read path, as can be seen in the Figure below. The write path is shorter now, at the cost of the computation being done on-demand in the read path.</p>
+
+<figure>
+    <a href="/assets/img/read-write-path/path_2.png"><img src="/assets/img/read-write-path/path_2.png" /></a>
+</figure>
+
+<p>Let’s suppose we have the inverse scenario, that users are complaining because it takes too much time to calculate the song similarities. We can solve that by pre-calculating the similar songs in the write path. In the read path, the user only accesses a repository with the song similarities.</p>
+
+<figure>
+    <a href="/assets/img/read-write-path/path_3.png"><img src="/assets/img/read-write-path/path_3.png" /></a>
+</figure>
+
+<p>We can go beyond that and add a song similarity cache, that maintains a list of the most similar songs for the most popular songs, speeding up the read path at the cost of a possible cache update on the write path.</p>
+
+<figure>
+    <a href="/assets/img/read-write-path/path_4.png"><img src="/assets/img/read-write-path/path_4.png" /></a>
+</figure>
+
+<hr />
+
+<p>The write path is the pre-computed part of the flow and the read path is the part that is only computed by request. In programming terms, the <strong>write path is similar to eager evaluation</strong>, while the <strong>read path is similar to lazy evaluation</strong>.</p>
+
+<p>The role of the repository, cache, index or any transformed data view can be seen as the boundary between the read and write path. We can shift the boundary according to our use case needs: if we need fast access to data, we can shorten the read path with additional data views; on the other hand, if we need faster write operations, we can shorten the write path and postpone some data processing to the read path, which will only be done when requested.</p>
+
+<p>When seen like that, in a system when a dataset is derived from another, it shortens the read path and extends the write path, for example:</p>
+
+<ul>
+  <li>When we create a secondary index in a database;</li>
+  <li>When we create a full-text search index;</li>
+  <li>When we create a machine learning model;</li>
+  <li>When we implement a cache.</li>
+</ul>
+
+<hr />
+
+<p>An example of write and read path shifting is explained in the book “Designing Data-Intensive Applications”. In 2012, Twitter main operations were posting a tweet and view tweets in the timeline. When a tweet was posted, it was stored in a repository with all tweets. When a user accessed its timeline, it was needed to make a query for the people they follow, and then fetch the tweets from them. Due to the heavy load of timeline queries, Twitter systems struggled to keep up. The problem was that the read path - to view the timeline - was doing too much work.</p>
+
+<p>To solve that, Twitter decided on a different approach. Each user would have a cache that had the tweets on its timeline. When someone posted a tweet, Twitter would look up its followers and insert the tweet in each follower cache. The request for the timeline was now much easier - just check its timeline cache.</p>
+
+<p>Did that solve the problem? The downside of this approach was that posting a tweet required a lot of extra work - now the write path was too heavy. Specially for celebrities, which had millions of followers, each tweet would need to be inserted in each users’ timeline cache.</p>
+
+<p>In the end, Twitter moved to a hybrid of both approaches: most users’ tweets were inserted in its followers’ timeline cache, but for users with a large number of followers they weren’t. When a user saw their timeline, Twitter would merge the tweets in the user cache with the tweets from people with a large number of followers.</p>
+
+<hr />
+
+<p>There are also some architectural examples where shortening the read path can have a tremendous impact. For example, some mobile applications do as much as possible using a local database on the same device without requiring an internet connection and sync with remote servers in the background whenever there is a connection available, practically extending the write path to the user. These design decisions lead to more resilient and efficient applications.</p>
+
+<p>With the popularity of end-to-end stream processing frameworks and tools, such as reactive frameworks, Kotlin Channels, the project Loom for Java or Flux architectures, it is a great time to start rethinking our architectures in terms of dataflow. Instead of treating a database as a passive component, think more about the interplay of state, state changes, and code that processes them. Application code responds to state changes in one place by triggering state changes in another place.</p>
+
+<hr />
+
+<p>Interesting, right? This is explained thoroughly in the last chapter of the book “Designing Data-Intensive Applications”, by Martin Kleppmann, but I recommend reading the whole book. It is the bible of modern data processing and storage, from the high-level overview to the details of the present databases.</p>
+
+<p>Thanks for reading!</p>]]></content><author><name></name></author><category term="software development" /><category term="software architecture" /><category term="software engineering" /><category term="backend development" /><category term="application development" /><summary type="html"><![CDATA[Start rethinking our software architectures in terms of dataflow]]></summary></entry><entry><title type="html">Good old Unix commands need more love ❤</title><link href="http://localhost:4000/good-old-linux-commands-need-more-love/" rel="alternate" type="text/html" title="Good old Unix commands need more love ❤" /><published>2022-11-11T00:00:00+00:00</published><updated>2022-11-11T00:00:00+00:00</updated><id>http://localhost:4000/good-old-linux-commands-need-more-love</id><content type="html" xml:base="http://localhost:4000/good-old-linux-commands-need-more-love/"><![CDATA[<figure>
     <a href="/assets/img/unix/creators.jpg"><img src="/assets/img/unix/creators.jpg" style="max-width: 80%" /></a>
     <figcaption style="text-align: center">Dennis Ritchie and Ken Thompson, two of the creators of Unix, in 1972. Photo: Alcatel-Lucent</figcaption>
 </figure>
@@ -997,98 +1067,4 @@ In a dissertation there are two types of “valuable software”:</p>
 
 <p>Thanks for sticking by until the end.</p>
 
-<p>See ya on other posts!</p>]]></content><author><name></name></author><category term="thesis" /><category term="dissertation" /><category term="tips" /><summary type="html"><![CDATA[15 tips for your thesis/dissertation - 4/4]]></summary></entry><entry><title type="html">How to have an A+ dissertation/thesis (III/IV)</title><link href="http://localhost:4000/how-to-have-a-thesis-part-3/" rel="alternate" type="text/html" title="How to have an A+ dissertation/thesis (III/IV)" /><published>2019-09-06T00:00:00+01:00</published><updated>2019-09-06T00:00:00+01:00</updated><id>http://localhost:4000/how-to-have-a-thesis-part-3</id><content type="html" xml:base="http://localhost:4000/how-to-have-a-thesis-part-3/"><![CDATA[<p>Hi there!</p>
-
-<p>If you didn’t read the previous post, check it out <a href="/how-to-have-a-thesis-part-2/">here</a>. I am summarizing tips I would give myself before starting the dissertation, explaining my good and bad decisions along the way.</p>
-
-<p>Before, a heads up: the content of this blog post is highly subjective and related to my dissertation experience, so don’t take it as the ground truth. But do think critically about my advice and, whether you agree with them or not, comment on what you think about it</p>
-
-<p>This post is divided into four parts:</p>
-<ul>
-  <li><a href="/how-to-have-a-thesis-part-1/">I - 3 tips for before starting the writing of the dissertation;</a></li>
-  <li><a href="/how-to-have-a-thesis-part-2/">II - 4 tips for during the writing of the dissertation;</a></li>
-  <li><strong>III - more 4 tips for during the writing of the dissertation;</strong></li>
-  <li><a href="/how-to-have-a-thesis-part-4/">IV - 3 tips for after the writing of the dissertation.</a></li>
-</ul>
-
-<h2 id="8---the-dissertation-is-a-marathon-not-a-sprint">8 - The dissertation is a marathon, not a sprint!</h2>
-
-<div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/sRKg9r2YWeCTG5JTTo" width="100%" height="100%" style="position:absolute" frameborder="0" class="giphy-embed" allowfullscreen=""></iframe></div>
-<p><a href="https://giphy.com/gifs/running-run-runs-sRKg9r2YWeCTG5JTTo"></a></p>
-
-<p>This advice is not about your dissertation work, or about your writing. Is just about you. And your time. In a dissertation work, everyone has moments when they thought everything is lost. That there is nothing valuable in your work. That it is so frustrating that you can’t wait for it to be finished. This piece of advice is not about how to deal with those times (sorry, I am not a motivational speaker). It is about how to avoid them.</p>
-
-<h3 id="my-experience">My Experience</h3>
-<p>I tend to get overanxious about the work that I need to do. I tend to work a lot in the beginning. And that’s what I did. So much that before the half of the schedule of my work, I had already written the equivalent of a “regular” dissertation. After I understood that I didn’t need to overwork to finish my dissertation (if I wanted, it was already done), I rarely spent after hours working on my dissertation as I did previously. I played a <strong>LOT</strong> of Football Manager. I played the guitar. I spent more time in Scouts. I saw many Youtube videos about random and uninteresting things. Curiously, I did not stop being productive. I did as much work as before, but with a lot more fun.</p>
-
-<h3 id="my-advice">My Advice</h3>
-<p>Relax. I learned that it is important to shut down when you get out of the office and distract yourself with other things. It helps you avoid burnout and it is clinically proved that it improves your productivity the next day. Whether you want to play a game, or see a movie, or just do nothing (doing nothing is also important!), do it.</p>
-
-<p>Besides, time is really important if you want to be productive. Create a schedule of what you propose yourself to do the next day, even if you don’t stick to it. Consider what are the next things to do and how long will take you to get them done. Everything will be easier if you keep a steady pace with your work. If you have done less than what you have scheduled for a day, do not overcompensate. All-nighters are clearly not worth it, and roadblocks are inevitable. Just adjust your schedule for the next day and try it again. If you do that, the dissertation work will be <strong>SO</strong> much easier. Because the dissertation is a marathon, not a sprint, and you must be mentally ready for the long run.</p>
-
-<h2 id="9---when-to-pivot-your-work">9 - When to pivot your work?</h2>
-
-<p>It is not so uncommon to find supervisors that are constantly shifting the objective of the dissertation. There are several reasons for it:</p>
-<ul>
-  <li>they saw a new paper with interesting results;</li>
-  <li>they do not understand in depth the area you are working in;</li>
-  <li>the results you have are useless;</li>
-  <li>you are not being productive/you are not motivated.</li>
-</ul>
-
-<p>When and why should you accept to pivot your work in the middle of a dissertation?</p>
-
-<h3 id="my-experience-1">My Experience</h3>
-<p>I did not completely pivot my work, but it has evolved over the year. In the beginning, the goal was to use machine learning to forecast network metrics. After that was done, we focused on some specific forecasting scenarios interesting for the network operator. After that, we thought that it was interesting to create a real-time distributed architecture to test the forecast - the focus of my work changed from machine learning to software engineering. In the end, two scenarios were tested with the forecasts implemented in the architecture to improve the network - again, the focus changed from software engineering to solving a real network problem.</p>
-
-<p>Althought I did the work I had planned to do, I did much more than that. My dissertation was not only a machine learning problem: it had grown over time. It solved real scenarios in a 5G network with the help of machine learning and a dedicated architecture for forecasting. It is comprehensible and even natural that the dissertation work evolves over time. However, many of my friends reached mid-year with a totally different dissertation from what they were expecting. They became bored, unmotivated and unconfident about their work. They did not like what they were doing, because that’s not what they signed up for (or at least what they thought they signed for). What did they do differently from me? It was their fault? It was their supervisors’ fault?</p>
-
-<h3 id="my-advice-1">My Advice</h3>
-<p>It is hard to determine who’s fault it is without looking at it on a case-by-case basis. However, there is some advice I can give.</p>
-
-<p>Take a look at tip <em>Understand the basics before diving in!</em> (part 1). This is the least you can do to not being caught up in the same situation that my friends were in. Talk with your supervisor and discuss what is the schedule for your work. Then, learn more about what you will do. That will help you to save some time and to have something done early. Having work done in an earlier phase is essential to discuss the scope of your work and validate our hypothesis. If you have to pivot, the earlier you do it the better.</p>
-
-<p>Another essential trick is to have a personal schedule for the dissertation. Be realistic. It helps you to understand which foot you are in, and how many hours do you still need to put in to get the job done. It will also help you to list upfront all the problems you think you may find in your implementation. Do you need license X and your University does not have it? Do you need a computer with special requirements? The earlier you ask for it, the better.</p>
-
-<p>If you really have to pivot your work, do it because of you. Do not pivot if your supervisor thinks that what you are doing is uninteresting and it will not produce any results. Yes, you should hear him and take his/her advice, but sometimes you really have to stand up for yourself. If you have done fruitful work, why give up? If you are on a later stage of the dissertation work, maybe pivoting will not produce any good results. You will take more time to understand and to redo everything you had done until then, and you will probably miss your personal deadlines.</p>
-
-<p>But when should you pivot then? For my experience, the main reason you should pivot is if you are not motivated and you have found a new problem that you want to solve and that you think you can do it. Obviously, this involves knowledge about the area you are pivoting. Otherwise, you may end up in the same situation as before. The interesting results are a secondary reason and they are closely related to your motivation. If you are motivated is because you think you think you can get interesting results, and vice-versa.</p>
-
-<h2 id="10---how-much-time-should-i-work-per-day">10 - How much time should I work per day?</h2>
-
-<p>Surely some students work more than 12 hours a day to get their dissertation done. Some students work around 4 hours a day and also get their dissertation done at the same time. How much time should you work per day?</p>
-
-<h3 id="my-experience-2">My Experience</h3>
-<p>When I began my dissertation work, I worked endlessly. Sometimes more than 12 hours every day. <strong>Every day</strong>. Looking back, it was a bad decision. Some months after, I realized that I was only productive for around 6 hours of that 12, and I changed my working habits. I worked only on workdays, 8 hours a day, just as if I worked for a company. Surprisingly, I started being even more productive than before.</p>
-
-<h3 id="my-advice-2">My Advice</h3>
-<p>This is not a hard question. Around 8 hours at workdays. That’s it. It’s the mean number of hours that a “regular” worker works in a job. It is also proved to be effective. If we worked for more than that, we became unproductive, tired and unmotivated. Of course, there are exceptions. If you like to work 12 hours a day in three days of the week and rest the other four, you can do it if it suits you. However, it is not what has proven to be successful for most people.</p>
-
-<p>Don’t feel pressured by the ones that say that you should work more than that - it is unrealistic to expect more and better work just because you work more hours. Mainly in a dissertation, where critical thinking is key.</p>
-
-<p>Maybe sometimes you will feel that you are procrastinating your work, and all you ever want to do is to see Youtube videos or read a book. When that happens, try to enforce yourself a time management rule, such as the Pomodoro technique: 25 minutes of work followed by 5 minutes of a break. The rule is adjustable: if you are feeling productive, there is nothing wrong in duplicating the work and break time (50/10). After you do it for some time, it will become natural to you the work-&gt;break cycle.</p>
-
-<p>Oh, I almost forgot one thing. It is OK to take breaks. Actually, it is essential to take breaks. It helps you and your body to focus. A longer break in the morning and another in the evening (15 minutes) to eat a snack will help you boost your productivity. When you are writing, it is common to feel the writer’s block - the feeling that you don’t know what to write or where to start writing. Take a break. Go chat with someone. Get up and go for a walk. It will help you clear your mind. When you come back it will be easier to end up writing.</p>
-
-<h2 id="11---the-first-goal-is-to-get-a-draft-not-to-get-it-written">11 - The first goal is to get a draft, not to get it written</h2>
-
-<figure>
-	<a href="/assets/img/thesis-5.jpeg"><img src="/assets/img/thesis-5.jpeg" style="width:70%" /></a>
-	<figcaption style="text-align: center">Don't worry if the first version is a mess. Rewrite it. It will be better the second time.</figcaption>
-</figure>
-
-<p>This is the last piece of advice during the dissertation. Many students are very concerned about their writing from the very first moment. So much concerned that for every line they write, they spend an hour looking at it and thinking about how they can improve it, to be no less than perfect. This is common to happen in the first moments where the students start to write their dissertation.</p>
-
-<h3 id="my-experience-3">My Experience</h3>
-<p>The first chapter I wrote for my dissertation was the state of the art. I started by writing it by topics; then, it evolved for sentences with little connection with each other. Finally, in later revisions, some paragraphs were reviewed to make connections between them. Reading it after the delivery, I understood the importance of iterations in the writing, and why I couldn’t do that the first time I wrote it. Some references in the text could only be made after I knew everything that I was going to say later. If I would have been obsessed with perfection at first try, I would probably not have written so much and with so high quality.</p>
-
-<h3 id="my-advice-3">My Advice</h3>
-<p>To write a dissertation is just like building a product - first, you have to build the Minimum Viable Product (MVP). Don’t expect to do everything right for the first time you write it. You will review your document and change it many times until it is finally ready to be delivered and presented.</p>
-
-<p>The first goal of the writing is to explain what you did, what are your thoughts and what conclusion you can take from your work. Style is important, but it is only regarded if what you are writing is interesting. Before wasting too much time rephrasing everything you did, write what you did in a quick and dirty way. After the first version is completed, it will be much easier for you to have the big picture of your work and to rephrase paragraphs making the connection with what you will say later.</p>
-
-<p>That’s it for today!</p>
-
-<p>Thanks for sticking by. Click <a href="/how-to-have-a-thesis-part-4/">here</a> for part IV.</p>
-
-<p>See ya!</p>]]></content><author><name></name></author><category term="thesis" /><category term="dissertation" /><category term="tips" /><summary type="html"><![CDATA[15 tips for your thesis/dissertation - 3/4]]></summary></entry></feed>
+<p>See ya on other posts!</p>]]></content><author><name></name></author><category term="thesis" /><category term="dissertation" /><category term="tips" /><summary type="html"><![CDATA[15 tips for your thesis/dissertation - 4/4]]></summary></entry></feed>

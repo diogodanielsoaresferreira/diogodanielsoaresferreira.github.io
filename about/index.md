@@ -2,33 +2,30 @@
 layout: page
 title: About me
 tags: [about, diogo ferreira]
-date: 2022-02-22
+date: 2023-07-18
 comments: false
 ---
 
 # Who am I?
 
-![me](../assets/img/me.png "me"){: style="height:250px"}
+![me](../assets/img/me.jpg "me"){: style="height:250px"}
 
 |Name| **Diogo Daniel Soares Ferreira**|
-|Job| **Backend Engineer @ Blip** ![TD_Logo](../assets/img/blip-logo.svg "Blip Logo"){: style="display:inline; height:40px"}|
+|Job| **Backend Engineer @** ![Blip_Logo](../assets/img/blip_logo.jpg "Blip Logo"){: style="display:inline; height:30px"}|
 |Education| **Master in Computer and Telematics Engineering (Aveiro University, 2014-2019)** ![UA_Logo](../assets/img/ua_logo_3.jpg "UA Logo"){: style="display:inline; height:50px"}|
-|Birthday date| **February 3<sup>rd</sup>, 1997 (25 years old)**|
+|Birthday date| **February 3<sup>rd</sup>, 1997 (26 years old)**|
 |Location| **Aveiro, Portugal**|
 
-Hi! I'm Diogo Ferreira and I have a special interest in cloud and data-driven architectures. Currently, I work at Blip, where I am Backend Engineer. I have also been in Talkdesk, where I worked with awesome technologies, such as Quarkus, Apache Camel, Kafka, Elastic Search, Databricks, and so much more.
+
+Hi! I'm Diogo Ferreira and I have 4 years of experience, mainly in event-driven architectures, working with technologies such as Java, Kotlin, Scala, Kafka, Relational (PostgreSQL) and Non-relational Databases (Elasticsearch). Currently, I work at Blip, where I am Backend Engineer. I have also been in Talkdesk, where I worked with awesome technologies, such as Quarkus, Apache Camel, and so much more.
 
 I have finished my Masters in Computer and Telematics Engineering, with a thesis about forecasting techniques in 5G networks and its implementation to improve the network behavior (with a 20/20 grade).
 
-I love doing online courses to learn more Computer Science, such as the Machine Learning course by Andrew Ng in Coursera, the Deep Learning Specialization by Deep Learning.ai, or CS224n: Natural Language Processing with Deep Learning by Stanford University.
+I love doing online courses to learn more Computer Science, such as the Akka Essentials with Scala, Akka Streams with Scala, Think Like a Leader, or Deployment of Machine Learning Models.
 
-Beyond the digital world, I am also a member of the Portuguese Scouts (CNE), being a scout leader.
-
-Finally, I am also passionate about running, having run multiple half marathons in the past years. I also enjoy music, having attended several music summer festivals.
-
+Beyond the digital world, I am also a member of the Portuguese Scouts (CNE), being a scout leader. I am also passionate about running, having run multiple half marathons in the past years. I also enjoy music, having attended several music summer festivals.
 
 Check my CV **[here](../assets/pdf/CV.pdf)**!
-
 
 ### Publications
 

@@ -49,6 +49,10 @@
 <lastmod>2022-11-11T00:00:00+00:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/application-read-and-write-path/</loc>
+<lastmod>2023-07-18T00:00:00+01:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/404</loc>
 </url>
 <url>
@@ -65,7 +69,7 @@
 </url>
 <url>
 <loc>http://localhost:4000/assets/pdf/CV.pdf</loc>
-<lastmod>2022-02-22T21:27:23+00:00</lastmod>
+<lastmod>2023-07-15T21:34:16+01:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/assets/pdf/paper.pdf</loc>
