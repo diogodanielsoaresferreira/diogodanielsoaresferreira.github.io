@@ -239,12 +239,4 @@ $(document).ready(function(){
 		$('#mailform').remove();
 		$('#filew').append("<iframe id=\"added\" src=\"https://app.box.com/embed/s/g8813sh3ifou5xn6eh4fytxs5ws19dtg?sortColumn=date&view=icon\" width=\"800\" height=\"550\" frameborder=\"0\" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>");
 	});
-	$("#contact").click(function(event){
-		$('.menu').remove();
-		$('#added').remove();
-		$('#mailform').remove();
-		$('#filew').append(
-		"<div id=\"mailform\"><p>Se por qualquer razão desejares entrar em contacto, não hesites em preencher formulário abaixo.</p><a id=\"foxyform_embed_link_146723\" href=\"http://br.foxyform.com/\">foxyform</a><script type=\"text/javascript\">(function(d, t){var g = d.createElement(t),s = d.getElementsByTagName(t)[0];g.src = \"http://br.foxyform.com/js.php?id=146723&sec_hash=98bd9203b5b&width=350px\";s.parentNode.insertBefore(g, s);}(document, \"script\"));</script></div>"
-		);
-	});
 });
