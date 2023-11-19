@@ -1,6 +1,6 @@
 # Site
 title:              Diogo Ferreira webpage
-bio:                'Welcome! Know more about my personal interests in this page.'
+#bio:                ''
 description:        "Diogo Ferreira personal webpage."
 reading_time:       true
 words_per_minute:   200
