@@ -2,7 +2,7 @@
 layout: page
 title: About me
 tags: [about, diogo ferreira]
-date: 2023-07-18
+date: 2023-12-25
 comments: false
 ---
 
@@ -11,13 +11,13 @@ comments: false
 ![me](../assets/img/me.jpg "me"){: style="height:250px"}
 
 |Name| **Diogo Daniel Soares Ferreira**|
-|Job| **Backend Engineer @** ![Blip_Logo](../assets/img/blip_logo.jpg "Blip Logo"){: style="display:inline; height:30px"}|
+|Job| **Software Engineer @** ![Timefold_Logo](../assets/img/timefold-logo-horizontal-positive.svg "Timefold Logo"){: style="display:inline; height:30px"}|
 |Education| **Master in Computer and Telematics Engineering (Aveiro University, 2014-2019)** ![UA_Logo](../assets/img/ua_logo_3.jpg "UA Logo"){: style="display:inline; height:50px"}|
 |Birthday date| **February 3<sup>rd</sup>, 1997 (26 years old)**|
-|Location| **Aveiro, Portugal**|
+|Location| **Oostende, Belgium**|
 
 
-Hi! I'm Diogo Ferreira and I have 4 years of experience, mainly in event-driven architectures, working with technologies such as Java, Kotlin, Scala, Kafka, Relational (PostgreSQL) and Non-relational Databases (Elasticsearch). Currently, I work at Blip, where I am Backend Engineer. I have also been in Talkdesk, where I worked with awesome technologies, such as Quarkus, Apache Camel, and so much more.
+Hi! I'm Diogo Ferreira and I have +4 years of experience, mainly in event-driven architectures, working with technologies such as Java, Kotlin, Scala, Kafka, Spring, Quarkus, Kubernetes, Docker, Relational (PostgreSQL) and Non-relational Databases (Elasticsearch). Currently I work at Timefold, where I am Software Engineer, having also been previously in Blip and Talkdesk.
 
 I have finished my Masters in Computer and Telematics Engineering, with a thesis about forecasting techniques in 5G networks and its implementation to improve the network behavior (with a 20/20 grade).
 
