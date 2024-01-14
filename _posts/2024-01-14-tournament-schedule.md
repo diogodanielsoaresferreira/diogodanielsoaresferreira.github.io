@@ -1,11 +1,16 @@
 ---
 layout: post
 title: "Generate the optimal soccer schedule"
-date: 2024-01-10
+date: 2024-01-14
 excerpt: "How to implement the optimal tournament schedule?"
 tags: [software development, java, sports scheduling, optimization]
 comments: true
 ---
+
+<figure>
+    <a href="/assets/img/tournament-schedule/cover.jpg"><img src="/assets/img/tournament-schedule/cover.jpg"></a>
+    <figcaption style="text-align: center">Photo by <a href="https://unsplash.com/@jeshoots" target="_blank">Jeshoots</a> on Unsplash</figcaption>
+</figure>
 
 Hi there! If you've ever organized a tournament with many teams, you know how hard it is to generate a good and fair tournament
 schedule that complies with all the rules, regardless if it's for the national soccer league or your local padel competition.
