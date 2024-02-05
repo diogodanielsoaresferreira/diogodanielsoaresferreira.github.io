@@ -7,6 +7,11 @@ tags: []
 comments: true
 ---
 
+<figure>
+    <a href="/assets/img/hexagonal-architecture/honeycomb.jpg"><img src="/assets/img/hexagonal-architecture/honeycomb.jpg"></a>
+    <figcaption style="text-align: center">Photo by <a href="https://www.flickr.com/photos/silkebaron/" target="_blank">prilfish</a> on Flickr</figcaption>
+</figure>
+
 Hi there! When I started to build services, I never knew how to structure the code. In Python it was easy: I would start with a single file and later split it if needed. However, for large projects, that would not do it: the complexity grew so much that **it was needed a better way to structure the code**. But how?
 
 ---
