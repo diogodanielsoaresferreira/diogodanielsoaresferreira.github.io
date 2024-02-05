@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "How to structure your code? Hexagonal Architecture!"
-date: 2024-01-01
+date: 2024-02-15
 excerpt: "Learn to structure your code using Hexagonal Architecture"
 tags: []
 comments: true
 ---
 
-When I started to build services, I never knew how to structure the code. In Python it was easy: I would start with a single file and later split it if needed. However, for large projects, that would not do it: the complexity grew so much that **it was needed a better way to structure the code**. But how?
+Hi there! When I started to build services, I never knew how to structure the code. In Python it was easy: I would start with a single file and later split it if needed. However, for large projects, that would not do it: the complexity grew so much that **it was needed a better way to structure the code**. But how?
 
 ---
 
