@@ -37,7 +37,7 @@ To decouple those dependencies it was created the **Hexagonal Architecture (or P
 
 ---
 
-Let's see an example. We will create a Kotlin application with Spring that receives messages from a RabbitMQ Broker and stores them in a Postgres database.
+Let's see an example. We will create a Kotlin application with Spring that receives messages from a RabbitMQ Broker and stores them in a PostgreSQL database.
 Let's start by creating the domain entity. In this case, the message.
 
 ```java
@@ -78,7 +78,7 @@ interface MessageListener {
 }
 ```
 
-Great! The only thing that's left now are the adapters. The adapters will implement the ports to their specific use case, in this case, a Postgresql repository and a RabbitMQ listener.
+Great! The only thing that's left now are the adapters. The adapters will implement the ports to their specific use case, in this case, a PostgreSQL repository and a RabbitMQ listener.
 
 ```java
 @Repository
