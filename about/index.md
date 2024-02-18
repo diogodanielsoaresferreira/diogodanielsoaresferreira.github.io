@@ -13,21 +13,55 @@ comments: false
 |Name| **Diogo Daniel Soares Ferreira**|
 |Job| **Software Engineer @** ![Timefold_Logo](../assets/img/timefold-logo-horizontal-positive.svg "Timefold Logo"){: style="display:inline; height:30px"}|
 |Education| **Master in Computer and Telematics Engineering (Aveiro University, 2014-2019)** ![UA_Logo](../assets/img/ua_logo_3.jpg "UA Logo"){: style="display:inline; height:50px"}|
-|Birthday date| **February 3<sup>rd</sup>, 1997 (26 years old)**|
+|Born| **February 3<sup>rd</sup>, 1997**|
 |Location| **Oostende, Belgium**|
 
 
-Hi! I'm Diogo Ferreira and I have +4 years of experience, mainly in event-driven architectures, working with technologies such as Java, Kotlin, Scala, Kafka, Spring, Quarkus, Kubernetes, Docker, Relational (PostgreSQL) and Non-relational Databases (Elasticsearch). Currently I work at Timefold, where I am Software Engineer, having also been previously in Blip and Talkdesk.
+Hi! I'm Diogo Ferreira and I am Software Engineer with +4 years of experience, mainly in event-driven architectures, working with technologies such as Java, Kotlin, Scala, Quarkus, Spring, Flink, Akka, Kafka, Relational (PostgreSQL) and Non-relational Databases (Elasticsearch).
 
-I have finished my Masters in Computer and Telematics Engineering, with a thesis about forecasting techniques in 5G networks and its implementation to improve the network behavior (with a 20/20 grade).
+# Experience
 
-I love doing online courses to learn more Computer Science, such as the Akka Essentials with Scala, Akka Streams with Scala, Think Like a Leader, or Deployment of Machine Learning Models.
+|**Software Engineer** ![Timefold_Logo](../assets/img/timefold-logo-horizontal-positive.svg "Timefold Logo"){: style="display:inline; height:30px"}|
+|**12/23 -** |
+|Developing a platform-as-a-service to schedule planning optimization jobs, such as employee shift scheduling, field service routing or vehicle routing, using Java with Quarkus framework, but also Kubernetes and various cloud providers, such as AWS, Azure or Google Cloud.|
 
-Beyond the digital world, I am also a member of the Portuguese Scouts (CNE), being a scout leader. I am also passionate about running, having run multiple half marathons in the past years. I also enjoy music, having attended several music summer festivals.
+---
 
-Check my CV **[here](../assets/pdf/CV.pdf)**!
+|**Software Engineer** ![Blip_Logo](../assets/img/blip_logo.jpg "Blip Logo"){: style="display:inline; height:30px"}|
+|**11/21 - 11/23**|
+|Working as part of Flutter Entertainment Group, the world's leading online sports betting and gaming operator, for brands such as Betfair, PaddyPower and Fanduel.
+Using Java, Kotlin and Scala with Spring and Flink frameworks to build and monitor event-driven microsservices capable of handle hundreds of thousands of events per second.|
 
-### Publications
+---
+
+|**Software Engineer** ![Talkdesk_Logo](../assets/img/TalkdeskLogo.png "Talkdesk Logo"){: style="display:inline; height:25px"}|
+|**09/19 - 11/21**|
+|Working for a unicorn that is the global cloud contact center leader.
+Using Java with Quarkus framework and Apache Camel to build and monitor data-driven services. Built a pipeline that handles on average 4 million events daily.|
+|Design, implementation and test of NLP machine-learning based techniques. Working with sentence embeddings, document similarity, word extraction from text and other NLP topics.|
+
+---
+
+|**Student Researcher** ![IT_Logo](../assets/img/it.png "IT Logo"){: style="display:inline; height:50px"}|
+|**04/19 - 08/19**|
+|Study and development of machine learning models for time series prediction metrics in 5G slices, using Deep Learning techniques. The project is being developed in the Network Architectures and Protocols (NAP) group, having as mentor Prof. Dr. Susana Sargento.|
+
+---
+
+|**Undergraduate Student Researcher** ![IT_Logo](../assets/img/it.png "IT Logo"){: style="display:inline; height:50px"}|
+|**10/17 - 09/18**|
+|Study of intelligence mechanisms in the core of a 5G network for monitoring, optimization and security. The project was developed in the Network Architectures and Protocols (NAP) group, having as mentor Prof. Dr. Susana Sargento.
+Continuation of a project made in a third-year course (“Project in Informatics Engineering”), in partnership with Altice Labs, having as main goal to develop a platform with support for management, monitoring, alerts and actuation over the data of a city, in real-time (smart city).|
+
+---
+
+|**Summer Internship**![Aptoide_Logo](../assets/img/Aptoide.png "Aptoide Logo"){: style="display:inline; height:30px"}|
+|**07/16 - 08/16**|
+|Design and build a software with the purpose of finding apps on the Aptoide Store with explicit content (nudity) using Machine Learning techniques, with accuracy over 95%.|
+
+---
+
+# Publications
 
 |**Prediction of Low Acessibility in 4G Networks** [PDF](../assets/pdf/paper5.pdf)|
 |Diogo Ferreira, Carlos Senna, Paulo Salvador, Luís Cortesão, Cristina Pires, Rui Pedro, Susana Sargento|
@@ -54,3 +88,5 @@ Check my CV **[here](../assets/pdf/CV.pdf)**!
 |IbPRIA 2019: Pattern Recognition and Image Analysis pp 404-415|
 |DOI: [10.1007/978-3-030-31321-0_35](https://doi.org/10.1007/978-3-030-31321-0_35)|
 
+
+Check my CV **[here](../assets/pdf/CV.pdf)**!
