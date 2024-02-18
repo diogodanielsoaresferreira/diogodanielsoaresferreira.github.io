@@ -11,10 +11,10 @@ comments: false
 ![me](../assets/img/me.jpg "me"){: style="height:250px"}
 
 |Name| **Diogo Daniel Soares Ferreira**|
-|Job| **Software Engineer @** ![Timefold_Logo](../assets/img/timefold-logo-horizontal-positive.svg "Timefold Logo"){: style="display:inline; height:30px"}|
-|Education| **Master in Computer and Telematics Engineering (Aveiro University, 2014-2019)** ![UA_Logo](../assets/img/ua_logo_3.jpg "UA Logo"){: style="display:inline; height:50px"}|
 |Born| **February 3<sup>rd</sup>, 1997**|
 |Location| **Oostende, Belgium**|
+|Education| **Master in Computer and Telematics Engineering (Aveiro University, 2014-2019)** ![UA_Logo](../assets/img/ua_logo_3.jpg "UA Logo"){: style="display:inline; height:50px"}|
+|Job| **Software Engineer @** ![Timefold_Logo](../assets/img/timefold-logo-horizontal-positive.svg "Timefold Logo"){: style="display:inline; height:30px"}|
 
 
 Hi! I'm Diogo Ferreira and I am Software Engineer with +4 years of experience, mainly in event-driven architectures, working with technologies such as Java, Kotlin, Scala, Quarkus, Spring, Flink, Akka, Kafka, Relational (PostgreSQL) and Non-relational Databases (Elasticsearch).
@@ -55,7 +55,7 @@ Continuation of a project made in a third-year course (“Project in Informatics
 
 ---
 
-|**Summer Internship**![Aptoide_Logo](../assets/img/Aptoide.png "Aptoide Logo"){: style="display:inline; height:30px"}|
+|**Summer Internship** ![Aptoide_Logo](../assets/img/Aptoide.png "Aptoide Logo"){: style="display:inline; height:30px"}|
 |**07/16 - 08/16**|
 |Design and build a software with the purpose of finding apps on the Aptoide Store with explicit content (nudity) using Machine Learning techniques, with accuracy over 95%.|
 
