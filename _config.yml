@@ -4,7 +4,7 @@ title:              Diogo Ferreira webpage
 description:        "Diogo Ferreira personal webpage."
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/img/me.jpg'
+logo:               'assets/img/favicon/android-chrome-512x512.jpg'
 background:         'assets/img/ua2.jpeg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
