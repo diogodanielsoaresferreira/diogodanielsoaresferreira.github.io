@@ -29,14 +29,14 @@ However, in most complex problems, the layers would end up having dependencies b
 To decouple those dependencies it was created the **Hexagonal Architecture (or Ports & Adapters)** by Alistair Cockburn in 2005. He noticed that it was not much different for an application to interact with a database, a filesystem, or any other external application, from the application point of view. That means that business logic can be isolated from the outside world using ports and adapters.
 
 <figure>
-    <a href="/assets/img/hexagonal-architecture/3-tier.png"><img src="/assets/img/hexagonal-architecture/3-tier.png"></a>
+    <a href="/assets/img/hexagonal-architecture/hexagonal.png"><img src="/assets/img/hexagonal-architecture/hexagonal.png"></a>
 </figure>
 <figcaption style="text-align: center">Hexagonal architecture (Source: <a href="https://www.happycoders.eu/software-craftsmanship/hexagonal-architecture/" target="_blank">HappyCoders</a>)</figcaption>
 
 **But what are ports and adapters?** Having the business logic at its core, it defines ports to communicate with the outside world. The ports are technology-agnostic, and create an interface through which external actors can communicate with an application. It is a contract defined by the application that states how it wants to interact with other systems, without knowing anything about them. The adapters use a port to interact with the application. An example of an adapter can be a database, a REST controller or a message bus.
 
 <figure>
-    <a href="/assets/img/hexagonal-architecture/3-tier.png"><img src="/assets/img/hexagonal-architecture/3-tier.png"></a>
+    <a href="/assets/img/hexagonal-architecture/hexagonal-adapters.png"><img src="/assets/img/hexagonal-architecture/hexagonal-adapters.png"></a>
 </figure>
 <figcaption style="text-align: center">Hexagonal architecture implementation (Source: <a href="https://www.happycoders.eu/software-craftsmanship/hexagonal-architecture/" target="_blank">HappyCoders</a>)</figcaption>
 
