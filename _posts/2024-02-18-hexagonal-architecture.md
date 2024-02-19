@@ -107,7 +107,7 @@ class MessageRepositoryImpl(
 @Component
 class MessageListenerImpl(
     @Autowired private val saveMessageUseCase: SaveMessageUseCase
-) {
+): MessageListener {
 
     private val logger: Logger = LoggerFactory.getLogger(this.javaClass)
 
