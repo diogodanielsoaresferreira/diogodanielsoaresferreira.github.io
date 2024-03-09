@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why Quarkus Native (probably) does not fit your project"
-date: 2024-02-19
+date: 2024-03-16
 excerpt: "What is Quarkus Native and comparison with JVM application"
 tags: [java, software development, quarkus, native, cloud]
 comments: true
@@ -28,7 +28,7 @@ If you've used Spring Boot, you'll notice the similarities. Quarkus is another J
 
 <figure>
     <a href="/assets/img/quarkus-native/build-time-principle.png"><img src="/assets/img/quarkus-native/build-time-principle.png" style="background-color:black;"></a>
-    <figcaption style="text-align: center">Image in <a href="https://quarkus.io/container-first" target="_blank">Quarkus website</a> showing the differences in the build and runtime steps when using traditional frameworks or Quarkus.</figcaption>
+    <figcaption style="text-align: center">Image from the <a href="https://quarkus.io/container-first" target="_blank">Quarkus website</a> showing the differences in the build and runtime steps when using traditional frameworks or Quarkus.</figcaption>
 </figure>
 
 
@@ -62,6 +62,7 @@ Using native images also has some disadvantages:
 - **Slower compilation** - the compilation time of a native application is also bigger than a JVM-based application because there are more steps to perform during build-time.
 - **Bigger file size** - the native binary consists mostly of two parts: the code of the application compiled to binary and the "image heap" of the preinitialized data structures and other components that are necessary for your application. This enables the startup time to be fast, because there is no need to initialize the heap memory (since it's already done), with the downside that the resulting executable file is usually bigger than the Jar file.
 - **Worst monitoring (debugging and profiling)** - since the executable does not run on a JVM, it can be harder to monitor the application, since native images lack most debugging and profiling capabilites probided by the JVM, such as JMX or other known Java Agents.
+- **Classes not loaded only discovered at runtime** - it has happened to me to use a native image and to spend hours and hours searching for a problem that only happened in the native image to discover that, due to reflection, some classes were not loaded in the native image. The compiler puts only reachable methods into the native executable. As a result, applications may behave unexpectedly or throw runtime errors. Therefore, you need to be careful when dealing with dynamic class loading, reflection, serialization and similar issues when running in native mode.
 
 
 Now that we know more about Native vs Non-native images, let's benchmark them!
@@ -74,38 +75,37 @@ The applications have just one endpoint: `/hello`, which answers `Hello World`.
 
 Let's start by comparing the build time.
 
-- **Spring Boot**: 1.381 s
-- **Quarkus**: 3.555 s
-- **Quarkus Native**: 42.428 s
+<figure>
+    <a href="/assets/img/quarkus-native/Build Time.svg"><img src="/assets/img/quarkus-native/Build Time.svg"></a>
+</figure>
 
 The difference in the build time is clear. Even in a machine with 32 GB and a dummy application with just one endpoint, the build time of Quarkus Native is much bigger than the JVM applications. For bigger applications or more limited resources, the build time of native applications can take several minutes (or more!). The build time of Quarkus is also substantially higher than the Spring Boot application, due to the optimizations that are done by Quarkus in build time.
 
 Let's check the the output size of the application.
-- **Spring Boot**: 19,7 MB
-- **Quarkus**: 176,4 kB
-- **Quarkus Native**: 49,6 MB
+<figure>
+    <a href="/assets/img/quarkus-native/Application Size.svg"><img src="/assets/img/quarkus-native/Application Size.svg"></a>
+</figure>
 
 The Quarkus Native application has the bigger size, as expected and explained before. Also, out-of-the-box Quarkus Jar is impressively small, mainly due to many of the optimizations done at build-time.
 
 We will now compare the startup time of each application:
-- **Spring Boot**: 1.084 s
-- **Quarkus**: 1.507 s
-- **Quarkus Native**: 0.018 s
+<figure>
+    <a href="/assets/img/quarkus-native/Startup Time.svg"><img src="/assets/img/quarkus-native/Startup Time.svg"></a>
+</figure>
 
 This is one of the biggest advantages of native executions: the startup time is blazing fast!
 
 Now that we have our applications running, let's do some requests and measure the average memory usage of each one.
-- **Spring Boot**: 56 MB
-- **Quarkus**: 155 MB
-- **Quarkus Native**: 2.4 MB
+<figure>
+    <a href="/assets/img/quarkus-native/Memory Usage.svg"><img src="/assets/img/quarkus-native/Memory Usage.svg"></a>
+</figure>
 
 This is another big advantage when running native applications: the application resources used by the native executable are very small when compared with JVM-based execution.
 
 Finally, let's compare the response time of the requests. For that, we will use <a href="https://locust.io/" target="_blank">Locust</a> , an open source load testing tool. The tests will run for 5 minutes, and will increase 4 requests per second every second until they reach 1000 requests per second.
-Average response times:
-- **Spring Boot**: 232 ms
-- **Quarkus**: 322 ms
-- **Quarkus Native**: 746 ms
+<figure>
+    <a href="/assets/img/quarkus-native/Average Response Time.svg"><img src="/assets/img/quarkus-native/Average Response Time.svg"></a>
+</figure>
 
 As it can be seen, the Quarkus Native execution response time is slower than the other two JVM executions.
 
