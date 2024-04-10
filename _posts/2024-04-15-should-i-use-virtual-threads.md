@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Should I use Virtual Threads in Java?"
-date: 2024-03-16
+date: 2024-04-12
 excerpt: "Motivation for creating Java Virtual Threads and comparison with Coroutines, Reactive frameworks and the older concurrency model"
 tags: [java, software development, kotlin, backend development]
 comments: true
@@ -66,7 +66,7 @@ How can this model be improved to be able to handle more requests concurrently?
 
 ## Pooled threads
 
-Since the JVM is limited by the number of threads, another possibility is to use a thread sharing system instead of a thread per request. We can create a fixed number of threads in store them in a pool. When needed, a thread is fetched from the pool to start the calculation. After the calculation is done or if it is blocked, the thread is put back into the pool and released.
+Since the JVM is limited by the number of threads, another possibility is to use a thread sharing system instead of a thread per request. We can create a fixed number of threads and store them in a pool. When needed, a thread is fetched from the pool to start the calculation. After the calculation is done or if it is blocked, the thread is put back into the pool and released.
 
 <figure>
     <a href="/assets/img/virtual-threads/thread_pool.gif"><img src="/assets/img/virtual-threads/thread_pool.gif"></a>
@@ -159,13 +159,13 @@ suspend fun square(num: Int): Int {
 }
 ```
 
-In Coroutines, the user must explicitly suspend the code for the coroutine to block. We must divide our program into two parts: one based on non-blocking IO (suspending functions) and one blocking. This can be achieved using libraries based on Netty, but not every task is easiliy dividible in blocking and non-blocking IO. It's a challeging task and it requires work and experience do to correctly. While it can be great for advanced users, we lose again the simplicity we want in our programs.
+In Coroutines, the user must explicitly suspend the code for the coroutine to block. We must divide our program into two parts: one based on non-blocking IO (suspending functions) and one blocking. This can be achieved using libraries based on Netty, but not every task is easiliy divisible in blocking and non-blocking IO. It's a challeging task and it requires work and experience do to correctly. While it can be great for advanced users, we lose again the simplicity we want in our programs.
 
 ---
 
 ## Virtual Threads
 
-It's impossible to implement OS threads more eficiently because they are used in different ways for many applications. However, it's possible to implement an abstraction in the JVM to create as many threads as the user wants, without them being mapped directly to OS threads. That abstraction is called virtual threads.
+It's impossible to implement OS threads more eficiently because they are used in different ways by many applications. However, it's possible to implement an abstraction in the JVM to create as many threads as the user wants, without them being mapped directly to OS threads. That abstraction is called virtual threads.
 
 <figure>
     <a href="/assets/img/virtual-threads/virtual_threads.png"><img src="/assets/img/virtual-threads/virtual_threads.png"></a>
@@ -192,8 +192,8 @@ Additionally, this is the faster implementation when compared with all others pr
 
 In my machine, if I increase the thread number to 1 million, it takes 1.53s to run all threads, which is still faster than all other alternatives to calculate the same method but just 100 000 times. Impressive!
 
-
-Why shouldn't I refactor all my Platform Threads to Virtual Threads then?
+---
+## Why shouldn't I refactor all my Platform Threads to Virtual Threads then?
 
 The advantage of Virtual Threads over Platform Threads is that it's possible to achieve higher concurrency, and with that, higher throughput. This makes virtual threads the ideal scenario for short-lived and short call stacks, for example for making an HTTP call or a database query. However, by itself, they do not make the application run faster. For CPU-intensive scenarios, virtual threads bring little to no improvement over platform threads, because since each virtual thread will be bound to a CPU core, they will perform identically to a platform thread.
 
@@ -207,7 +207,7 @@ There is also a specific scenario where virtual threads can lead to worse perfor
 
 Virtual threads are ideal for short-lived and short call stacks, for example for making an HTTP call or a database query. If that's your scenario, they're probably the right fit. For CPU-bound processes, platform threads continue to be the best option.
 
-It's not expected that virtual threads kill Kotlin coroutines or reactive programming. For more complex projects, Kotlin coroutines offer much more flexibility than any other option, given its structured concurrency approach, channel-based concurrency and actor-based concurrency.
+It's not expected that virtual threads totally replace Kotlin coroutines or reactive programming. For more complex projects, Kotlin coroutines offer much more flexibility than any other option, given its structured concurrency approach, channel-based concurrency and actor-based concurrency.
 
 Reactive frameworks are also best fit for projects that involve handling asynchronous data streams and event-driven architectures, with built-in features like backpressure and data stream processing operations, such as stream composition and transformation.
 
