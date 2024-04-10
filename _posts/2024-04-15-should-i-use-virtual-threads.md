@@ -2,7 +2,7 @@
 layout: post
 title: "Should I use Virtual Threads in Java?"
 date: 2024-04-12
-excerpt: "Motivation for creating Java Virtual Threads and comparison with Coroutines, Reactive frameworks and the older concurrency model"
+excerpt: "Java Virtual Threads and comparison with Coroutines, Reactive frameworks and platform threads"
 tags: [java, software development, kotlin, backend development]
 comments: true
 ---
