@@ -121,7 +121,6 @@ import os
 from client import StockExchange
 from pact import Consumer, Provider
 
-
 PACT_MOCK_HOST = 'localhost'
 PACT_MOCK_PORT = 1234
 PACT_DIR = os.path.dirname(os.path.realpath(__file__))
@@ -227,7 +226,7 @@ After the tests have run, pact generates a contract that states what the client 
 }
 ```
 
-In this case, given a Get request `/ticker/ASML`, the server should answer with `ASML`, and given a Get request `/ticker/Amazon`, the server should answer with `AMZN`.
+In this case, given a get request `/ticker/ASML`, the server should answer with `ASML`, and given a get request `/ticker/Amazon`, the server should answer with `AMZN`.
 
 
 With the contract, we can now run the server and test if the expectations apply.
@@ -275,9 +274,9 @@ As we can see, using only mocks we would not have catched the error.
 
 A common mistake of many developers when making contract testing is to test the contract itself.
 In this case, it would be to test that the server returns "ASML" or "AMZN".
-However, the goal of contract testing is to be able to test the client funcionality and not the contract itself. When using contract testing, be sure to not test the mock and test the funcionality instead.
+However, the goal of contract testing is to be able to test the client funcionality and not the contract itself. When using contract testing, **be sure to not test the mock and test the funcionality instead**.
 
-Pact is not the only implementation available, but it's the most widely used. It's also possible to integrate your OpenAPI schema with pact and have more extensive testing. It's also possible to use a Pact Broker to share contracts across clients and producers, which can be very useful in a large organization.
+Pact is not the only implementation available, but it's the most widely used. It's also possible to integrate your OpenAPI schema with Pact and have more extensive testing. It's also possible to use a Pact Broker to share contracts across clients and producers, which can be very useful in a large organization.
 
 If you want to find out more, check out this <a href="https://martinfowler.com/bliki/ContractTest.html">great article on Contract Testing by Martin Fowler</a>, or check <a href="https://docs.pact.io/faq/convinceme">this Pact page</a> on why to use contract testing.
 
