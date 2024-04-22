@@ -5,7 +5,7 @@ description:        "Diogo Ferreira personal webpage."
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/me.jpg'
-background:         'assets/img/ua2.jpeg'
+background:         'assets/img/background.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             en_US
 #url:                http://127.0.0.1:4000
