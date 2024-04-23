@@ -8,16 +8,20 @@ comments: false
 
 # Who am I?
 
-![me](../assets/img/me.jpg "me"){: style="height:250px"}
+![me](../assets/img/me.jpg "me"){: style="height:200px"}
 
 |Name| **Diogo Daniel Soares Ferreira**|
 |Born| **February 3<sup>rd</sup>, 1997**|
 |Location| **Oostende, Belgium**|
-|Education| **Master in Computer and Telematics Engineering (Aveiro University, 2014-2019)** ![UA_Logo](../assets/img/ua_logo_3.jpg "UA Logo"){: style="display:inline; height:50px"}|
-|Job| **Software Engineer @** ![Timefold_Logo](../assets/img/timefold-logo-horizontal-positive.svg "Timefold Logo"){: style="display:inline; height:30px"}|
+|Education| **Master in Computer and Telematics Engineering (Aveiro University, 2014-2019)** ![UA_Logo](../assets/img/ua_logo_3.jpg "UA Logo"){: style="display:inline; height:40px"}|
+|Job| **Software Engineer @** ![Timefold_Logo](../assets/img/timefold-logo-horizontal-positive.svg "Timefold Logo"){: style="display:inline; height:20px"}|
 
 
 Hi! I'm Diogo Ferreira and I am Software Engineer with +4 years of experience, mainly in event-driven architectures, working with technologies such as Java, Kotlin, Scala, Quarkus, Spring, Flink, Akka, Kafka, Relational (PostgreSQL) and Non-relational Databases (Elasticsearch).
+
+When I'm not coding, I may be reading (check out my Goodreads <a href="https://www.goodreads.com/review/list/142999797?shelf=read">![Timefold_Logo](https://s.gr-assets.com/images/badge/badge1.jpg){: style="display:inline; height:20px"}</a>) or running (check out my Strava <a href="https://www.strava.com/athletes/67910674">![Timefold_Logo](../assets/img/strava.svg){: style="display:inline; height:20px"}</a>).
+
+I am also a big enthusiast of the <a href="https://en.wikipedia.org/wiki/FIRE_movement">FIRE</a> movement and of financial literacy. I am currently 25% FIRE 💸💸💸.
 
 # Experience
 
@@ -42,13 +46,13 @@ Using Java with Quarkus framework and Apache Camel to build and monitor data-dri
 
 ---
 
-|**Student Researcher** ![IT_Logo](../assets/img/it.png "IT Logo"){: style="display:inline; height:50px"}|
+|**Student Researcher** ![IT_Logo](../assets/img/it.png "IT Logo"){: style="display:inline; height:30px"}|
 |**04/19 - 08/19**|
 |Study and development of machine learning models for time series prediction metrics in 5G slices, using Deep Learning techniques. The project is being developed in the Network Architectures and Protocols (NAP) group, having as mentor Prof. Dr. Susana Sargento.|
 
 ---
 
-|**Undergraduate Student Researcher** ![IT_Logo](../assets/img/it.png "IT Logo"){: style="display:inline; height:50px"}|
+|**Undergraduate Student Researcher** ![IT_Logo](../assets/img/it.png "IT Logo"){: style="display:inline; height:30px"}|
 |**10/17 - 09/18**|
 |Study of intelligence mechanisms in the core of a 5G network for monitoring, optimization and security. The project was developed in the Network Architectures and Protocols (NAP) group, having as mentor Prof. Dr. Susana Sargento.
 Continuation of a project made in a third-year course (“Project in Informatics Engineering”), in partnership with Altice Labs, having as main goal to develop a platform with support for management, monitoring, alerts and actuation over the data of a city, in real-time (smart city).|
