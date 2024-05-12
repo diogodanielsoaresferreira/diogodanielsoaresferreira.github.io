@@ -34,7 +34,7 @@ The goal of contract testing is not to replace integration testing. However, it'
 
 Let's look at an example to understand how it works.
 
-Every contract needs at least one consumer and at least one producer. We will implement in Python (using Flask) a simple client-server interaction. The server has an endpoint for requesting the stock ticker of a company. For example, when performing a rest request to /ticker/Amazon, it should answer with "AMZN".
+Every contract needs at least one consumer and one producer. We will implement in Python (using Flask) a simple client-server interaction. The server has an endpoint for requesting the stock ticker of a company. For example, when performing a GET request to `/ticker/Amazon`, it should answer with `AMZN`.
 
 ```python
 from flask import Flask
@@ -52,7 +52,7 @@ def get_company_ticker(company):
     return ticker[company] if company in ticker else ""
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5001)
+    app.run(debug=True, port=5000)
 ```
 
 The client has the goal of discovering in which stock exchange the company is listed. Amazon, for example, is listed in NASDAQ stock exchange.
@@ -87,7 +87,7 @@ How can we test this interaction? We have three options.
     <figcaption style="text-align: center">Source: <a href="https://pactflow.io/how-pact-works/?utm_source=ossdocs&utm_campaign=getting_started#slide-1">PactFlow</a></figcaption>
 </figure>
 
-We start an instance of the server everytime we want to test the client. This scenario would be the closest to the production environment. However, it would also be the most costly option in terms of time and resources. Setting up and tearing down the server for each test can slow down the testing process and make it less efficient, especially as the application grows in complexity. We should fallback on integration tests as little as possible.
+We start an instance of the server everytime we want to test the client. This scenario would be the closest to the production environment. However, it would also be the most costly option in terms of time and resources. Setting up and tearing down the server for each test can slow down the testing process and make it less efficient, especially as the application grows in complexity. We should rely on integration tests as little as possible.
 
 ## Unit testing
 
@@ -95,7 +95,7 @@ We start an instance of the server everytime we want to test the client. This sc
     <a href="/assets/img/contract-testing/unit_tests.gif"><img src="/assets/img/contract-testing/unit_tests.gif"></a><figcaption style="text-align: center">Source: <a href="https://pactflow.io/how-pact-works/?utm_source=ossdocs&utm_campaign=getting_started#slide-1">PactFlow</a></figcaption>
 </figure>
 
-With unit tesing, we can simulate the behaviour of the server without actually starting it. This means that we do not need to start in instance of it everytime we want to run a test in the client. However, it's also more prone to errors, since the expected implementation of the server can actually diverge from the actual implementation. This means that we may actually be setting up our mock with wrong data and having wrong expectations in tests, and we may never find until the error comes up in integration testing or in a live environment.
+With unit tesing, we can simulate the behaviour of the server without actually starting it. This means that we do not need to start in instance of it everytime we want to run a test in the client. However, it's also more error prone, since the expected implementation of the server can actually diverge from the actual implementation. This means that we may actually be setting up our mock with wrong data and having wrong expectations in tests, and we may never find until the error comes up in integration testing or in a live environment.
 
 ## Contract testing
 
@@ -234,7 +234,7 @@ With the contract, we can now run the server and test if the expectations apply.
 ```bash
 $ python server.py
 ...
-$ pact-verifier --provider-base-url=http://localhost:5001 --pact-url=stockexchange-tickerservice.json
+$ pact-verifier --provider-base-url=http://localhost:5000 --pact-url=stockexchange-tickerservice.json
 ...
 2 interactions, 0 failures
 ```
@@ -254,7 +254,7 @@ ticker = {
 ```bash
 $ python server.py
 ...
-$ pact-verifier --provider-base-url=http://localhost:5001 --pact-url=stockexchange-tickerservice.json
+$ pact-verifier --provider-base-url=http://localhost:5000 --pact-url=stockexchange-tickerservice.json
 ...
        Matching keys and values are not shown
 
@@ -273,7 +273,7 @@ As we can see, using only mocks we would not have catched the error.
 
 
 A common mistake of many developers when making contract testing is to test the contract itself.
-In this case, it would be to test that the server returns "ASML" or "AMZN".
+In this case, it would be to test that the server returns `ASML` or `AMZN`.
 However, the goal of contract testing is to be able to test the client funcionality and not the contract itself. When using contract testing, **be sure to not test the mock and test the funcionality instead**.
 
 Pact is not the only implementation available, but it's the most widely used. It's also possible to integrate your OpenAPI schema with Pact and have more extensive testing. It's also possible to use a Pact Broker to share contracts across clients and producers, which can be very useful in a large organization.
