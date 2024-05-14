@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Using contract testing for your microsservices"
-date: 2024-04-15
+date: 2024-04-14
 excerpt: "How to use contract testing to deploy faster, easier and more often"
 tags: [python, testing, software development, backend development]
 comments: true
