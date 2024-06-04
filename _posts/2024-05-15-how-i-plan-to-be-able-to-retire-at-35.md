@@ -8,8 +8,8 @@ comments: true
 ---
 
 <figure>
-    <a href="/assets/img/contract-testing/train.jpg"><img src="/assets/img/contract-testing/train.jpg"></a>
-    <figcaption style="text-align: center">Photo by <a href="https://www.flickr.com/photos/10157133@N08/" target="_blank"> Norbert Clausen</a> on Flickr</figcaption>
+    <a href="/assets/img/retirement-post/retirement.jpg"><img src="/assets/img/retirement-post/retirement.jpg" style="max-width: 66%"></a>
+    <figcaption style="text-align: center">Photo by <a href="https://www.flickr.com/photos/68751915@N05/6869770873/" target="_blank">401(K) 2012</a> on Flickr</figcaption>
 </figure>
 
 
@@ -26,7 +26,7 @@ In this post, I'll explain how I plan to be able to retire at 35, and how to hav
 
 <figure>
     <a href="/assets/img/retirement-post/relaxed.webp"><img src="/assets/img/retirement-post/relaxed.webp"></a>
-    <figcaption style="text-align: center">Source: <a href="ttps://giphy.com/gifs/vulture-3o6vY59s91hWsxASYMk" target="_blank">Giphy</a></figcaption>
+    <figcaption style="text-align: center">Source: <a href="https://giphy.com/gifs/vulture-3o6vY59s91hWsxASYM" target="_blank">Giphy</a></figcaption>
 </figure>
 
 With the increase in the retirement age and a growing elderly population in most developed countries, the pension system of most developed countries is under big pressure. With the planned decrease of the real value of pensions in most countries, it seems certain that if someone wants to keep their quality of life in retirement, they must save money by their means. Besides, a retirement plan also allows you to plan an early retirement, or at least to reach financial independence.
@@ -50,7 +50,10 @@ After defining your goal, you must define the steps to do it.
 ----
 ## Where to invest
 
--- Imagem de pessoa relaxada enquanto investe? algo do género, que mostre uma pessoa relaxada a investir
+<figure>
+    <a href="/assets/img/retirement-post/relax.webp"><img src="/assets/img/retirement-post/relax.webp"></a>
+    <figcaption style="text-align: center">Source: <a href="https://giphy.com/gifs/showtime-ray-donovan-jon-voight-mickey-xTiTniXrZvZBrDIZri" target="_blank">Giphy</a></figcaption>
+</figure>
 
 You want your investment to have some characteristics:
 - It must have an equal to or higher return than the market. You don't want to invest most of your money in a savings account or on most of the capital-guaranteed products.
@@ -69,7 +72,10 @@ Some of the most popular ETFs are ETFs that track the S&P500 index (eg. SPY, VUA
 ----
 ## Focus on the savings rate
 
--- Imagem de alguem a recusar alguma coisa cara
+<figure>
+    <a href="/assets/img/retirement-post/maths.webp"><img src="/assets/img/retirement-post/maths.webp"></a>
+    <figcaption style="text-align: center">Source: <a href="https://giphy.com/gifs/rodneydangerfield-thinking-math-rodney-gEvab1ilmJjA82FaSV" target="_blank">Giphy</a></figcaption>
+</figure>
 
 After knowing where to invest, it's time to optimize your life for your investments. The savings rate is the percentage of money you can save every month from your income. It's probably the most important number to focus on. You want it to be as high as possible so that you can invest as much as possible from your income.
 
@@ -89,7 +95,10 @@ To increase the savings rate, there are two things you can do:
 ----
 ## Changing your mindset
 
--- Imagem de alguem feliz com pouca coisa
+<figure>
+    <a href="/assets/img/retirement-post/minimalism.webp"><img src="/assets/img/retirement-post/minimalism.webp"></a>
+    <figcaption style="text-align: center">Source: <a href="https://giphy.com/gifs/theminimalists-minimalism-simplicity-the-minimalists-rFDMmUYI9P3GCVtalR" target="_blank">Giphy</a></figcaption>
+</figure>
 
 When reducing expenses, we are confronted with some crossroads and difficult decisions. Should we sell our car and use public transportation? Should we reduce our vacation spending and focus on cheaper alternatives? Should we move to a smaller house to save on the rent? Those are very personal decisions and there is no one-size-fits-all solution. What you need to understand is that you define your priorities. You can calculate how much you will save by selling your car or moving to a smaller house, and then calculate how much time that decision will save you in reaching financial independence.
 
@@ -101,9 +110,12 @@ As you can see, these three mindsets complement each other and make it easier to
 
 
 ----
-## There are still many misconceptions about the idea of retiring early.
+## There are still many misconceptions about the idea of retiring early
 
--- Imagem de boneco com dúvidas
+<figure>
+    <a href="/assets/img/retirement-post/questions.webp"><img src="/assets/img/retirement-post/questions.webp"></a>
+    <figcaption style="text-align: center">Source: <a href="https://giphy.com/gifs/netflix-spike-lee-shes-gotta-have-it-sghi-ZaJtnTY8tFZz0PvmW9" target="_blank">Giphy</a></figcaption>
+</figure>
 
 - **"I don't invest because I don't have time to always be looking for the stock prices"**
 
@@ -147,4 +159,4 @@ I don't know yet if I will want to retire early. However, I would like to have t
 
 Thanks for reading!
 
-DISCLAIMER: I am not a financial advisor. The content of this post is for educational purposes only and merely cites my personal opinions. To make the best financial decision that suits your own needs, you must conduct your own research. Know that all investments involve some form of risk and there is no guarantee that you will be successful in making, saving, or investing money; nor is there any guarantee that you won't experience any loss when investing.
+**DISCLAIMER: I am not a financial advisor. The content of this post is for educational purposes only and merely cites my personal opinions. To make the best financial decision that suits your own needs, you must conduct your own research. Know that all investments involve some form of risk and there is no guarantee that you will be successful in making, saving, or investing money; nor is there any guarantee that you won't experience any loss when investing.**
