@@ -3,7 +3,7 @@ layout: post
 title: "How I plan to (be able to) retire at 35"
 date: 2024-05-15
 excerpt: "How to financially plan for your retirement"
-tags: []
+tags: [investing, financial independence, fire, early retirement]
 comments: true
 ---
 
@@ -15,9 +15,9 @@ comments: true
 
 Hi there! Some years ago, I was listening to an old interview with Agostinho da Silva, a Portuguese philosopher who died 30 years ago, and he said something that has been in my mind ever since: "The Man is not born to work, the Man is born to create".
 
-This goes contrary to the current belief in developed countries, which says that the life of a Man must be dedicated to his work for most years of his life.
+This goes contrary to the current belief in developed countries, which says that the life of a Man must be dedicated to his work for most of his years.
 
-Who wouldn't like to spend more time on himself and his hobbies instead of working? However, in the current days, with the age of retirement increasing and the pension system more and more fragile, it seems that one is doomed to spend his life working to maintain his quality of life.
+Who wouldn't like to spend more time on himself and his hobbies instead of working? However, in the current days, with the age of retirement increasing and the pension system more and more fragile, it seems that one is doomed to spend his time working to maintain his quality of life.
 
 In this post, I'll explain how I plan to be able to retire at 35, and how to have a plan for your financial life.
 
@@ -26,14 +26,14 @@ In this post, I'll explain how I plan to be able to retire at 35, and how to hav
 
 <figure>
     <a href="/assets/img/retirement-post/relaxed.webp"><img src="/assets/img/retirement-post/relaxed.webp"></a>
-    <figcaption style="text-align: center">Source: <a href="https://giphy.com/gifs/vulture-3o6vY59s91hWsxASYM" target="_blank">Giphy</a></figcaption>
+    <figcaption style="text-align: center">Source: <a href="https://giphy.com/gifs/relax-florida-hammock-7Je6xJ0kPxUORZSvv8" target="_blank">Giphy</a></figcaption>
 </figure>
 
-With the increase in the retirement age and a growing elderly population in most developed countries, the pension system of most developed countries is under big pressure. With the planned decrease of the real value of pensions in most countries, it seems certain that if someone wants to keep their quality of life in retirement, they must save money by their means. Besides, a retirement plan also allows you to plan an early retirement, or at least to reach financial independence.
+With the increase in the retirement age and a growing elderly population in most developed countries, the pension system of most developed countries is under big pressure. With the planned decrease of the real value of pensions in most countries, it seems certain that if someone wants to keep their quality of life after retirement, they must save money by their means. Besides, a retirement plan also allows you to plan an early retirement, or at least to reach financial independence.
 
-An early retirement means you can retire before retirement age and live off the return of your investments, doing minimal work. It means to focus on what you want, without being tied to a job. It means to do whatever you want without money holding you back. Do you want to spend a year traveling? You can do it. Do you want to spend a year doing a course that you would like to learn? Do you want to learn an instrument? Or spend more time with your family? You can have time to do all that once you are financially independent.
+An early retirement means you can retire before retirement age and live off the return of your investments, doing minimal work. It means to focus on what you want, without being tied to a job. It means to do whatever you want without money holding you back. Do you want to spend a year traveling? You can do it. Do you want to spend a year doing a course? Do you want to learn an instrument? Or spend more time with your family? You can have time to do all that once you are financially independent.
 
-If you like your job and want to keep working, that's also no problem. Just because you reached financial independence, it does not mean that you must stop working.
+If you like your job and want to keep working, that's also not a problem. Just because you've reached financial independence, it does not mean that you must stop working.
 
 ----
 ## Setting your goal
@@ -43,9 +43,9 @@ If you like your job and want to keep working, that's also no problem. Just beca
     <figcaption style="text-align: center">Photo by <a href="https://flic.kr/p/f71k" target="_blank">Martin Cathrae</a> on Flickr</figcaption>
 </figure>
 
-To reach financial independence, the first step is to define your goal. It is different for everyone, and everyone has a different number. But a rule of thumb is that you can retire when you have invested 25x the value of your annual expenses. This value assumes that your investments return on average 4% by year, a rather conservative return rate. For example, if you spend 10.000€ each year, you can retire when you have invested 250.000€ and live off the investment returns.
+To reach financial independence, the first step is to define your goal. It is different for everyone, and everyone has a different number. But a rule of thumb is that you can retire when you have invested 25x the value of your annual expenses. This value assumes that your investments return on average 4% by year, a rather conservative return rate. For example, if you spend 10.000€ each year, you can retire when you have invested 250.000€ and live off of the investment returns.
 
-After defining your goal, you must define the steps to do it.
+After defining your goal, you must define the steps achieve it.
 
 ----
 ## Where to invest
@@ -85,7 +85,7 @@ $$ x = 50 * (1 - savings rate)^{1.5} $$
 
 where x is the number of years that will take you to reach your financial independence number (assuming it's 4% of your annual expenses).
 
-If you have a savings rate of 40%, it will take 23 years to reach financial independence. However, if your savings rate is 60%, it will take just 12 years. It's important to invest as much as early as possible because, as investment interest compounds, it can make a big difference in a few years.
+If you have a savings rate of 40%, it will take 23 years to reach financial independence. However, if your savings rate is 60%, it will take just 12 years. It's important to invest as much and as early as possible because, as investment interest compounds, it can make a big difference in a few years.
 
 To increase the savings rate, there are two things you can do:
 - **Increase income** - this does not come as a surprise, but increasing income is probably the best way to increase the savings rate. Unlike reducing expenses, there is no upper limit to how much we can increase our income. Reevaluate your job situation and the market. Can you increase your income by switching jobs? Can you ask for a raise from your boss?
