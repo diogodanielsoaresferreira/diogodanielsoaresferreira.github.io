@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How I plan to (be able to) retire at 35"
-date: 2024-06-15
+date: 2024-06-14
 excerpt: "How to financially plan for your retirement"
 tags: [investing, financial independence, fire, early retirement]
 comments: true
