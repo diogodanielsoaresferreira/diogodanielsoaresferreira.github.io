@@ -45,7 +45,7 @@ If you like your job and want to keep working, that's also not a problem. Just b
 
 To reach financial independence, the first step is to define your goal. It is different for everyone, and everyone has a different number. But a rule of thumb is that you can retire when you have invested 25x the value of your annual expenses. This value assumes that your investments return on average 4% by year, a rather conservative return rate. For example, if you spend 10.000€ each year, you can retire when you have invested 250.000€ and live off of the investment returns.
 
-After defining your goal, you must define the steps achieve it.
+After defining your goal, you must define the steps to achieve it.
 
 ----
 ## Where to invest
@@ -89,7 +89,7 @@ If you have a savings rate of 40%, it will take 23 years to reach financial inde
 
 To increase the savings rate, there are two things you can do:
 - **Increase income** - this does not come as a surprise, but increasing income is probably the best way to increase the savings rate. Unlike reducing expenses, there is no upper limit to how much we can increase our income. Reevaluate your job situation and the market. Can you increase your income by switching jobs? Can you ask for a raise from your boss?
-- **Reduce expenses** - reducing expenses it's not about depriving yourself and living a depressing life, but instead focusing on what is important and reducing the superfluous waste. You want to make conscious choices to live efficiently, knowing that you are investing for a better future. This often includes renegotiation of energy/water/gas contracts, canceling unnecessary subscriptions, and avoiding unnecessary spending.
+- **Reduce expenses** - reducing expenses is not about depriving yourself and living a depressing life, but instead focusing on what is important and reducing the superfluous waste. You want to make conscious choices to live efficiently, knowing that you are investing for a better future. This often includes renegotiation of energy/water/gas contracts, canceling unnecessary subscriptions, and avoiding unnecessary spending.
 
 
 ----
@@ -131,7 +131,7 @@ Reevaluate your investments every 3 or 6 months, but remind yourself that the bi
 If you follow a simple investment plan, like I suggested above, the knowledge you need to start investing is minimal. There is no need to know how to analyze a balance sheet or an annual report. Many people overrate the need to learn everything about investing, but like many other things, investing is mostly learned on the go. If you wait to learn everything before investing, chances are you will never do it. If you feel you lack some knowledge, you can spend some time learning, but do it within a defined time-frame, 3 months or so. When that time-frame has passed, you know it's time to start investing. Time is a crucial part of investing, and studies show that you should start as early as possible, so don't waste time (and money) and start as soon as possible.
 
 
-- **"I am going to loose all my money if I start investing"**
+- **"I am going to lose all my money if I start investing"**
 
 A lot of people are afraid of losing all their money if they start investing. That's understandable, given the stories they heard from their parents and friends. However, investing does not need to be so risky. In reality, when following a diversified strategy as suggested above and focusing on the long-term, history suggests that it's uncommon to lose money at all when the years go by. Even more, the probability of higher returns only increases with time. So time is your best ally.
 
@@ -142,7 +142,7 @@ Moreover, most passive ETFs are capitalization-weighted, which means that the we
 
 This is a real problem for many of the people that retire early. From an early age, we were trained to live to work. This mindset is deeply in our minds, so much so that we connect our identity with our work - what we do is what we are, it's our purpose. When you retire, you lose your purpose, which can have a very negative impact on your identity and your mental health. Many early retirees feel anxious or depressed months after their retirement date. Some studies even relate an early retirement to a decline in health.
 
-While stopping to work can be a big change for someone who from their early years always had their days occupied, there are some techniques that you can try to get used to this new chapter of life.
+While stopping work can be a big change for someone who from their early years always had their days occupied, there are some techniques that you can try to get used to this new chapter of life.
 - Before you fully commit to early retirement, try to imagine how your life will be. How will you fill your days? What will be your day-to-day routine?
 - Have some hobbies that you like to spend time doing. Maybe you like to practice sports, gardening, or volunteering. This can be a great way to keep yourself active and happy with your life while having a healthier lifestyle.
 - Create a bucket list of things to do. What did you always want to do that you never have the time? Learn a new language? Learn a new musical instrument? Travel the world? Now it's the time to do it!
