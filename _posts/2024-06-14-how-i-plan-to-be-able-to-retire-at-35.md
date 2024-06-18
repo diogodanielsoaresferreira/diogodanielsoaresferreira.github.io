@@ -67,7 +67,7 @@ In some studies, it's also shown that most simple investment strategies yield be
 
 A passive strategy usually has better results because of the lower fees. Besides, most funds, even though they are managed by highly skilled analysts, do not beat the market. If they do not beat the market, the odds are that you will also not beat the market. So instead of choosing individual stocks to beat the market, FIRE long-term investors focus on investing in the market, which is what ETFs track, at low cost.
 
-Some of the most popular ETFs are ETFs that track the S&P500 index (eg. SPY, VUAA, SXR8), ETFs that track the world economy (eg. VWCE, IUSQ), ETFs that track developed markets (eg. IWDA, SWRD, VGVF), or ETFs that track developed markets (EMIM, IEMA, VFEA).
+Some of the most popular ETFs are ETFs that track the S&P500 index (eg. SPY, VUAA, SXR8), ETFs that track the world economy (eg. VWCE, IUSQ), ETFs that track developed markets (eg. IWDA, SWRD, VGVF), or ETFs that track emerging markets (EMIM, IEMA, VFEA).
 
 ----
 ## Focus on the savings rate
