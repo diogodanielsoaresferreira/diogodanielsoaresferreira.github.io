@@ -45,6 +45,8 @@ If you like your job and want to keep working, that's also not a problem. Just b
 
 To reach financial independence, the first step is to define your goal. It is different for everyone, and everyone has a different number. But a rule of thumb is that you can retire when you have invested 25x the value of your annual expenses. This value assumes that your investments return on average 4% by year, a rather conservative return rate. For example, if you spend 10.000€ each year, you can retire when you have invested 250.000€ and live off of the investment returns.
 
+The 4% return is based on some assumptions. For example, you'll live approximately 30 years past your retirement date, you have a portfolio of 50% stock and 50% bonds, and you are not including taxes or investment fees. For a more in-depth discussion about it, check out this [Vanguard analysis](https://corporate.vanguard.com/content/dam/corp/research/pdf/Fuel-for-the-F.I.R.E.-Updating-the-4-rule-for-early-retirees-US-ISGFIRE_062021_Online.pdf) or this [updated study](https://thepoorswiss.com/updated-trinity-study/). We will stick to 4% for the rest of the discussion, however it may vary slightly depending on your investment profile.
+
 After defining your goal, you must define the steps to achieve it.
 
 ----
