@@ -253,3 +253,18 @@ kbd {
     font-weight: 300;
     margin-bottom: 10px;
 }
+
+#mc-embedded-subscribe {
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for size */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+#mc-embedded-subscribe:hover {
+    background-color: #218838; /* Darker green on hover */
+}
