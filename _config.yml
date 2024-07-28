@@ -27,7 +27,7 @@ sass:
   style:            compressed
 
 # Comments
-disqus_shortname:   diogo-ferreira-webpage
+#disqus_shortname:   diogo-ferreira-webpage
 
 # Social
 # if you don't have any of social below, comment the line.
