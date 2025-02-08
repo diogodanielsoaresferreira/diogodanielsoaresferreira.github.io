@@ -16,7 +16,7 @@ Hi there! Full-duplex communication is becoming essential modern application. Th
 One of the most popular technologies for enabling real-time communication is WebSockets. In this post, I'll walk you through **how I used WebSockets to implement a Pong game**. You can play the game and check out the code in [this repository](https://github.com/diogodanielsoaresferreira/pong).
 
 ---------------------
-# Why Websockets?
+## Why Websockets?
 
 Before WebSockets became a standard in 2011, real-time communication was typically handled by **polling**, where the client repeatedly sent HTTP requests to check for new data. However, this approach causes some problems:
 - **High server load** - If 1000 clients poll the server every second, the server has to handle at least 1000 requests per second. As the number of client grows, the server can quickly become overwhelmed, processing a large number of redundant requests even when there is no new data.
@@ -35,7 +35,7 @@ There are other options to implement low-latency communication between a client 
 While each of these approaches has its place, WebSockets strike the right balance between efficiency, simplicity, and broad compatibility for most real-time applications.
 
 ---------------------
-# How do Websockets work?
+## How do Websockets work?
 
 WebSockets are designed to work over the **existing HTTP infrastructure**, ensuring compatibility with modern web architectures without requiring changes to network or client configurations.
 
@@ -52,7 +52,7 @@ It also reduces the protocol overhead required by relying on HTTP handshake for 
 
 
 ---------------------
-# Implement an online Pong game
+## Implement an online Pong game
 
 My goal was to implement a 2-player online pong game using Python and the websockets library.
 
@@ -62,38 +62,38 @@ The game follows a client-server model, where both players communicate with a ce
     <a href="/assets/img/pong/pong_interaction_diagram.png"><img src="/assets/img/pong/pong_interaction_diagram.png"></a>
 </figure>
 
-## Creating a game
+### Creating a game
 
 - A player sends a `create` message to the server, with a chosen game name.
 - The server responds with a `created` message. indicating that the game was created and it's waiting for an opponent.
 
-## Joining a game
+### Joining a game
 
 - The second player sends a `join` message to the server with the name of the game that they want to join.
 - The server answers with a `joined` message.
 
-## Game loop
+### Game loop
 
 - We now have both players connected, so the game is on! The server will broadcast for both players the state of the game: the ball position and paddle positions.
 - Each player can send `move` messages to control their paddles: `up`, `down`, or `none`.
 
-## Preventing Cheating
+### Preventing Cheating
 
 Each player can only send `up` or `down` messages, and cannot directly update their position (`move to position x`). This is important to avoid players from cheating. Only the server should manage the game state and players should only send actions to the server, not state messages.
 
 ---------------------
-# What about Network Latency?
+## What about Network Latency?
 
 In this guide, I implemented a simple version of pong without focusing on network lag. However, in more complex, time-sensitive games, such as first-person shooters (FPS) or real-time strategy (RTS) games, **high latency can degrade the game experience**, or even make the game unplayable. How to solve this problem?
 
 There are two common techniques that can be used to compensate for network latency.
 
-## Client-side Prediction
+### Client-side Prediction
 In this case, the **client predicts the result of the player's action** without waiting for the server's response. In most cases, the server should confirm the prediction and the player won't notice any difference. However, if the server sends a different state of the player, the client must correct the player's position, potentially causing a visual hitch.
 
 In the pong game, this would mean to move the paddle instantly when a player presses a key, without waiting for the server's confirmation. If the server later corrects the position, the paddle might appear to "jump" slightly.
 
-## Lag Compensation
+### Lag Compensation
 Imagine you're playing a first-person shooter and you clearly hit the enemy's head. But somehow you still miss. How is that possible? Maybe the action reached the server too late and the enemy was not there anymore.
 
 In this case, lag compensation should fix the problem. **The client should not only send the action, but also the state of the world**. In that state of the world, the enemy would be shot. The server can then reconstruct the game state at that moment and process the action accordingly.
