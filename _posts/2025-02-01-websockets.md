@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Using WebSockets to make an online multiplayer pong game"
+title: "Using WebSockets to make an online pong game"
 date: 2025-02-01
-excerpt: "How to use websockets to make an online multiplayer game"
+excerpt: "How to use websockets to make an online game"
 tags: [programming, websockets,python, backend development, software development]
 comments: true
 ---
@@ -16,6 +16,7 @@ Hi there! Full-duplex communication is becoming essential modern application. Th
 One of the most popular technologies for enabling real-time communication is WebSockets. In this post, I'll walk you through **how I used WebSockets to implement a Pong game**. You can play the game and check out the code in [this repository](https://github.com/diogodanielsoaresferreira/pong).
 
 ---------------------
+# Why Websockets?
 
 Before WebSockets became a standard in 2011, real-time communication was typically handled by **polling**, where the client repeatedly sent HTTP requests to check for new data. However, this approach causes some problems:
 - **High server load** - If 1000 clients poll the server every second, the server has to handle at least 1000 requests per second. As the number of client grows, the server can quickly become overwhelmed, processing a large number of redundant requests even when there is no new data.
@@ -34,62 +35,84 @@ There are other options to implement low-latency communication between a client 
 While each of these approaches has its place, WebSockets strike the right balance between efficiency, simplicity, and broad compatibility for most real-time applications.
 
 ---------------------
+# How do Websockets work?
 
-WebSockets were designed to work over the HTTP protocol, which means that it will work on current web architectures without the need for changes in network or client configurations.
+WebSockets are designed to work over the **existing HTTP infrastructure**, ensuring compatibility with modern web architectures without requiring changes to network or client configurations.
 
-The websocket protocol is simple: it starts with a handshake that is initiated by the client and acknowledged by the server. From there, a bidirectional channel is setup, and the client or the server can send messages in the channel. In the same way, any part in the exchange can close the channel.
+<figure>
+    <a href="/assets/img/pong/Websocket_connection.png"><img src="/assets/img/pong/Websocket_connection.png"></a>
+    <figcaption style="text-align: center">By Brivadeneira - Own work, CC BY-SA 4.0, <a href="https://commons.wikimedia.org/w/index.php?curid=82810859">Wikipedia</a></figcaption>
+</figure>
 
-This solves the problem of overloading the server because there is no polling. Because the server can send data to the channel without being prompted, there is no need for the client to constantly check if the server has new messages.
+The protocol is straightforward: the client initiates a handshake over HTTP, which is acknowledged by the server. From there, a persistent bidirectional channel is setup, and the client or the server can send messages at any time without waiting for a request. Either party can close the channel when needed.
 
-It also eliminates much of the overhead required in other implementations by relying on HTTP.
+This solves the server overload problem because **there is no polling**. The client no longer needs to repeatedly request updates, as the server can push data in real time.
+
+It also reduces the protocol overhead required by relying on HTTP handshake for the connection establishment while maintaining an efficient and lightweight communication channel.
 
 
 ---------------------
+# Implement an online Pong game
 
-My goal was to implement a 2-player network pong game. To do that, I used Python and the library websockets.
+My goal was to implement a 2-player online pong game using Python and the websockets library.
 
-In my pong game implementation, there is a client and a server, which exchange messages using WebSockets to communicate the actions and the state of the game.
+The game follows a client-server model, where both players communicate with a central server via WebSockets to exchange game actions and state updates.
 
-When a client wants to start a game, it sends a "create" message to the server, which has the name of the game to be created. The server should hopefully answer with a "created" message, which means that the game was created and it's waiting for another player to join.
+<figure>
+    <a href="/assets/img/pong/pong_interaction_diagram.png"><img src="/assets/img/pong/pong_interaction_diagram.png"></a>
+</figure>
 
-When the second player joins, it sends a "join" message to the server with the name of the game that it wants to join. If all goes well, the server should answer with a "joined" message.
+## Creating a game
 
-We now have both players in the connection, so the game is on! The server will broadcast for both players the state of the game: where the ball is and where each paddle is. Each player can also send "move" messages, that make their paddle move in one direction: up, down, or none.
+- A player sends a `create` message to the server, with a chosen game name.
+- The server responds with a `created` message. indicating that the game was created and it's waiting for an opponent.
 
-Notice that each player can only send "move up" or "move down" messages, and cannot say "move to position x". This is important to avoid clients from cheating. Only the server should manage the game state and clients should only send actions to the server, not state messages.
+## Joining a game
+
+- The second player sends a `join` message to the server with the name of the game that they want to join.
+- The server answers with a `joined` message.
+
+## Game loop
+
+- We now have both players connected, so the game is on! The server will broadcast for both players the state of the game: the ball position and paddle positions.
+- Each player can send `move` messages to control their paddles: `up`, `down`, or `none`.
+
+## Preventing Cheating
+
+Each player can only send `up` or `down` messages, and cannot directly update their position (`move to position x`). This is important to avoid players from cheating. Only the server should manage the game state and players should only send actions to the server, not state messages.
 
 ---------------------
+# What about Netowrk Latency?
 
+In this guide, I implemented a simple version of pong without focusing on network lag. However, in more complex, time-sensitive games, such as first-person shooters (FPS) or real-time strategy (RTS) games, **high latency can degrade the game experience**, or even make the game unplayable. How to solve this problem?
 
-I used the python library PyGame to implement the UI. It's important to clearly separate the UI from the game engine, since the game engine will be used only by the server, and the client will be only rendering the game.
+There are two common techniques that can be used to compensate for network latency.
 
-The game engine is pretty simple. There are two paddles that can only move up or down, and a ball that moves at a constant velocity, but speeds up everytime it hits on a paddle. When a ball hits a paddle, it shifts its direction depending on where it hit the paddle. If the ball moves past the paddle, it's a point for the other player.
+## Client-side Prediction
+In this case, the **client predicts the result of the player's action** without waiting for the server's response. In most cases, the server should confirm the prediction and the player won't notice any difference. However, if the server sends a different state of the player, the client must correct the player's position, potentially causing a visual hitch.
 
-Try the game and see how it feels. I also added the option for playing against an AI, or two players in the same keyboard. The game is the same without the need for the messages between the client and the server.
+In the pong game, this would mean to move the paddle instantly when a player presses a key, without waiting for the server's confirmation. If the server later corrects the position, the paddle might appear to "jump" slightly.
 
----------------------
+## Lag Compensation
+Imagine you're playing a first-person shooter and you clearly hit the enemy's head. But somehow you still miss. How is that possible? Maybe the action reached the server too late and the enemy was not there anymore.
 
+In this case, lag compensation should fix the problem. **The client should not only send the action, but also the state of the world**. In that state of the world, the enemy would be shot. The server can then reconstruct the game state at that moment and process the action accordingly.
 
-In this guide, I implemented a simple version of pong without caring too much about the lag. The truth is that with more complex games that require more precision and where timing is essential (for example Online FPS), a high lag can really degrade the game experience, or even make the game completely unusable. How to solve this?
+While this makes shooting feel fairer for the attacker, it can feel frustrating for the target. For example, a player who already moved behind cover might still get hit because, in the past game state, they were still exposed.
 
-There are two techniques that can be used to combat network latency.
+<figure>
+    <a href="/assets/img/pong/Lag_compensation.jpg"><img src="/assets/img/pong/Lag_compensation.jpg"></a>
+    <figcaption style="text-align: center">Historic client enemy position (red) versus server enemy position (blue), <a href="https://developer.valvesoftware.com/w/index.php?curid=1969">Valve Developer Community</a></figcaption>
+</figure>
 
-- Client-side Prediction
-In this case, the client tries to predict the result of the action of the player without waiting for the server message. In most cases, the server should confirm the prediction and the user should not even see the difference. However, if the server sends a different state of the player, it can cause a hitch in the player position. In the pong game, this would mean to change move the paddle up or down without waiting for the server to confirm the move.
-
-- Lag Compensation
-Imagine that you are playing a first-person shooter and you are sure that you hit the target's head. But somehow you still miss. How is that possible? Maybe the action reached the server too late and the target was not there anymore.
-In this case, lag compensation should fix the problem. The idea here is for the client to not only send the action, but also to send the state of the world as is known by the client. In that state of the world, the target should be shot. The server can then reconstruct the world at that instant and update the world state.
-The tradeoff is that the target, which can be another player, can find it weird being shot, specially if meanwhile is moved to be behind a wall - the truth is that it should have been killed a few moments earlier.
-
-IMAGE https://developer.valvesoftware.com/wiki/Lag_Compensation
-
-If you want to go more in-depth, there is a great guide in Valve developer community (https://developer.valvesoftware.com/wiki/Latency_Compensating_Methods_in_Client/Server_In-game_Protocol_Design_and_Optimization).
+If you want to learn more about this topic, there is a great guide about it in [Valve developer community](https://developer.valvesoftware.com/wiki/Latency_Compensating_Methods_in_Client/Server_In-game_Protocol_Design_and_Optimization).
 
 For such a simple game such techniques would bring little benefit, so they were not applied.
 
 ---------------------
 
-Now that you’ve seen how WebSockets enable real-time communication, why not experience it yourself? Feel free to clone the repository, play the game, and improve it with your own ideas.
+Now that you’ve seen how WebSockets enable real-time communication, why not experience it yourself? [**Give the game a try and see how it feels!**](https://github.com/diogodanielsoaresferreira/pong) You can play against an AI or even with two players on the same keyboard, a version that runs entirely locally without the need for WebSocket communication.
+
+Feel free to [clone the repository](https://github.com/diogodanielsoaresferreira/pong), play the game, and improve it with your own ideas.
 
 Thanks for reading!
