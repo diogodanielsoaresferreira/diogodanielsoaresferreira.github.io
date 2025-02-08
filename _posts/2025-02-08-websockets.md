@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Using WebSockets to make an online pong game"
-date: 2025-02-01
+date: 2025-02-08
 excerpt: "How to use websockets to make an online game"
 tags: [programming, websockets,python, backend development, software development]
 comments: true
