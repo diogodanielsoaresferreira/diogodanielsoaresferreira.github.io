@@ -82,7 +82,7 @@ The game follows a client-server model, where both players communicate with a ce
 Each player can only send `up` or `down` messages, and cannot directly update their position (`move to position x`). This is important to avoid players from cheating. Only the server should manage the game state and players should only send actions to the server, not state messages.
 
 ---------------------
-# What about Netowrk Latency?
+# What about Network Latency?
 
 In this guide, I implemented a simple version of pong without focusing on network lag. However, in more complex, time-sensitive games, such as first-person shooters (FPS) or real-time strategy (RTS) games, **high latency can degrade the game experience**, or even make the game unplayable. How to solve this problem?
 
