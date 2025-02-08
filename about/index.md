@@ -17,11 +17,11 @@ comments: false
 |Job| **Software Engineer @** ![Timefold_Logo](../assets/img/timefold-logo-horizontal-positive.svg "Timefold Logo"){: style="display:inline; height:20px"}|
 
 
-Hi! I'm Diogo Ferreira and I am Software Engineer with +4 years of experience, mainly in event-driven architectures, working with technologies such as Java, Kotlin, Scala, Quarkus, Spring, Flink, Akka, Kafka, Relational (PostgreSQL) and Non-relational Databases (Elasticsearch).
+Hi! I'm Diogo Ferreira and I am Software Engineer with +5 years of experience, mainly in event-driven architectures, working with technologies such as Java, Kotlin, Scala, Quarkus, Spring, Kubernetes, Flink, Akka, Kafka, Relational (PostgreSQL) and Non-relational Databases (Elasticsearch).
 
 When I'm not coding, I may be reading (check out my Goodreads <a href="https://www.goodreads.com/review/list/142999797?shelf=read">![Timefold_Logo](https://s.gr-assets.com/images/badge/badge1.jpg){: style="display:inline; height:20px"}</a>) or running (check out my Strava <a href="https://www.strava.com/athletes/67910674">![Timefold_Logo](../assets/img/strava.svg){: style="display:inline; height:20px"}</a>).
 
-I am also a big enthusiast of the <a href="https://en.wikipedia.org/wiki/FIRE_movement">FIRE</a> movement and of financial literacy. I am currently 25% FIRE 💸💸💸.
+I am also a big enthusiast of the <a href="https://en.wikipedia.org/wiki/FIRE_movement">FIRE</a> movement and of financial literacy.
 
 # Experience
 
