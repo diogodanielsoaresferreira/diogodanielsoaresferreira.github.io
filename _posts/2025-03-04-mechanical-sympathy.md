@@ -3,7 +3,7 @@ layout: post
 title: "Beyond AI Code Generation: The Art of Mechanical Sympathy"
 date: 2025-03-04
 excerpt: "Should you still bother learning programming languages?"
-tags: [programming, c, backend development, software development, mechanical sympathy]
+tags: [programming, c, backend development, software development, ai]
 comments: true
 ---
 
