@@ -15,11 +15,18 @@ layout: compress
     <header class="header" role="banner">
         <div class="wrapper animated fadeIn">
             <div class="content">
-                <div class="post-title">
-                    <h1>{{ page.title }}</h1>
-                    <a class="btn zoombtn" href="{{site.url}}">
-                        <i class="fa fa-home"></i>
-                    </a>
+                <div class="post-title" style="display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h1>{{ page.title }}</h1>
+                    </div>
+                    <div style="display: flex; gap: 10px;">
+                        <a class="btn zoombtn" href="{{site.url}}" title="Home">
+                            <i class="fa fa-home"></i>
+                        </a>
+                        <a href="/feed.xml" class="btn zoombtn" title="Atom Feed" style="padding: 8px 10px;">
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="post-list">
                     {% for post in site.posts %} 
