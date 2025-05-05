@@ -6,15 +6,35 @@ date: 2023-12-25
 comments: false
 ---
 
-# Who am I?
 
-![me](../assets/img/me.jpg "me"){: style="height:200px"}
+<img src="../assets/img/me.jpg" alt="me" style="height:200px; border-radius: 100px; margin-bottom: 1em;" />
 
-|Name| **Diogo Daniel Soares Ferreira**|
-|Born| **February 3<sup>rd</sup>, 1997**|
-|Location| **Oostende, Belgium**|
-|Education| **Master in Computer and Telematics Engineering (Aveiro University, 2014-2019)** ![UA_Logo](../assets/img/ua_logo_3.jpg "UA Logo"){: style="display:inline; height:40px"}|
-|Job| **Software Engineer @** ![Timefold_Logo](../assets/img/timefold-logo-horizontal-positive.svg "Timefold Logo"){: style="display:inline; height:20px"}|
+<div class="profile-card">
+  <div class="profile-line">
+    <strong>Diogo Daniel Soares Ferreira</strong>
+  </div>
+
+  <div class="profile-line">
+    🇧🇪 <strong>Living in Oostende, Belgium</strong>
+    🇵🇹 <strong>From Aveiro, Portugal</strong>
+  </div>
+
+  <div class="profile-line">
+    🎓 <strong>Master in Computer and Telematics Engineering</strong>
+  </div>
+
+  <div class="profile-line">
+    <strong>University of Aveiro (2014–2019)</strong>
+    <img src="../assets/img/ua_logo_3.jpg" alt="UA Logo" class="profile-logo" />
+  </div>
+
+  <div class="profile-line">
+    💼 <strong>Software Engineer @</strong>
+    <img src="../assets/img/timefold-logo-horizontal-positive.svg" alt="Timefold Logo" class="profile-logo" style="height: 1.4em;" />
+  </div>
+</div>
+
+
 
 
 Hi! I'm Diogo Ferreira and I am Software Engineer with +5 years of experience, mainly in event-driven architectures, working with technologies such as Java, Kotlin, Scala, Quarkus, Spring, Kubernetes, Flink, Akka, Kafka, Relational (PostgreSQL) and Non-relational Databases (Elasticsearch).

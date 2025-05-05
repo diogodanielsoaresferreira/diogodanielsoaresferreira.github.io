@@ -230,3 +230,30 @@ header .entry-meta {
         background-position: center center;
     }
 }
+
+.profile-card {
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+  
+  .profile-line {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    margin: 0.2em 0;
+  }
+  
+  .profile-logo {
+    height: 1.2em;
+    margin-left: initial;
+  }
+  
+  
