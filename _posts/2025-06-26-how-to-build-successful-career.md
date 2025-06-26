@@ -45,21 +45,21 @@ If you already have a long-term goal in mind, the answer becomes clearer.
 
 ## Surrond yourself with people smarter than you.
 Your most valuable asset in your career is your knowledge. Keep learning consistently, and over time you’ll surpass those with more years of experience who stopped learning along the way.
-One of the best ways to learn is by work with people who are better than you.
+One of the best ways to learn is by working with people who are better than you.
 
 > “You are the average of the five people you spend the most time with.” - Jim Rohn
 
 We naturally absorb the behavior, work ethic, and mindset of those around us. That’s why your colleagues are one of the biggest influences on your career. Work with people you admire and respect. It should be a major factor in your decision to join (or leave) a company.
 
 ## Learn from your failures.
-Let's face it: everyone faces failure. Some of these failures are small, and others can undo years of effort. But failuer doesn't define a career, it shapes it.
+Everyone faces failure. Some of these failures are small, and others can undo years of effort. But failure doesn't define a career, it shapes it.
 
 Each failure is an opportunity to learn something valuable. As painful as it may be, it contributes to your growth, if you’re willing to reflect and adapt.
 
 Recognize your failures, fail fast and learn from them.
 
 ## Balance is key.
-Your career is not a sprint, it's a marathon. Life has many facets: career, health, relationships, finances, mental well-being. You're only as strong as our weakest area.
+Your career is not a sprint, it's a marathon. Life has many facets: career, health, relationships, finances, mental well-being. You're only as strong as your weakest area.
 If you focus too much on your career and neglect the rest, you risk burnout and dissatisfaction.
 
 Have an holistic approach. A sustainable, fulfilling career is built on consistency, not constant overwork.
