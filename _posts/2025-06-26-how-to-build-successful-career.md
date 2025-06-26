@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to Build a Meaningful and Successful Career"
-date: 2025-06-25
+date: 2025-06-26
 excerpt: "6 tips for building a meaningful and successful career"
 tags: [career, software engineering, tips]
 comments: true
@@ -72,6 +72,7 @@ Have an holistic approach. A sustainable, fulfilling career is built on consiste
 
 ## Enjoy the ride!
 What you’ll truly remember years from now aren’t the titles you held or the size of your paycheck, but the good moments with your teammates. The late-night product launches, the mentors who believed in you, the times you struggled and grew, the laughs during coffe breaks.
+
 We often get so focused on getting ahead that we forget to look around. Celebrate the small wins. Reflect on how far you’ve come. Be present in your day-to-day. Make time to connect with others. These moments are what truly give meaning to your career.
 
 
