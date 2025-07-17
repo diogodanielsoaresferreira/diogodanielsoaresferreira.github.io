@@ -11,7 +11,7 @@ comments: true
     <a href="/assets/img/mcp/connected.jpg"><img src="/assets/img/mcp/connected.jpg"></a><figcaption style="text-align: center">Photo by <a href="https://unsplash.com/@choys_?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Conny Schneider</a> on <a href="https://unsplash.com/photos/a-blue-background-with-lines-and-dots-xuTJZ7uD7PI?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></figcaption>
 </figure>
 
-Hi there! There are very exciting times ahead with the industry-wide adoption of **MCP (Model Context Protocol)**. But what is MCP? And from where did it come from?
+Hi there! These are exciting times with the industry-wide adoption of **MCP (Model Context Protocol)**. But what is MCP? And from where did it come from?
 
 ## The limits of LLMs without tools
 
