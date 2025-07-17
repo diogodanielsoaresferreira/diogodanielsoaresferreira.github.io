@@ -140,7 +140,7 @@ Looks like the tools are correctly configured! Let's prompt Claude to buy a car 
 
 There it is, our MCP server is providing the tools for a car dealership chatbot to aid customers in buying cars.
 
-There are already many useful **MCP servers available**, ranging from weather services and file system tools to integrations with YouTube or Spotify. You can explore curated lists of these servers [here](https://mcpservers.org) or [here](https://mcp.pipedream.com/)).
+There are already many useful **MCP servers available**, ranging from weather services and file system tools to integrations with YouTube or Spotify. You can explore curated lists of these servers [here](https://mcpservers.org) or [here](https://mcp.pipedream.com/).
 
 ## The Dangers of MCP Access
 
