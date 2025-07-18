@@ -27,11 +27,11 @@ Things improved with the introduction of **RAG (Retrieval Augmented Generation)*
 
 ## Introducing MCP
 
+To solve this problem, Anthropic introduced the MCP as an open stardard in November 2024. **MCP allows models to access tools and resources** in an unified and consistent way. Developers can now expose their tools without worrying about which model will use them, while AI agents can discover available tools and choose the most appropriate one for their task.
+
 <figure>
     <a href="/assets/img/mcp/after_mcp.png"><img src="/assets/img/mcp/after_mcp.png"></a><figcaption style="text-align: center">Image by <a href="https://www.philschmid.de/mcp-introduction">philschmid</a></figcaption>
 </figure>
-
-To solve this problem, Anthropic introduced the MCP as an open stardard in November 2024. **MCP allows models to access tools and resources** in an unified and consistent way. Developers can also expose their tools without worrying about which model will use them and AI agents can discover available tools and choose the most appropriate one for their task.
 
 MCP follows a client-server architecture. MCP Hosts are typically AI applications (Claude Desktop, Cursor, etc.) that have a client that connects to an MCP server. The server provides the AI applications context and capabilities, such as external tools (for example, to access an API or a database).
 
