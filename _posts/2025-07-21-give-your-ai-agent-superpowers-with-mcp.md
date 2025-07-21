@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Give your AI agent superpowers with MCP"
-date: 2025-07-18
+date: 2025-07-21
 excerpt: "Building an MCP Server with Java and Quarkus: Hands-On With Model Context Protocol"
 tags: [software engineering, software development, backend development, programming, ai, java, quarkus, mcp]
 comments: true
