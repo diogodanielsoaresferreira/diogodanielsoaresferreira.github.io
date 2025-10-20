@@ -11,7 +11,7 @@ comments: true
     <a href="/assets/img/decisions/decisions.jpg"><img src="/assets/img/decisions/decisions.jpg"></a><figcaption style="text-align: center">Photo by <a href="https://unsplash.com/@io_exception">IO_Exception</a> on <a href="https://unsplash.com/photos/brown-wooden-cross-on-green-grass-field-under-white-clouds-during-daytime-L57L1mlKoM8">Unsplash</a></figcaption>
 </figure>
 
-Hi there! AI is shrinking the amount of code many of us write. The real leverage of a software engineer, more than knowing a specific programming language or framework, comes from **making the right decisions**. Not only in software engineering, but also in life: as information is more readily available than ever before, the barrier to making good decisions isn't about having access to data, but about knowing how to process it. However, every day we make dozens of calls with bias-prone brains. **How can we make better decisions, not only as software engineers, but in our lives**?
+Hi there! AI is shrinking the amount of code many of us write. The real leverage of a software engineer, more than knowing a specific programming language or framework, comes from **making the right decisions**. Not only in software engineering, but also in life: as information is more readily available than ever before, the barrier to making good decisions isn't about having access to data, but about knowing how to process it. However, every day we make dozens of calls with bias-prone brains. **How can we make better decisions, not only as software engineers, but in our lives?**
 
 In this blog post, I give 10 tips that work for me when I have to make a difficult decision.
 
@@ -21,18 +21,18 @@ The first response to a situation is usually discomfort masquerading as urgency,
 
 ### 2. The role of inertia
 
-Many times after a few days of thinking through the problem, you may realize that **the best decision is actually not to do anything**. The problem may well be created just in your own head, amplified by overthinking or influenced by someone else's opinion.
+Many times after a few days of thinking through the problem, you may realize that **the best decision is actually not to do anything.** The problem may as well be created only in your own head, amplified by overthinking or influenced by someone else's opinion.
 However, doing nothing is still a decision with consequences. Inertia can be wise, but it can also be a trap if it keeps you from moving forward when movement is needed.
-As the Zen of Python beautifully puts it: *"Now is better than never. Although never is often better than *right* now"*.
+As the *Zen of Python* beautifully puts it: *"Now is better than never. Although never is often better than* **right now**".
 Patience is powerful, but passivity isn’t.
 
 ### 3. Ask what changed
 
-If you feel compelled to undo a past choice, remind yourself that the previous decision was made with different knowledge, risk tolerance, and priorities. Revisiting those decisions without judgment lets you spot when the context has shifted. Re-deciding is a sign of learning, not failure. Naming what changed helps you **avoid the sunk cost fallacy**.
+If you feel compelled to undo a past choice, remind yourself that the previous decision was made with different knowledge, risk tolerance and priorities. Revisiting those decisions without judgment lets you spot when the context has shifted. Re-deciding is a sign of learning, not failure. Naming what changed helps you **avoid the sunk cost fallacy**.
 
 ### 4. Focus on the long-term - The regret minimization framework
 
-Oftentimes, we create a story in our heads to justify the decision we want. However, it's also important to frame it from all angles, so that we understand all possible consequences. We will often find conflicting stories that make sense. How to make a decision then? Jeff Bezos was also confronted with a similar situation and created the **Regret Minimization Framework**, which is quite simple: Imagine yourself at 80 years old. Will you regret not taking (or taking) the decision?
+Oftentimes, we create a story in our heads to justify the decision we want. However, it's also important to frame it from all angles, so that we understand all possible consequences. We will often find conflicting stories that make sense. How to make a decision then? Jeff Bezos was also confronted with a similar situation and created the **Regret Minimization Framework**, which is quite simple: Imagine yourself at 80 years old. Will you regret taking (or not taking) the decision?
 
 ### 5. Listen to advice but make your own decision
 
@@ -48,9 +48,8 @@ Even perfectly reasoned decisions **cannot control every variable**. Systems sur
 
 ### 8. Trust your intuition
 
-Analysis and logic can take you far, but they can’t always reach the final inch between indecision and action. When you’ve gathered the facts, listened to advice, and reflected deeply, **trust your gut**. Intuition is not magic; it’s **pattern recognition built from experience**. The subconscious often connects dots that the conscious mind can’t see.
-
-If everything still feels uncertain, pay attention to how your body reacts when imagining each outcome. Calmness often signals alignment; tension may point to something unresolved. Once you’ve done your homework, a leap of faith is not recklessness, it’s courage informed by preparation.
+When you have everything mapped out, you know the pros and cons of every option, listened to advice, reflected deeply and still can't make a final decision, what to do? **Trust your gut.** Intuition is not magic, it’s **learning from experience**.
+If everything still feels uncertain, pay attention to how your body reacts when imagining each outcome. Maybe that can give you the final hint to take your decision.
 
 ### 9. Document your decision
 
