@@ -17,16 +17,23 @@ In this blog post, I give 10 tips that work for me when I have to make a difficu
 
 ### 1. Start by slowing down
 
-The first response to a situation is usually discomfort and a sense of urgency. Avoiding to take a rushed decision and sleeping on it, or taking days or even months (if the decision is important enough) to really think it through, it's usually a good idea. **The right decision often surfaces naturally** when the brain is not worried about it.
+The first response to a situation is usually discomfort and a sense of urgency. Avoiding to take a rushed decision and sleeping on it, or taking days or even months (if the decision is important enough) to really think it through, it's usually a good idea. Have you ever been stuck with a problem for a while and the solution only came when you were in the shower, or walking the dog, or right before you fall asleep? You're not alone.
 
-### 2. The role of inertia
+This effect is called [Incubation](https://en.wikipedia.org/wiki/Incubation_(psychology)), and it's widely acknowledged that taking a break from a problem can actually help solve it. **The right decision often surfaces naturally** when the brain is not worried about it.
 
-Many times after a few days of thinking through the problem, you may realize that **the best decision is actually not to do anything.** The problem may have been created only in your own head, amplified by overthinking or influenced by someone else's opinion.
-However, doing nothing is still a decision with consequences. Inertia can be wise, but it can also be a trap if it keeps you from moving forward when movement is needed.
-As the *Zen of Python* beautifully puts it: *"Now is better than never. Although never is often better than* **right now**".
-Patience is powerful, but passivity isn’t.
+### 2. Identify what is important
 
-### 3. Ask what changed
+Has it ever happened to you that after a few days of thinking through the problem, you realize that **the best decision is actually not to do anything?** By the Pareto Principle, only 20% of your code will drive 80% of your value. This means that identifying those 20% is a valuable task of a software engineer.
+
+This is relared to the principle ["You aren't gonna need it" (YAGNI)](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it). Knowing the system architecture well enough to avoid building what won't deliver value is a sign of deep understanding.
+
+As the *Zen of Python* beautifully puts it: **"Now is better than never. Although never is often better than right now**". Patience is powerful, but passivity isn’t. The art lies in knowing when doing nothing is a wise choice.
+
+### 3. Avoid the sunk cost fallacy by asking what changed
+
+Imagine you’re maintaining a large codebase with an old authentication module. It’s poorly designed, hard to test and every new feature requires hacks to keep it running. The team has already spent months refactoring it, but it’s still fragile. Then someone proposes: “Why don’t we just replace it with an off-the-shelf identity provider like Auth0 or Keycloak?”
+
+What do you do? The rational move is to ask: “What’s the best decision going forward, **regardless of what we’ve already spent?**” If you think “But we’ve already spent so much time improving it!”, you're falling into the [sunk cost fallacy](https://en.wikipedia.org/wiki/Sunk_cost_fallacy) effect.
 
 If you feel compelled to undo a past choice, remind yourself that the previous decision was made with different knowledge, risk tolerance and priorities. Revisiting those decisions without judgment lets you spot when the context has shifted. Re-deciding is a sign of learning, not failure. Naming what changed helps you **avoid the sunk cost fallacy**.
 
@@ -40,7 +47,7 @@ There are always people that have faced similar problems, or that have more expe
 
 ### 6. Make the decision reversible
 
-Any decision can be wrong, and it's important to be aware that any decision done today may be the wrong decision with tomorrow's knowledge. When that happens, it's important to pivot - to reverse the decision. However, we can only do that if the decision is reversible. Thinking in terms of reversibility frees yourself from perfectionism. Jeff Bezos's concept of one-way door versus two-way door decisions is a useful way to frame it: **if a decision is reversible (two-way door), it can be taken much more easily than the one-way door decision**.
+Any decision can be wrong, and it's important to be aware that any decision done today may be the wrong decision with tomorrow's knowledge. When that happens, it's important to reverse the decision. However, we can only do that if the decision is reversible. Thinking in terms of reversibility frees yourself from perfectionism. Jeff Bezos's concept of one-way door versus two-way door decisions is a useful way to frame it: **if a decision is reversible (two-way door), it can be taken much more easily than the one-way door decision**.
 
 ### 7. You can't control everything
 
