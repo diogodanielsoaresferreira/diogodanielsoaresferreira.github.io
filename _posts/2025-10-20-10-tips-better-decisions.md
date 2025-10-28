@@ -49,7 +49,7 @@ As engineers, we’re often tempted by quick fixes or shortcuts that make life e
 
 There are always people that have faced similar problems, or that have more experience than you. You can leverage them: their input is valuable. **Don't be afraid to ask for help**. Engineers often want to do things alone, in a DIY way, and tend to think they are smarter than everyone else. However, it's by listening to others that we can understand the consequences of our decisions.
 
-Don't forget that **the decision can only be made by yourself**. It's okay to make a decision that goes against others’ advice, as long as you are aware of the risks and the consequences. You are the one who will have to deal with the consequences.
+Don't forget that **the decision can only be made by yourself**. It's okay to make a decision that goes against others’ advice as long as you are aware of the risks and the consequences, because you're the one who will have to deal with them.
 
 ### 6. Make the decision reversible
 
