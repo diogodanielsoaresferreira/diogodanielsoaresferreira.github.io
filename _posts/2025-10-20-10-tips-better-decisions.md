@@ -17,43 +17,67 @@ In this blog post, I give 10 tips that work for me when I have to make a difficu
 
 ### 1. Start by slowing down
 
-The first response to a situation is usually discomfort masquerading as urgency, but a rushed decision is usually just a reaction to discomfort. Sleeping on it, or taking days or even months (if the decision is important enough) to really think it through, it's usually a good idea. **The right decision often surfaces naturally** when the brain is not worried about the urgency of it.
+The first response to a situation is usually discomfort and a sense of urgency. Avoiding to take a rushed decision and sleeping on it, or taking days or even months (if the decision is important enough) to really think it through, it's usually a good idea. Have you ever been stuck with a problem for a while and the solution only came when you were in the shower, or walking the dog, or right before you fall asleep? You're not alone.
 
-### 2. The role of inertia
+This effect is called [Incubation](https://en.wikipedia.org/wiki/Incubation_(psychology)), and it's widely acknowledged that taking a break from a problem can actually help solve it. **The right decision often surfaces naturally** when the brain is not worried about it.
 
-Many times after a few days of thinking through the problem, you may realize that **the best decision is actually not to do anything.** The problem may as well be created only in your own head, amplified by overthinking or influenced by someone else's opinion.
-However, doing nothing is still a decision with consequences. Inertia can be wise, but it can also be a trap if it keeps you from moving forward when movement is needed.
-As the *Zen of Python* beautifully puts it: *"Now is better than never. Although never is often better than* **right now**".
-Patience is powerful, but passivity isn’t.
+### 2. Is doing nothing an option?
 
-### 3. Ask what changed
+Has it ever happened to you that after a few days of thinking through the problem, you realize that **the best decision is actually not to do anything?**
+
+This is related with the principle ["You aren't gonna need it" (YAGNI)](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it). Knowing the system architecture well enough to avoid building what won't deliver value, instead of building just because you can, is a sign of deep understanding.
+
+As the *Zen of Python* beautifully puts it: **"Now is better than never. Although never is often better than right now**". Patience is powerful, but passivity isn’t. The art lies in knowing when doing nothing is a wise choice.
+
+### 3. Avoid the sunk cost fallacy by asking what changed
+
+Imagine you’re maintaining a large codebase with an old authentication module. It’s poorly designed, hard to test and every new feature requires hacks to keep it running. The team has already spent months refactoring it, but it’s still fragile. Then someone proposes: “Why don’t we just replace it with an off-the-shelf identity provider like Auth0 or Keycloak?”
+
+What do you do? The rational move is to ask: “What’s the best decision going forward, **regardless of what we’ve already did?**” If you think “But we’ve already spent so much time improving it!”, you're falling into the [sunk cost fallacy](https://en.wikipedia.org/wiki/Sunk_cost_fallacy) effect.
 
 If you feel compelled to undo a past choice, remind yourself that the previous decision was made with different knowledge, risk tolerance and priorities. Revisiting those decisions without judgment lets you spot when the context has shifted. Re-deciding is a sign of learning, not failure. Naming what changed helps you **avoid the sunk cost fallacy**.
 
 ### 4. Focus on the long-term - The regret minimization framework
 
-Oftentimes, we create a story in our heads to justify the decision we want. However, it's also important to frame it from all angles, so that we understand all possible consequences. We will often find conflicting stories that make sense. How to make a decision then? Jeff Bezos was also confronted with a similar situation and created the **Regret Minimization Framework**, which is quite simple: Imagine yourself at 80 years old. Will you regret taking (or not taking) the decision?
+Oftentimes, we create a story in our heads to justify the decision we want. However, it's also important to frame it from different angles, so that we understand all possible consequences. We will often find conflicting stories that make sense. How to make a decision then?
+
+Jeff Bezos was also confronted with a similar situation and created the **Regret Minimization Framework**, which is quite simple: Imagine yourself at 80 years old. Will you regret taking (or not taking) the decision?
+
+As engineers, we’re often tempted by quick fixes or shortcuts that make life easier today but harder tomorrow. Thinking long-term means valuing maintainability over immediacy. Cutting corners might feel efficient now, but it often becomes technical debt later.
 
 ### 5. Listen to advice but make your own decision
 
-There are always people that have faced similar problems, or that have more experience than you. You can leverage them: their input is valuable. **Don't be afraid to ask for help**. Engineers often want to do things alone, in a DIY way, and tend to think they are smarter than everyone else. However, it's by listening to others that we can understand the consequences of our decisions. Don't forget that **the decision can only be made by yourself**. It's okay to make a decision that goes against others’ advice, as long as you are aware of the risks and the consequences. You are the one who will have to deal with the consequences.
+There are always people that have faced similar problems, or that have more experience than you. You can leverage them: their input is valuable. **Don't be afraid to ask for help**. Engineers often want to do things alone, in a DIY way, and tend to think they are smarter than everyone else. However, it's by listening to others that we can understand the consequences of our decisions.
+
+Don't forget that **the decision can only be made by yourself**. It's okay to make a decision that goes against others’ advice, as long as you are aware of the risks and the consequences. You are the one who will have to deal with the consequences.
 
 ### 6. Make the decision reversible
 
-Any decision can be wrong, and it's important to be aware that any decision done today may be the wrong decision with tomorrow's knowledge. When that happens, it's important to pivot - to reverse the decision. However, we can only do that if the decision is reversible. Thinking in terms of reversibility frees yourself from perfectionism. Jeff Bezos's concept of one-way door versus versus two-way door decisions is a useful way to frame it: **if a decision is reversible (two-way door), it can be taken much more easily than a one-way door decision**.
+Any decision can be wrong, and it's important to be aware that any decision done today may be the wrong decision with tomorrow's knowledge. When that happens, it's important to reverse the decision. However, we can only do that if the decision is reversible.
+
+Jeff Bezos's concept of one-way door versus two-way door decisions is a useful way to frame it: **if a decision is reversible (two-way door), it can be taken much more easily than a one-way door decision**. Thus, it's important to convert one-way decisions into two-way decisions whenever possible.
+
+For example, when choosing your tech stack, try to avoid vendor lock-in by **using open standards or open-source technologies**. Similarly, when redesigning a system, start with an isolated service or feature flag instead of rewriting the entire codebase at once. In that way, you can revert or adjust if something breaks. Thinking in terms of reversibility frees yourself from perfectionism.
 
 ### 7. You can't control everything
 
-Even perfectly reasoned decisions **cannot control every variable**. Systems surprise us. Markets shift. Governments and policy change. Companies go bankrupt. Doing the homework reduces risk, but it does not eliminate it. That mindset will keep you curious instead of paralyzed.
+Even with perfectly reasoned decisions, you **can't control every variable**. Systems surprise us. Markets shift. Governments and policies change. Companies go bankrupt. Doing the homework reduces risk, but it does not eliminate it.
+
+For instance, you might choose a cloud provider that later changes its pricing model, breaking your cost assumptions. You might build on a stable open-source library, only to see it become unmaintained. You might optimize a product for one market segment, and then watch that market vanish because of a regulation change. None of these are signs of poor decision-making; they’re reminders that uncertainty is baked into reality. Good engineering isn’t about predicting the future — it’s about **staying flexible when the future surprises you**. That mindset will keep you curious instead of paralyzed.
 
 ### 8. Trust your intuition
 
 When you have everything mapped out, you know the pros and cons of every option, listened to advice, reflected deeply and still can't make a final decision, what to do? **Trust your gut.** Intuition is not magic, it’s **learning from experience**.
-If everything still feels uncertain, pay attention to how your body reacts when imagining each outcome. Maybe that can give you the final hint to take your decision.
+
+If everything still feels uncertain, pay attention to how your body reacts when imagining each outcome. Maybe that can give you the final hint to take your decision. The best decisions come when analysis and intuition work together: reason gives structure, intuition gives direction. When both align, you usually know it’s time to act.
 
 ### 9. Document your decision
 
-Once you've made your decision, **write down why you did it**: the context, assumptions, risks, options and final decision (for example, in an Architectural Decision Record format). Whenever you have doubts about why you have made that decision, you can **revisit the document that explains the context and the reasoning behind your choice**. If any of the assumptions or context change, it may be time to review your decision. If not, why would you?
+Who has never wanted to roll back a previous decision, but forgot why they made it in the first place?
+
+In a software engineering team, this is even more common with new elements. A new person coming on to a project may be surprised by some past decision. Without understanding the rationale or consequences, this person can only blindly accept the decision or blindly change it.
+
+To avoid this situation, once you've made your decision, **write down why you did it**: the context, assumptions, risks, options and final decision (for example, in an [Architectural Decision Record](https://learn.microsoft.com/en-us/azure/well-architected/architect-role/architecture-decision-record) format). Whenever you have doubts about why you have made that decision, you can **revisit the document that explains the context and the reasoning behind your choice**. If any of the assumptions or context change, it may be time to review it.
 
 ### 10. Move forward with kindness and treat outcomes as learning material
 
