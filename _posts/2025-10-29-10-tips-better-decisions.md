@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "10 Tips for Making Better Decisions"
-date: 2025-10-20
+date: 2025-10-29
 excerpt: "How can we make better decisions, not only as software engineers, but in our lives?"
 tags: [career, software engineering, tips]
 comments: true
