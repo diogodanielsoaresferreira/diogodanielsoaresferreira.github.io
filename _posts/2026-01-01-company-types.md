@@ -2,7 +2,7 @@
 layout: post
 title: "Choosing Your Next Job: Startup vs Large Company, B2B vs B2C"
 date: 2026-01-01
-excerpt: "B2B vs B2C changes how you build, ship, and live with your decisions, often more than company size itself."
+excerpt: "B2B vs B2C changes how you build, ship, and live with your decisions, often more than company size itself"
 tags: [career, software engineering, tips, software development]
 comments: true
 ---
