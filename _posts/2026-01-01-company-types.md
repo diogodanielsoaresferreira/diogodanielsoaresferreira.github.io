@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Choosing Your Next Job: Startup vs Large Company, B2B vs B2C"
-date: 2025-12-01
+date: 2026-01-01
 excerpt: "B2B vs B2C changes how you build, ship, and live with your decisions, often more than company size itself."
 tags: [career, software engineering, tips, software development]
 comments: true
@@ -42,6 +42,7 @@ In large companies, usually with slower development, there are more reviews, che
 In startups, learning depends much on the other members of the team. **Mentorship** can be limited because everyone is focused on building, and it may be the case that most or all team members are not very experienced. Regardless, you will learn a lot by doing, because usually you will have do to a bit of everything. You may need to be a **jack-of-all-trades**, since there is a lot to do and not many employees who can help you. You may also have the opportunity to build something from scratch, which is rarer in large companies.
 In large companies, there is usually more guidance from other senior colleagues, as well as better onboarding and mentorship, but you will probably not work across many different parts of the overall architecture, as there most likely are teams focused on different services. You may turn into a specialist in a specific area (depth instead of breadth).
 
+---
 
 # B2B vs B2C
 
@@ -75,7 +76,7 @@ At B2C companies, it's much easier to replace or create new features, as those a
 
 
 ------
-Having worked across some of these environments, it's a few things stand out:
+Having worked across some of these environments, a few things stand out:
 
 
 When working at a B2C Startup:
