@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Choosing Your Next Job: Startup vs Large Company, B2B vs B2C"
-date: 2026-01-01
+date: 2026-01-03
 excerpt: "B2B vs B2C changes how you build, ship, and live with your decisions, often more than company size itself"
 tags: [career, software engineering, tips, software development]
 comments: true
@@ -9,9 +9,9 @@ comments: true
 
 <figure><a href="/assets/img/company-types/b2b_b2c.svg"><img src="/assets/img/company-types/b2b_b2c.svg"></a></figure>
 
-Hi there! A lot has already been written about the differences between working at a startup and working at a large company. However, there is another important difference that is often disregarded by candidates, but that is nonetheless very important. The differences between working at a **Business-to-Business (B2B)** or a **Business-to-Customer (B2C)** company can be as important for your decision on your next workplace as the size of it.
+Hi there! A lot has already been written about the differences between working at a startup and working at a large company. However, there is another important difference that is often disregarded by candidates, but that is nonetheless very important: **Business-to-Business (B2B)** vs **Business-to-Customer (B2C)**. The business model of a company can be as important for your decision of your next workplace as the size of it.
 
-Each company is obviously different from each other, and there are exception to all rules. However, depending on its size and the type of clients they have, it's possible to identify some patterns.
+Each company is obviously different from each other, and there are exception to all rules. However, depending on its size and the type of clients they have, it's possible to identify some patterns. Having worked across some of these environments, a few things stand out.
 
 -----
 
@@ -53,8 +53,8 @@ But what are the differences between working at a B2B company and working at a B
 
 ## Business Stability
 
-B2B companies usually have a more predictable revenue stream, so they are considered **more stable**. Once customers sign, there is much less existential panic. The sales cycles here can be long but very important. The **iteration cycles are usually shorter** when compared with B2C companies, and the changes are often coordinated. **Backward compatibility** is important.
-When you work directly for the clients, there is a greater probability that the traffic or revenue can drop suddenly, which requires more adaptability and sudden changes of plans. This makes it so that **the pace is faster** than most B2B companies, with faster iteration loops. Launch weeks can be specially **intense and stressful**, because there can be a high number of users stress-testing the product.
+B2B companies usually have a more predictable revenue stream, so they are considered **more stable**. Once customers sign, there is much less existential panic. The sales cycles here can be long but very important. The **iteration cycles are usually longer** when compared with B2C companies, and the changes are often coordinated. **Backward compatibility** is important.
+When you work directly for the clients (B2C), there is a greater probability that the traffic or revenue can drop suddenly, which requires more adaptability and sudden changes of plans. This makes it so that **the pace is faster** than most B2B companies, with faster iteration loops. Launch weeks can be specially **intense and stressful**, because there can be a high number of users stress-testing the product.
 
 
 ## Customer Proximity
@@ -74,41 +74,6 @@ At B2C companies, on the other hand, **performance testing** is critical. Since 
 At B2B companies, features tend to live for years. It can be **hard and risky to remove or change** them, because they are used by large enterprise users that also don't want those features to change. There is a strong expectation of **long-term support and maintenance**. This can create technical and product debt over time.
 At B2C companies, it's much easier to replace or create new features, as those are much more short-lived. **Feature deprecation** is expected, and there is **less long-term commitment** to individual product decisions. The responsibility is much more about current performance than about historical decisions. This also means that, when working for a B2C company, it's more likely that you will end up creating new features instead of just maintaining old ones.
 
-
-------
-Having worked across some of these environments, a few things stand out:
-
-
-When working at a B2C Startup:
-- Very volatile environment, with high ambiguity
-- The pace is very high with frequent iterations
-- There can be high stress during launch and growth fases
-- Experimentation is constant
-- High risk, high reward - success or failure is amplified, and pivoting or throwing work away can be a necessity
-
-
-When working at a B2B Startup:
-- Work very close to real customer problems
-- High autonomy and visibility
-- Features can live for years, but mistakes can compound over time
-- Strong pressure to ship, but also not to break trust
-- Broad learning from product, engineers and customers
-- Can be intense, but often meaningful work
-
-
-When working at a B2C Large Company:
-- Usually large user bases
-- Understanding scalability requirements is important
-- Very good observability and metrics
-- Performance tests are essential
-- Pressure comes from visibility and scale, not from survival.
-
-
-When working at a B2B Large Company:
-- Very stable product
-- Slower pace, more coordination
-- Mature processed and engineering standards
-- Backwards compatibility is very important
-- Testing is very important
+There’s no universally better environment to work in, what matters is which one makes sense for you.
 
 Thanks for reading!
