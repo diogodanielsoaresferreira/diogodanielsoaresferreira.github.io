@@ -33,7 +33,7 @@ It can be tempting to build everything ourselves (tip: don't reinvent the wheel!
 ## Document (almost) everything
 Document, document, document. **Every team decision should be documented in a shared space**. This includes code decisions (why is the code structured as is?), architectural decisions (why are we using service x instead of y), or product decisions (why is the API done like this?). Documenting everything is essential because as team elements come and go, context can be kept within the team and avoid being lost. Even if the team elements do not change, the reason of many decisions will be forgotten in a few months if not written down. There are many ways to document decisions - Git repository, Confluence, Shared folder in Google Drice, Slack - any that fits your workflow is good enough.
 
-## Careful about cloud vendors lock-in
+## Be careful about cloud vendors lock-in
 It's easy to start using a cloud vendor (eg. AWS, Google Cloud or Azure) and to use their services. However, **it's not wise to lock yourself in to a specific vendor**. If their price goes up, or their service becomes degraded, or by any other reason, you may want to switch from cloud provider. Trying to keep an independent approach towards cloud vendors is smart. If you need a specific service from them, you can always build an adaptor for your application that uses that service and that can be switched later by any other vendor, if needed.
 
 ## Understand the economics of your application
