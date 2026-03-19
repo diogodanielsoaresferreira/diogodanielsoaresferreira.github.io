@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Can Your LinkedIn Inbox Predict the Job Market?"
-date: 2026-03-11
+date: 2026-03-19
 excerpt: "Using the number of messages in LinkedIn as a proxy for the software engineering market"
 tags: [career, software engineering, market, jobs]
 comments: true
@@ -34,8 +34,10 @@ The similarities are pretty remarkable. The trends in LinkedIn messages look ver
     <a href="/assets/img/linkedin-messages/comparison.png"><img src="/assets/img/linkedin-messages/comparison.png"></a><figcaption style="text-align: center"></figcaption>
 </figure>
 
-The peak in the number of LinkedIn messages appears a few months after the peak in job postings (maybe the hiring peak in Portugal occurred slightly later?). The most recent peak is also more noticeable in the LinkedIn messages than in the market data, but the upward trend is still visible for most markets.
+The peak in the number of LinkedIn messages appears a few months after the peak in job postings, which makes sense, since companies first open roles, and only later start actively reaching out. The most recent peak is also more noticeable in the LinkedIn messages than in the market data, but the upward trend is still visible for most markets.
 
-At least in my case, the LinkedIn inbox can be a surprisingly good indicator of the software job market.
+At least in my case, the LinkedIn inbox can be a surprisingly good indicator of the software job market. While this is just a single data point and depends on factors like experience, location, and tech stack, the correlation with broader job postings data is hard to ignore.
+
+The next time you are looking for a new job, it might be a good idea to check your LinkedIn inbox to understand if it's a good time to apply or if it might be worth waiting a bit for the market to improve.
 
 Thanks for reading!
