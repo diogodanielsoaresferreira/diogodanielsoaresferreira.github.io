@@ -48,25 +48,27 @@ Check my CV **[here](../assets/pdf/CV.pdf)**!
 
 |**Software Engineer** ![Timefold_Logo](../assets/img/timefold-logo-horizontal-positive.svg "Timefold Logo"){: style="display:inline; height:30px"}|
 |**12/23 -** \| **Remote (Belgium)**|
-|Designed and implemented a platform-as-a-service for scheduling optimization workloads (eg. employee shifts, vehicle routing).
- 
-Used Java and Quarkus, deploying to Kubernetes across multiple cloud providers (AWS, Azure, GCP), enabling customers to run complex planning jobs efficiently and at scale.|
+|Early engineer on the Platform team (second hire), built the platform from scratch for scheduling optimization workloads (e.g. employee shifts, vehicle routing).
+
+Designed and implemented core backend systems using Java and Quarkus.
+
+Deployed and operated workloads on Kubernetes across AWS, Azure, and GCP, enabling customers to run complex planning jobs efficiently at scale.|
 
 ---
 
 |**Software Engineer** ![Blip_Logo](../assets/img/blip_logo.jpg "Blip Logo"){: style="display:inline; height:30px"}|
 |**11/21 - 11/23** \| **Remote (Portugal)**|
-|Built and maintained event-driven microservices for brands like Betfair, PaddyPower and FanDuel as part of Flutter Entertainment Group, the world's leading online sports betting and gaming operator.
- 
-Worked primarily with Java, Kotlin and Scala, using Akka, Kafka, Spring and Flink to ensure scalable and observable systems in a high-traffic environment.|
+|Built and maintained event-driven microservices for brands like Betfair, PaddyPower and FanDuel within Flutter Entertainment, a large-scale global organization.
+
+Worked with Java, Kotlin and Scala, using Akka, Kafka, Spring and Flink to ensure scalable and observable systems in a high-traffic environment.|
 
 ---
 
 |**Software Engineer** ![Talkdesk_Logo](../assets/img/TalkdeskLogo.png "Talkdesk Logo"){: style="display:inline; height:25px"}|
 |**09/19 - 11/21** \| **Remote (Portugal)**|
-|Developed data-driven backend services at a unicorn startup leading the global cloud contact center market.
- 
-Used Java, Quarkus and Apache Camel to build robust pipelines on AWS, processing 4+ million events daily with a focus on monitoring, reliability and scalability.|
+|Developed data-driven backend services using Java, Quarkus, and Apache Camel.
+
+Built robust pipelines on AWS, processing 4M+ events daily with a focus on reliability, monitoring, and scalability.|
 
 ---
 
