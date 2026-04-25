@@ -35,7 +35,7 @@ The inverse is just as real. Highly competent people tend to underestimate their
 
 What software engineer wasn't once the naive, just-graduated engineer straight out of college, ready to take on the world? I certainly was.
 
-My bachelor's project was built with Django. At the start, I had a loads of confidence. I could build anything. Features kept coming in and I kept piling them on. Technical debt was growing, but I didn't know better.
+My bachelor's project was built with Django. At the start, I had a lot of confidence. I could build anything. Features kept coming in and I kept piling them on. Technical debt was growing, but I didn't know better.
 
 By the end of the semester, the main project file — [`views.py`](https://github.com/diogodanielsoaresferreira/IoTCity/blob/master/Projeto/IoTcity_services/server/server/mainserver/views.py) — had **2,621 lines** (yes, I went back to check). That single file contained basically all the business logic of the entire application. It was my beautiful big ball of mud. Thankfully, no one had the burden of maintaining it for very long.
 
@@ -62,7 +62,7 @@ That's not necessarily bad: faster prototyping is great! But it does mean the ga
 
 ## The Antidote
 
-The good news is that awareness is half the battle. If you know about the Dunning-Kruger effect, you can watch for it in yourself. A few things that help:
+The good news is that awareness is half the battle. If you know about the Dunning-Kruger effect, you can watch out for it in yourself. A few things that help:
 - Seek out people who know more than you and actually listen to them. Find mentors, read code written by experienced engineers, and resist the urge to dismiss feedback that doesn't match your self-assessment.
 - Stay curious and stay humble. The more you learn, the more you realize how much there is left to learn, and that's not a bad thing (although it can feel bad to know we did something wrong). That's the whole point.
 - The peak of Mount Stupid is a fun place to visit. Just don't build your house there.
