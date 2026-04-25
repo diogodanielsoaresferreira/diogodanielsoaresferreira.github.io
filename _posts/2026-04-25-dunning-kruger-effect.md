@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Dunning-Kruger Effect: Why Your First 6 Months With a Framework Are a Lie"
-date: 2026-04-23
+date: 2026-04-25
 excerpt: "Your first 6 months with a framework: 'I can build anything.' Two years in: 'I know nothing.' Let's talk about why."
 tags: [software engineering, software development, backend development, programming, ai]
 comments: true
@@ -37,7 +37,7 @@ What software engineer wasn't once the naive, just-graduated engineer straight o
 
 My bachelor's project was built with Django. At the start, I had a lot of confidence. I could build anything. Features kept coming in and I kept piling them on. Technical debt was growing, but I didn't know better.
 
-By the end of the semester, the main project file — [`views.py`](https://github.com/diogodanielsoaresferreira/IoTCity/blob/master/Projeto/IoTcity_services/server/server/mainserver/views.py) — had **2,621 lines** (yes, I went back to check). That single file contained basically all the business logic of the entire application. It was my beautiful big ball of mud. Thankfully, no one had the burden of maintaining it for very long.
+By the end of the semester, the main project file — [`views.py`](https://github.com/diogodanielsoaresferreira/IoTCity/blob/master/Projeto/IoTcity_services/server/server/mainserver/views.py) — had **2621 lines** (yes, I went back to check). That single file contained basically all the business logic of the entire application. It was my beautiful big ball of mud. Thankfully, no one had the burden of maintaining it for very long.
 
 The pattern is universal among developers. Your first six months with a framework: *"I can build anything."* Two years in: *"I know nothing."*
 
