@@ -36,11 +36,9 @@ comments: false
 </div>
 
 
-Software Engineer with 6+ years of experience building scalable, distributed systems in the cloud. I specialize in Java, Kotlin and Python, and have a strong focus on clean architecture, observability and reliability at scale.
+Software Engineer with 7+ years of experience building scalable, distributed systems in the cloud. I specialize in Java, Kotlin and Python, and have a strong focus on clean architecture, observability and reliability at scale.
 
 When I'm not coding, I may be reading (check out my Goodreads <a href="https://www.goodreads.com/review/list/142999797?shelf=read">![Timefold_Logo](https://s.gr-assets.com/images/badge/badge1.jpg){: style="display:inline; height:20px"}</a>) or running (check out my Strava <a href="https://www.strava.com/athletes/67910674">![Timefold_Logo](../assets/img/strava.svg){: style="display:inline; height:20px"}</a>).
-
-I am also a big enthusiast of the <a href="https://en.wikipedia.org/wiki/FIRE_movement">FIRE</a> movement and of financial literacy.
 
 Check my CV **[here](../assets/pdf/CV.pdf)**!
 
