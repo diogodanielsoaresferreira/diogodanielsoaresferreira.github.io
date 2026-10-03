@@ -30,7 +30,7 @@ The inverse is just as real. Highly competent people tend to underestimate their
 ## My Beautiful Big Ball of Mud
 
 <figure>
-    <a href="/assets/img/dunning-kruger-effect/journey-to-competence.jpg"><img src="/assets/img/dunning-kruger-effect/journey-to-competence.jpg"></a><figcaption style="text-align: center">Source: <a href="https://thedecisionlab.com/biases/dunning-kruger-effect">The Decision Lab</a></figcaption>
+    <a href="/assets/img/dunning-kruger-effect/journey-to-competence.jpeg"><img src="/assets/img/dunning-kruger-effect/journey-to-competence.jpeg"></a><figcaption style="text-align: center">Source: <a href="https://thedecisionlab.com/biases/dunning-kruger-effect">The Decision Lab</a></figcaption>
 </figure>
 
 What software engineer wasn't once the naive, just-graduated engineer straight out of college, ready to take on the world? I certainly was.
