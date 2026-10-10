@@ -13,6 +13,8 @@ If you're a software engineer, you've probably asked yourself the uncomfortable 
 
 Economists have been thinking about this kind of question for a couple of centuries. So let's borrow a few of their tools and see where they take us.
 
+A salary is a price: what companies pay for engineering work. To guess where it's going, we need to know what happens to the demand for engineers, and that depends on what happens to software itself. So we'll start with software, figure out how much more of it the world will want, and then work our way back to us.
+
 ## Economics 101
 
 Prices are set where the demand and supply curves meet. The demand curve shows how much of something buyers want at each price: the cheaper it is, the more they buy. The supply curve shows how much producers are willing to sell at each price: the higher the price, the more they produce. Where the two cross, we get the market price.
@@ -21,7 +23,7 @@ Prices are set where the demand and supply curves meet. The demand curve shows h
     <a href="/assets/img/software_economics/01-supply-demand.png"><img src="/assets/img/software_economics/01-supply-demand.png" alt="When supply shifts right, the price drops and the quantity goes up"></a><figcaption style="text-align: center">When supply shifts right, the price drops and the quantity goes up</figcaption>
 </figure>
 
-Now apply this to software, the product, not to us. When AI makes code cheaper to produce, companies can build the same software with less effort. In economic terms, the supply curve shifts to the right. The new crossing point has a lower price and a higher quantity. So software gets cheaper and there's more of it.
+Now apply this to software, the product, not to us. When AI makes code cheaper to produce, companies can build the same software with less effort. In economic terms, the supply curve shifts to the right. The new crossing point has a lower price and a higher quantity. So software gets cheaper and there's more of it. The question is how much more, because that decides how much work is left for us.
 
 ## Is Software Like Water or Like Flights?
 
@@ -34,6 +36,8 @@ Water is the classic inelastic example. If the price of water halved tomorrow, w
 </figure>
 
 So which one is software? Arguably, it's much closer to flights. Every company has a backlog of things nobody builds because they aren't worth the engineering time: internal dashboards, scripts that automate a boring manual process, integrations with legacy systems, etc. Outside tech it's even more obvious. Your local bakery won't pay for custom software today, but it might if it cost a tenth of the price (although whoever builds it might be the owner's nephew with an AI tool, not a software engineer).
+
+If software is like flights, the world will want a lot more of it. But history shows that more of something doesn't always mean more work for the people who make it.
 
 ## The Jevons Paradox
 
@@ -49,9 +53,12 @@ But Jevons only tells us we'll consume more *code*. It doesn't promise more *eng
 
 When power looms arrived in 19th-century Britain, cloth got much cheaper and people bought far more of it, just as Jevons would predict. Yet the handloom weavers who used to make that cloth saw their wages collapse and within a few decades most of them had left the trade. The industry as a whole still hired plenty of people, though, because someone had to run the new factories. What disappeared was a specific skill, along with the people who had built their careers on it. That's much closer to the risk we face.
 
+To understand what happens to engineers, we need to connect the demand for software to the demand for the people who build it.
+
 ## From Software to Engineers
 
-To get from "more software" to salaries, we need one more idea, which economists call **derived demand**. Companies don't want engineers for their own sake. They want software and they hire us to build it.
+Economists call that connection **derived demand**. Companies don't want engineers for their own sake. They want software and they hire us to build it.
+
 
 That means two forces pull in opposite directions:
 
@@ -80,9 +87,11 @@ Our job is a bundle of tasks, and they don't all get cheaper at the same rate. A
 
 Those harder tasks are complements to code. The more code we can generate, the more we need someone who knows *what* to generate, can check that it's correct and takes responsibility for it running in production. As code gets cheaper, those skills should get more valuable, at least as long as AI doesn't catch up on them too.
 
+So the demand for engineers doesn't move as one block. Demand for the tasks AI does well goes down, and demand for the tasks it struggles with goes up. That split is what will decide our salaries.
+
 ## So, What Happens to Our Salaries?
 
-I don't think software engineering salaries will simply go up or down. I think the gap between the lowest and highest paid engineers will grow.
+The full chain looks like this: AI makes software cheaper, the world probably wants much more of it, and the extra demand for engineers flows mostly to the tasks AI can't do yet. That's why I don't think software engineering salaries will simply go up or down. I think the gap between the lowest and highest paid engineers will grow.
 
 - Entry-level roles will feel the most pressure. Junior engineers often get the most well-defined tasks, which is exactly where AI is strongest. That creates a problem for later, because today's juniors are tomorrow's seniors. Fewer juniors now could mean scarcer (and more expensive) seniors in a few years.
 - Engineers who can be trusted with a whole problem will be worth more. If you combine technical depth with domain knowledge and can direct and check AI output, you get a lot more done than you could before.
