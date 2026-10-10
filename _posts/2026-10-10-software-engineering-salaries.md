@@ -59,6 +59,7 @@ To understand what happens to engineers, we need to connect the demand for softw
 
 Economists call that connection **derived demand**. Companies don't want engineers for their own sake. They want software and they hire us to build it.
 
+
 That means two forces pull in opposite directions:
 
 - Each feature needs fewer engineering hours, which pushes demand for engineers down.
