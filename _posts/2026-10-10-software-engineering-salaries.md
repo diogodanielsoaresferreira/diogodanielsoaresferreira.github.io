@@ -13,7 +13,7 @@ If you're a software engineer, you've probably asked yourself the uncomfortable 
 
 Economists have been thinking about this kind of question for a couple of centuries. So let's borrow a few of their tools and see where they take us.
 
-Here's the plan. A salary is a price: what companies pay for engineering work. To guess where it's going, we need to know what happens to the demand for engineers, and that depends on what happens to software itself. So we'll start with software, figure out how much more of it the world will want, and then work our way back to us.
+A salary is a price: what companies pay for engineering work. To guess where it's going, we need to know what happens to the demand for engineers, and that depends on what happens to software itself. So we'll start with software, figure out how much more of it the world will want, and then work our way back to us.
 
 ## Economics 101
 
